@@ -1,13 +1,268 @@
 <!DOCTYPE html>
 <html>
 <head> 
+	<style>
+		body {
+  margin: 0px;
+   padding: 0px;
+  font-family: "Asap", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0px 5%;
+  z-index: 1;
+}
+.logo a {
+  font-weight: 900;
+  color: #00c2cb;
+  font-size: 100px;
+}
+nav ul {
+  display: flex;
+}
+nav ul li a {
+  height: 40px;
+  line-height: 43px;
+  margin: 10px;
+  padding: 0px 30px;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e0ffff;
+  transition: 0.1s;
+}
+nav ul li a:hover,
+.main-text a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  color: #fff;
+}
+#main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+#main video{
+  	position:relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+
+		}
+    .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: rgba(48,25,52,0.75);
+}
+
+  .main-text{
+  position: absolute;
+  left: 13%;
+  top: 42%;
+  transform: translate(-13%,-42%);
+  line-height: 0;
+}
+.name{
+  font-weight: 500;
+  font-size: 30px;
+  color: #e0ffff;
+  margin-left: 10%;
+}
+.main-text h1{
+  font-size: 70px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+.main-text p{
+  font-size: 20px;
+  color: #e0ffff;
+  margin: 25px 0px 25px;
+  line-height: 50px;
+}
+.main-text a{
+  width: 150px;
+  height: 40px;
+  outline: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 200;
+  padding: 1rem;
+}
+.btn{
+  padding: 15px 20px;
+  border: 2px solid rgb(245, 245, 246);
+  color: #f9f6f6;
+  text-align: center;
+  font-family: "Asap", sans-serif;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin-left: 50px;
+  font-style: italic;
+  font-size: 30px;
+}
+
+.profilePhoto{
+      height: 300px;
+      width: 300px;
+      border-radius: 50%;
+      border-style:dotted;
+      border-color: white;
+    }
+    .quote{
+      font-weight: 100;
+      font-size: 23px;
+      color: #e0ffff;
+      margin-left:50px;
+    }
+    rotatingText { 
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  text-align: center;
+}
+
+.rotatingText-content { 
+  position: relative;
+  left: 55px;
+  width: 100%;
+}
+
+.rotatingText-description { 
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-size: 40px;
+
+  
+  @media (min-width: 768px) { 
+    font-size: 50px;
+  }
+}
+
+.rotatingText-adjective { 
+  font-family: 'Open Sans', sans-serif;
+  font-size: 50px;
+  left: 0;
+  margin-bottom: 0;
+  margin-top: 20px;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0;
+  color: rgb(7, 183, 60);
+  font-style: italic;
+  
+  @media (min-width: 768px) { 
+    font-size: 60px;
+  }
+  
+  &:nth-of-type(1) { 
+    animation: rotate-text-up 1.5s .75s; 
+  }
+  
+  &:nth-of-type(2) { 
+    animation: rotate-text-up 1.5s 2s; 
+  }  
+  
+  &:nth-of-type(3) { 
+    animation: fade-text-in 1.5s 3.25s forwards;
+  }
+}
+@keyframes rotate-text-up { 
+  0% {
+    transform: translate3d(0, 80px, 0);
+    opacity: 0;
+  }
+  
+  20%, 80% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  
+  100% {
+    transform: translate3d(0, -40px, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-text-in { 
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 80px, 0);
+  }
+  
+  50%, 100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+  
+	</style>
 	<title>
 		Abhinav's Portfolio
 	</title>
 <head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<p>Hey This side Abhinav Verma.</p>
+	<section id="#main">
+    <div class="overlay"></div>
+		<nav>
+			<div class="Logo">
+				<a href="#">Portfolio</a>
+			</div>
+			<ul class="menu">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Education</a></li>
+			<li><a href="#">Skills</a></li>
+      <li> <a href="#">Projects</a></li>
+      <li> <a href="#">Contacts</a></li>
+		</ul> </nav>		
+    <video src="pexels-1.mp4" muted autoplay loop></video>
+    <div class="main-text">
+      <img src="Abhinav.jpg" class="profilePhoto">
+      <h2 class="name" >Abhinav Verma</h2>
+      <br>
+      <section class="rotatingText">
+        <div class="rotatingText-content">
+          <p class="rotatingText-description">
+            Hi! I'm a 
+          </p>
+          <h2 class="rotatingText-adjective">Coder</h2>
+          <h2 class="rotatingText-adjective">Developer</h2>
+          <h2 class="rotatingText-adjective">technophile</h2>
+        </div>
+      </section>
+      <h2 class="quote">"The only limits that exist are the ones in your own mind." </h2>
+      <br>
+    <a href="https://www.linkedin.com/in/abhinavverma658/"><button class="btn"> Let's go</button></a>  
+    </div>
+	</section>
+
+  
 </body>
 </html>
