@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body{
+                margin: 0px;
+                padding: 0px;
+                font-family: "Asap", sans-serif;
+            }
+             * {
+                box-sizing: border-box;
+            }
+            ul {
+                list-style: none;
+            }
+            a {  
+                text-decoration: none;
+            }
+            nav {
+                display: inline-flex;
+                justify-content: space-around;
+                align-items: center;
+                height: 60px;
+                position:fixed;
+                width: 100%;
+                backdrop-filter: blur(15px);
+                -webkit-backdrop-filter: blur(15px);
+                 border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                 padding: 0px 5%;
+                 z-index: 1;
+                }
+                .logo a {
+                    font-weight: 300;
+                    color: #FFFFFF;
+                    font-size: 50px;
+                }
+                nav ul {
+                    display: flex;
+                }
+                nav ul li a {
+                    height: 40px;
+                    line-height: 40px;
+                    margin: 10px;
+                    padding: 0px 30px;
+                    display: flex;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: #e0ffff;
+                    transition: 0.1s;
+                }
+                nav ul li a:hover,.main-text a:hover {
+                    background: rgba(255, 255, 255, 0.1);
+                    border-radius: 3px;
+                    color: #fff;
+                }
+                #main {
+ 
+                    width: 100%;
+                    height: 100vh;
+                    position: relative;
+                }
+                .main-text{ 
+                    position: absolute;
+                    left: 5%;
+                    top: 15%;
+                    transform: translate(-13%,-42%);
+                    line-height: 0;
+                }
+                .overlay{
+                    position:fixed;
+                    top: 0;
+                    left: 0;
+                    width:100%;
+                    height:100%;
+                    object-fit: fill;
+                    background: rgba(0, 0, 0, 0.75);
+                }
+                .education{
+                    margin-top: 175px;
+                    color: #FFFFFF;
+                    size: 50px;
+                    font-style: italic;
+                    margin-left: 200px;
+                }
+                .college{
+                    margin-top: 30px;
+                    height: 100px;
+                    width: 300px;
+                    margin-left: 125px;
+                }
+                .detail-1{
+                    color: white ;
+                    margin-left: 90px;
+                    font-size: 20px;
+                }
+                .year-1{
+                    color: white ;
+                    margin-left: 225px;
+                    font-size: 20px;
+                }
+                
+                .div1{
+                    margin-top: 40px ;
+                    cursor:pointer;
+                    background: rgba(255, 255, 255, 0.459);
+                    margin-left: 100px;
+                    height:250px;
+                    width: 550px;
+                    border-radius: 50%;
+                    float: left;
+                }
+                .div1:hover{
+                    background-color: #4c484890;
+                }
+                .div-2{
+                    margin-top: 40px ;
+                    margin-left: 25px;
+                    cursor:pointer;
+                    background: rgba(255, 255, 255, 0.459);
+                    height:250px;
+                    width: 550px;
+                    border-radius: 50%;
+                    float: right;
+                    
+                }
+                .div-2:hover{
+                    background-color: #4c484890;
+                }
+                .schoolPhoto{
+                    height:170px;
+                    width: 300px;
+                    margin-left: 130px;
+                    object-fit: cover;       
+                }
+                .detail-2{
+                    color: white;
+                    margin-left:160px;
+                    font-size: 20px;
+                }
+                .certification{
+                    position: absolute;
+                    margin-top: 350px;
+                    color: #FFFFFF;
+                    font-style: italic;
+                    margin-left: 200px;
+                }
+                .div-3{
+                    position: absolute;
+                    top: 600px;
+                    cursor:pointer;
+                    background: rgba(255, 255, 255, 0.459);
+                    margin-left: 175px;
+                    height:250px;
+                    width: 250px;
+                    border-radius: 50%;
+                    float: left;
+                }
+                .linkedin{
+                    height: 100px;
+                    width: 100px;
+                    margin-top: 50px;
+                    margin-left: 80px;
+                    border-radius: 30%;
+                }
+                .detail-3{
+                    color: white;
+                    font-size: 20px;
+                    margin-left: 60px;
+                }
+                .top-img{
+                    position: absolute;
+                    left:0;
+                    right: 0;
+                    border-radius: 50%;
+                    height: 250px;
+                    width: 250px;
+                    opacity: 0;
+                    transition: all .5s ease;
+                }
+                .top-img:hover{
+                    background-color: #4c4848bb;
+                    opacity: 1;
+                }
+        </style>
+        <title>
+            Education page
+        </title>
+    </head>
+    <body >
+        <section id="#main">
+            <div class="overlay"></div>
+            <nav>
+                <div class="logo">
+                    <a href="index.html">Abhinav Verma</a>
+                </div>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li> <a href="#">Projects</a></li>
+                    <li> <a href="#">Contacts</a></li>
+                 </ul> 
+            </nav>
+            <video src="pexels-2.mp4" muted autoplay loop></video>
+            <div class="main-text">
+            <h1 class="education"> 
+                <u>EDUCATION :-</u>
+            </h1>
+            <br>
+
+            <div class="div1"> 
+                <img src="college.png" class="college">
+                <br>
+                <p class="detail-1">B.Tech in Computer Science and Engineering </p>
+                <br>
+                <p class="year-1">(2020-2024)</p>
+            </div>
+            <div class="div-2">
+                <img src="school-1.png" class="schoolPhoto">
+                <P class="detail-2">10th(2018) and 12th(2020)</P>
+            </div>
+            <br>
+            <h1 class="certification"> 
+                <u>Online Certification :-</u>
+            </h1>
+           <a href="https://www.linkedin.com/learning/certificates/095be842299f2145f4a5a42d7643856b1e526b34e9fcaf4d733e90dceda7f2ec">
+            <div class="div-3"> 
+            <img src="linkedin.png" class="linkedin">
+            <img src="link-1.png" class="top-img">
+            <br>
+            <p class="detail-3">Git and Github</p>
+        </div></a> 
+
+        </div>
+
+        </section>
+               
+    </body>
+</html>
