@@ -26,6 +26,7 @@ nav {
      z-index: 1;
     }
     .logo a {
+        position: absolute;
         font-weight: 300;
         color: #FFFFFF;
         font-size: 50px;
@@ -102,20 +103,21 @@ nav {
         margin-left: 100px;
         height:250px;
         width: 550px;
-        border-radius: 50%;
+        border-radius: 50px;
         float: left;
     }
     .div1:hover{
         background-color: #4c484890;
     }
     .div-2{
-        margin-top: 40px ;
-        margin-left: 25px;
+        position: absolute;
+        top: 230px;
+        left:750px;
         cursor:pointer;
         background: rgba(255, 255, 255, 0.459);
         height:250px;
         width: 550px;
-        border-radius: 50%;
+        border-radius: 50px;
         float: right;
         
     }

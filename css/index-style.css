@@ -27,10 +27,10 @@ body {
       z-index: 1;
     }
     .logo a {
+      position: relative;
       font-weight: 300;
       color: #FFFFFF;
       font-size: 50px;
-      position: relative;
     }
     nav ul {
       display: flex;
@@ -74,18 +74,13 @@ body {
         background: rgba(48,25,52,0.75);
       }
       .main-text{
+        float: left;
         position: absolute;
-        left: 13%;
-        top: 42%;
+        left: 10%;
+        top: 175px;
         transform: translate(-13%,-42%);
         line-height: 0;
         }
-        .name{
-        font-weight: 500;
-        font-size: 30px;
-        color: #e0ffff;
-        margin-left: 10%;
-      }
       .main-text h1{
         font-size: 70px;
         font-weight: 500;
@@ -94,7 +89,7 @@ body {
       }
       .main-text p{
         font-size: 20px;
-        color: #e0ffff;
+        color: white;
         margin: 25px 0px 25px;
         line-height: 50px;
       }
@@ -108,6 +103,9 @@ body {
         padding: 1rem;
       }
       .btn{
+        position: relative;
+        top: 225px;
+        left:100px;
         padding: 15px 20px;
         border: 2px solid rgb(245, 245, 246);
         color: #FFFFFF;
@@ -116,41 +114,49 @@ body {
         background-color: transparent;
         background-repeat: no-repeat;
         cursor: pointer;
-        margin-left: 50px;
         font-style: italic;
         font-size: 30px;
 }
 
 .profilePhoto{
-      height: 300px;
-      width: 300px;
+  position: relative;
+  top: 200px;
+  left:100px;
+      height: 350px;
+      width: 350px;
       border-radius: 50%;
       border-style:dotted;
       border-color: white;
     }
-    .quote{
-      font-weight: 100;
-      font-size: 23px;
-      color: #e0ffff;
-      margin-left:50px;
-    }
-    rotatingText { 
-  align-items: center;
-  display: flex;
-  height: 100vh;
-  text-align: center;
-}
-
+    .name{
+      position: absolute;
+      top:550px;
+      left: 170px;
+    font-weight: 500;
+    font-size: 30px;
+    color: #e0ffff;
+  }
+  .quote{
+    position: relative;
+    top: 225px;
+    left: 100px;
+    font-weight: 100;
+    font-size: 23px;
+    color: #e0ffff;
+  }
 .rotatingText-content { 
   position: relative;
-  left: 55px;
+  top: 200px;
+  left:100px;
   width: 100%;
 }
 
 .rotatingText-description { 
+  position: relative;
+  top:25px;
   font-family: 'Georgia', serif;
   font-style: italic;
-  font-size: 40px;
+  font-size: 60px;
 
   
   @media (min-width: 768px) { 
@@ -161,15 +167,14 @@ body {
 .rotatingText-adjective { 
   font-family: 'Open Sans', sans-serif;
   font-size: 50px;
-  left: 0;
-  margin-bottom: 0;
-  margin-top: 20px;
+  left: 300px;
   opacity: 0;
   position: absolute;
   right: 0;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   top: 0;
+  bottom: 800px;
   color: rgb(7, 183, 60);
   font-style: italic;
   
@@ -216,4 +221,38 @@ body {
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
+}
+.content-1{
+  float: right;
+  width:750px;
+  height: 600px;
+  position:absolute;
+  top:100px;
+  right:0;
+  left:900px;
+  border-radius: 50px;
+  background-color: #ffffffa0;
+  border-style:solid;
+  border-color: white;
+}
+.aboutme-heading{
+  position: relative;
+  top: 20px;
+  left: 20px;
+  color:rgb(12, 12, 12);
+  font-style: italic;
+  text-transform: uppercase;
+}
+.content-1 p{
+  position: relative;
+  top: 20px;
+  left: 20px;
+  margin-right: 20px;
+  color: black;
+  font-size: 23px;
+  font-style: italic;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.content-1:hover{
+  background-color: #f5f3f6ec;
 }
