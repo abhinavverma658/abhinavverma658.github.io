@@ -76,7 +76,7 @@ body {
       .main-text{
         float: left;
         position: absolute;
-        left: 10%;
+        left: 5%;
         top: 175px;
         transform: translate(-13%,-42%);
         line-height: 0;
@@ -224,8 +224,8 @@ body {
 }
 .content-1{
   float: right;
-  width:750px;
-  height: 600px;
+  width:700px;
+  height: 700px;
   position:absolute;
   top:100px;
   right:0;

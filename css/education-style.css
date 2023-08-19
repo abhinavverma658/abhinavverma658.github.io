@@ -26,7 +26,7 @@ nav {
      z-index: 1;
     }
     .logo a {
-        position: absolute;
+        position:relative;
         font-weight: 300;
         color: #FFFFFF;
         font-size: 50px;
@@ -73,7 +73,7 @@ nav {
         background: rgba(0, 0, 0, 0.75);
     }
     .education{
-        margin-top: 175px;
+        margin-top: 190px;
         color: #FFFFFF;
         size: 50px;
         font-style: italic;
@@ -111,7 +111,7 @@ nav {
     }
     .div-2{
         position: absolute;
-        top: 230px;
+        top: 250px;
         left:750px;
         cursor:pointer;
         background: rgba(255, 255, 255, 0.459);
@@ -137,7 +137,7 @@ nav {
     }
     .certification{
         position: absolute;
-        margin-top: 350px;
+        margin-top: 330px;
         color: #FFFFFF;
         font-style: italic;
         margin-left: 200px;
