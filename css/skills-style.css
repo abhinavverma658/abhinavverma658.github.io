@@ -1,0 +1,251 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Asap", sans-serif;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  nav {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0px 5%;
+    z-index: 1;
+  }
+  .logo a {
+    position: relative;
+    font-weight: 300;
+    color: #FFFFFF;
+    font-size: 50px;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav ul li a {
+     height: 40px;
+     line-height: 43px;
+     margin: 10px;
+     padding: 0px 30px;
+     display: flex;
+     font-size: 1rem;
+     font-weight: 600;
+     color: #e0ffff;
+     transition: 0.1s;
+    }
+    nav ul li a:hover,.main-text a:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 3px;
+     color: #fff;
+    }
+    #main {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+    }
+    #main video{
+      position:relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit:fill;
+    }
+    .overlay{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background: rgba(0, 0, 0, 0.601);
+    }
+    .main-text{
+      float: left;
+      position: absolute;
+      left: 5%;
+      top: 150px;
+      transform: translate(-13%,-42%);
+      line-height: 0;
+      }
+    .main-text h1{
+      font-size: 70px;
+      font-weight: 500;
+      font-family: "Roboto", sans-serif;
+      color: #fff;
+    }
+    .main-text p{
+      font-size: 20px;
+      color: white;
+      margin: 25px 0px 25px;
+      line-height: 50px;
+    }
+    .main-text a{
+      width: 150px;
+      height: 40px;
+      outline: none;
+      border-radius: 5px;
+      font-size: 15px;
+      font-weight: 200;
+      padding: 1rem;
+    }
+    .Skills{
+        margin-top: 30px;
+        color: #FFFFFF;
+        size: 50px;
+        font-style: italic;
+        margin-left: 200px;
+    }
+    .programming-language{
+        position: absolute;
+        left: 175px;
+        margin-top: 30px;
+        height: 250px;
+        width: 1100px;
+        background-color: rgba(255, 255, 255, 0.578);
+        border-radius: 30px;
+    }
+    .programming-language:hover{
+      background-color: #FFFFFF;
+    }
+    .language-name{
+      margin-top: 30px;
+        margin-left: 20px;
+    }
+    .java{
+        height: 150px;
+        width: 150px;
+        margin-left: 20px;
+        margin-top: 20px;
+        border-radius: 20px;
+    }
+    .java:hover{
+      background-color: #f6fe0349;
+    }
+    .kotlin{
+      height: 150px;
+      width: 175px;
+      margin-left: 20px;
+      margin-top: 20px;
+      border-radius: 20px;
+  }
+  .kotlin:hover{
+    background-color: #f6fe0349;;
+  }
+    .html{
+        height: 150px;
+        width: 150px;
+        border-radius: 20px;
+        margin-left: 10px;
+    }
+    .html:hover{
+      background-color: #f6fe0349;;
+    }
+    .css-1{
+      height: 150px;
+      width: 150px;
+      border-radius: 20px;
+      margin-left: 10px;
+    }
+    .css-1:hover{
+      background-color: #f6fe0349;;
+    }
+    .javascript{
+      height: 150px;
+      width: 120px;
+      border-radius: 20px;
+      margin-left: 10px;
+    }
+    .javascript:hover{
+      background-color: #f6fe0349;;
+    }
+    .sql{
+      height: 150px;
+      width: 150px;
+      border-radius: 20px;
+      margin-left: 10px;
+    }
+    .sql:hover{
+      background-color: #f6fe0349;
+    }
+    .frameworks{
+      position: absolute;
+      left: 175px;
+      top: 350px;
+      height: 250px;
+      width: 1100px;
+      background-color: rgba(255, 255, 255, 0.578);
+      border-radius: 30px;
+    }
+    .frameworks:hover{
+      background-color: #FFFFFF;
+    }
+    .frameworks-name{
+      margin-top: 35px;
+        margin-left: 20px;
+    }
+    .spring{
+      width: 350px;
+     border-radius: 20px;
+     margin-left: 10px; 
+     margin-top: 20px;
+    }
+    .spring:hover{
+      background-color: #f6fe0349 ;
+    }
+    .bootstrap{
+     border-radius: 20px;
+     margin-left: 10px; 
+    }
+    .bootstrap:hover{
+      background-color: #f6fe0349 ;
+    }
+    .tools{
+      position: absolute;
+      left: 175px;
+      top: 625px;
+      height: 250px;
+      width: 1100px;
+      background-color: rgba(255, 255, 255, 0.578);
+      border-radius: 30px;
+    }
+    .tools:hover{
+      background-color: #FFFFFF;
+    }
+    .tools-name{
+      margin-top: 35px;
+      margin-left: 20px;
+    }
+    .git{
+      margin-left: 20px;
+      height: 175px;
+      width: 175px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    .git:hover{
+      background-color: #f6fe0349;
+    }
+    .github{
+      margin-left: 10px;
+      height: 175px;
+      width: 175px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    .github:hover{
+      background-color: #f6fe0349;
+    }
+  
