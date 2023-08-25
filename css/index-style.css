@@ -104,18 +104,49 @@ body {
       }
       .btn{
         position: relative;
-        top: 225px;
-        left:100px;
-        padding: 15px 20px;
+        top: 235px;
+        left:230px;
+        padding: 15px 15px;
         border: 2px solid rgb(245, 245, 246);
-        color: #FFFFFF;
-        text-align: center;
-        font-family: "Asap", sans-serif;
-        background-color: transparent;
+        background-color: #ffffff80;
         background-repeat: no-repeat;
         cursor: pointer;
-        font-style: italic;
-        font-size: 30px;
+        border-radius: 70px;
+}
+.btn-img-1{
+  height: 30px;
+  width: 30px;
+}
+.btn-2{
+  position: relative;
+  top: 235px;
+  left:230px;
+  padding: 15px 15px;
+  border: 2px solid rgb(245, 245, 246);
+  background-color: #ffffff80;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border-radius: 70px;
+}
+.btn-img-2{
+height: 30px;
+width: 30px;
+}
+
+.btn-3{
+  position: relative;
+  top: 235px;
+  left:230px;
+  padding: 15px 15px;
+  border: 2px solid rgb(245, 245, 246);
+  background-color: #ffffff80;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border-radius: 70px;
+}
+.btn-img-3{
+height: 30px;
+width: 30px;
 }
 
 .profilePhoto{
@@ -143,7 +174,7 @@ body {
     left: 100px;
     font-weight: 100;
     font-size: 23px;
-    color: #e0ffff;
+    color: #ffffff;
   }
 .rotatingText-content { 
   position: relative;

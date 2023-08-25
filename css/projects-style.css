@@ -124,9 +124,11 @@ body {
       background-color: rgba(255, 255, 255, 0.684);
     }
     .erp{
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       color: black;
-      margin-left: 20px;
       margin-top: 50px;
     }
     .getdetails-1{
@@ -158,9 +160,11 @@ body {
       background-color: rgba(255, 255, 255, 0.684);
     }
     .bot{
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       color: black;
-      margin-left: 25px;
       margin-top: 50px;
     }
     .getdetails-2{
@@ -192,9 +196,11 @@ body {
       background-color: rgba(255, 255, 255, 0.684);
     }
     .portfolio{
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       color: black;
-      margin-left: 90px;
       margin-top: 50px;
     }
     .getdetails-3{

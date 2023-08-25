@@ -240,12 +240,19 @@ body {
     }
     .github{
       margin-left: 10px;
-      height: 175px;
-      width: 175px;
+      height: 125px;
+      width: 300px;
       border-radius: 20px;
       margin-bottom: 20px;
     }
     .github:hover{
       background-color: #f6fe0349;
     }
-  
+    .flutter{
+      width: 300px;
+      border-radius: 20px;
+      margin-left: 10px;
+    }
+    .flutter:hover{
+      background-color:  #f6fe0349;
+    }
