@@ -1,64 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width", initial-scale="1.0">
-  <meta name="description" content="Written By Abhinav Verma,Welcome to my personal portfolio, where I showcase my creative journey and professional accomplishments.">
- <link rel="stylesheet" type="text/css" href="css/index-style.css"/>
-	<title>
-		Abhinav's Portfolio
-	</title>
-  <link rel="icon" href="assets/img/logo.png" type="image/x-icon">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhinav's Portfolio</title>
+    <link rel="stylesheet"  type="text/css" href="css/index.css">
+    <link rel="stylesheet"   type="text/css" href="css/bootstrap.css">
+</head>
 <body>
-	<section id="#main">
-    <div class="overlay"></div>
-		<nav>
-			<div class="logo">
-				<a href="index.html">Personal Portfolio</a>
-			</div>
-			<ul class="menu">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="education.html">Education</a></li>
-			<li><a href="skills.html">Skills</a></li>
-      <li> <a href="projects.html">Projects</a></li>
-      <li> <a href="contacts.html">Contacts</a></li>
-      <li><a href="https://drive.google.com/uc?export=download&id=1fTLIMEcCKKLxj4alKIDVL3YwpowYzMHc">Resume</a></li>
-		</ul> </nav>		
-    <video src="assets/mp4/pexels-1.mp4" muted autoplay loop></video>
-    <div class="main-text">
-      <img src="assets/img/Abhinav.jpg" class="profilePhoto" alt="photo">
-      <h2 class="name" >Abhinav Verma</h2>
-      <br>
-        <div class="rotatingText-content">
-          <p class="rotatingText-description">
-            Hi! I'm a tech enthusiast who 
-          </p>
-          <h2 class="rotatingText-adjective">Codes</h2>
-          <h2 class="rotatingText-adjective">Develope</h2>
-          <h2 class="rotatingText-adjective">Innovate</h2>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Personal Portfolio 2.0</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0  fs-4">
+              <li class="nav-item">
+                <a class="nav-link"  href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resume</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-warning" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-      <h2 class="quote">"The only limits that exist are the ones in your own mind." </h2>
-      <br>
-    <a href="https://www.linkedin.com/in/abhinavverma658/"><button class="btn"> <img src="assets/img/linkedin-icon.png" class="btn-img-1"></button></a>
-    <a href="https://github.com/abhinavverma658"><button class="btn-2"> <img src="assets/img/github.png" class="btn-img-2"></button></a>  
-    <a href="mailto: abhinavverma658@gmail.com"><button class="btn-3"><img src="assets/img/mail.png" class="btn-img-3"></button></a>
-    </div>
-    <div class="content-1"> 
-      <u><h2 class="aboutme-heading">Let me share a bit about myself :-</h2></u>
-      <p class="aboutme">
-       I am Abhinav Verma, originating from Bihar, and my current focus lies in building a career within the realm of Computer Science.
-       My affable nature greatly aids me in establishing impactful professional connections, which is complemented by my robust technical and pragmatic proficiencies that I consistently strive to elevate.
-      </p>
-      <p> Beyond my formal pursuits, I am fervently passionate about acquiring technological knowledge during my leisure hours. Staying abreast of the latest industry advancements and trends brings me joy. 
-        Regarding my technical aptitude, I excel in Java, my primary programming language, and possess adeptness in diverse technologies such as Android development, Web development encompassing HTML, CSS, JavaScript, along with Kotlin, Flutter, and XML.
-      </p>
-      <p>
-        Collectively, my unwavering commitment to perpetual learning, coupled with my genial disposition and technical adeptness, positions me favorably for triumph in the Computer Science arena.
-      </p>
-    </div>
-	</section>
+      </nav>
+      <!-- Navbar end -->
 
-  
+      <!-- Introduction Start -->
+      <div class="container-fluid ">
+        <div class="row" >
+            <div class="col-md-6 photo float-left text-center">
+                <img src="assets/Abhinav.jpg " alt="Abhinav"  class="mx-auto d-block abhinav_photo">
+                <br>
+                <h2>Abhinav Verma</h2>
+                <div id="wrapper">
+                    <div id="container">
+                        <h3>Hi!🤗 I'm Tech Enthusiast who Code, Develope, Innovate.</h3>
+                    </div>
+                    <h4>"The only limits that exist are the ones in your own mind."</h4>
+                </div>
+                <div class="links">
+                  <a href="https://www.linkedin.com/in/abhinavverma658/"> <img src="assets/linkedin-icon.png" class="btn-img-1"></a>
+                <a href="https://github.com/abhinavverma658"> <img src="assets/g.png" class="btn-img-2"></a>      
+                <a href="mailto: abhinavverma658@gmail.com"><img src="assets/mail.png" class="btn-img-3"></a>
+                </div>
+                
+            </div>
+            <div class="col-md-5  intro float-right">
+                <h4> LET ME SHARE A BIT ABOUT MYSELF :-</h4> 
+                <p>Welcome to my portfolio! I'm Abhinav Verma, originally from Bihar, with a passionate focus on forging a successful career in Computer Science. My affable nature enables me to build strong professional relationships, complemented by my solid technical and pragmatic skills which I continually enhance.</p>
+                <p>Outside of formal education and work, I'm deeply enthusiastic about technology, always eager to learn and stay updated with the latest industry trends. My technical expertise is broad-ranging, with Java as my forte and proficiency in Android and Web development technologies including <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span>, <span>Bootstrap</span>, <span>React Js</span>, <span>Kotlin</span>, and <span>XML</span>. Additionally, I have a strong foundation in <span>SQL</span> for databases.</p>
+                <p>My commitment to continuous learning, combined with my friendly demeanor and technical prowess, positions me well for success in the dynamic world of Computer Science. I also have hands-on experience with <span>Git and GitHub</span>, enhancing my collaborative and version control capabilities.</p> 
+            </div>
+            <div class="col-md-1 blank"></div>
+        </div>
+      </div>
+      <!-- Introduction End -->
+      <!-- Education Section Start -->
+      <div class="container-fluid education">
+        <H1>More Coming Soon..</H1>
+      </div>
+      <!-- Education Section End -->
+    <script src="js/index.js"></script>
 </body>
 </html>
