@@ -171,15 +171,15 @@ a:hover {
     border-style:solid;
 }
 .name_animation{
-    height: auto;
-    width: auto;
+    height: 100px;
+    width: 400px;
 }
   svg text {
     text-transform: uppercase;
     animation: stroke 5s infinite alternate;
     stroke-width: 1;
     stroke: #ffffff;
-    font-size: 75px;
+    font-size: 100px;
   }
   @keyframes stroke {
     0%   {
