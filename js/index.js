@@ -1,4 +1,6 @@
-var loader =document.getElementById("preloader");
-window.addEventListener("load",function(){
-    loader.style.display="none";
-})
+document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+        const preloader = document.getElementById('preloader');
+        preloader.style.display = 'none';
+    }, 2000); // 3 seconds delay
+});
