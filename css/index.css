@@ -65,34 +65,56 @@
 }
 
 
-*,
-:before,
-:after {
+*,:before,:after {
     box-sizing: border-box;
 }
 
-.typewriter h4 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .10em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
-  }
+.wrapper.six {
+    background-color: #000000;
+}
+
+.flicker {
+    font-size: 30px;
+    margin: 1rem auto;
+    color: transparent; /* Set text color to transparent */
+    background: -webkit-gradient(linear, left top, right top, from(rgb(255, 255, 255)), to(rgb(0, 0, 0)), color-stop(0.8, rgb(255, 255, 255))) no-repeat;
+    background: linear-gradient(to right, #222, #222, #fff 80%) no-repeat;
+    background-size: 200% 100%; /* Increased size to cover the full text */
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: flick 3s infinite; /* Changed to forwards to keep the final state */
+}
+
+@keyframes flick {
+    0% {
+        background-position: -100% 0; /* Start position to the left */
+    }
+    50% {
+        background-position: 100% 0; /* Move to the right */
+    }
+    100% {
+        background-position: 200% 0; /* End position to ensure full visibility */
+    }
+}
+
+/* Show text after animation */
+.flicker::after {
+    content: attr(data-text); /* Display the actual text */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff; /* Text color */
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+@media (max-width: 768px) {
+    .flicker {
+        font-size: 2rem;
+    }
+}
+
   
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-  }
 
 .education{
     height: 300px;
@@ -122,4 +144,37 @@
       fill: yellow; stroke: rgba(54,95,160,0); 
       stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
     }
+  }
+  .skills{
+    height: 300px;
+    border-color: white;
+    border-width: 0.5px;
+    border-style:solid;
+  }
+  .projects{
+    height: 300px;
+    border-color: white;
+    border-width: 0.5px;
+    border-style:solid;
+  }
+  .certification{
+    height: 300px;
+    border-color: white;
+    border-width: 0.5px;
+    border-style:solid;
+  }
+  .contacts{
+    height: 300px;
+    border-color: white;
+    border-width: 0.5px;
+    border-style:solid;
+  }
+  #preloader{
+    background: #000000 url("../assets/preloader.gif") no-repeat center center;
+    background-size: 50%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+
   }

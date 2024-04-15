@@ -8,8 +8,14 @@
     <link rel="stylesheet"   type="text/css" href="css/bootstrap.css">
 </head>
 <body>
+  <!-- Preloader Section Start -->
+  <div id="preloader">
+
+  </div>
+  <!-- Preloader Section End -->
+
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Personal Portfolio 2.0</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,19 +24,22 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0  fs-4">
               <li class="nav-item">
-                <a class="nav-link"  href="#">Home</a>
+                <a class="nav-link"  href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Education</a>
+                <a class="nav-link" href="#education">Education</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Skills</a>
+                <a class="nav-link" href="#skills">Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="#projects">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contacts</a>
+                <a class="nav-link" href="#certification">Certifications</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacts">Contact Details </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Resume</a>
@@ -46,7 +55,7 @@
       <!-- Navbar end -->
 
       <!-- Introduction Start -->
-      <div class="container-fluid ">
+      <div class="container-fluid" id="home">
         <div class="row" >
             <div class="col-md-6 photo float-left text-center">
                 <img src="assets/Abhinav.jpg " alt="Abhinav"  class="mx-auto d-block abhinav_photo">
@@ -57,10 +66,12 @@
                     </text>
                   </svg>  
                 </div>
-                <div class="typewriter">
-                  <h4>Hi! 🤗 I'm a Tech Enthusiast Who Code, Develope, Innovate. </h4>
-                </div>
-                <br>
+                <div class="wrapper six">
+                  <div>
+                     <h3>Hi!👋 I'm a Tech Enthusiast Who ❤️ To </h3> 
+                     <h3 class="flicker">Code, Develope, Innovate</h3>
+                  </div>
+              </div>
                 <h4>"The only limits that exist are the ones in your own mind."</h4>
                 <div class="links">
                   <a href="https://www.linkedin.com/in/abhinavverma658/"> <img src="assets/linkedin-icon.png" class="btn-img-1"></a>
@@ -81,10 +92,30 @@
       </div>
       <!-- Introduction End -->
       <!-- Education Section Start -->
-      <div class="container-fluid education">
+      <div class="container-fluid education" id="education">
         <H1>More Coming Soon..</H1>
       </div>
       <!-- Education Section End -->
+      <!-- Skill Section Start -->
+      <div class="container-fluid skills" id="skills">
+        <h1>More Coming Soon..</h1>
+      </div>
+      <!-- skill section end -->
+      <!-- Project Section Start -->
+      <div class="container-fluid projects" id="projects">
+        <h1>More Coming Soon..</h1>
+      </div>
+      <!-- Project section end -->
+      <!-- Certification Section Start -->
+      <div class="container-fluid certification" id="certification">
+        <h1>More Coming Soon..</h1>
+      </div>
+      <!-- Certification section end -->
+      <!-- Contacts Section Start -->
+      <div class="container-fluid contacts" id="contacts">
+        <h1>More Coming Soon..</h1>
+      </div>
+      <!-- Contacts section end -->
     <script src="js/index.js"></script>
 </body>
 </html>
