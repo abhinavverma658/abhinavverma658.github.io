@@ -152,7 +152,6 @@
     border-style:solid;
   }
   .projects{
-    height: 300px;
     border-color: white;
     border-width: 0.5px;
     border-style:solid;
@@ -176,5 +175,4 @@
     width: 100%;
     position: fixed;
     z-index: 100;
-
   }
