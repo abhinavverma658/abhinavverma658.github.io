@@ -149,7 +149,10 @@
     }
   }
   .skills{
-    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     border-color: white;
     border-width: 0.5px;
     border-style:solid;
@@ -181,8 +184,10 @@
   }
 /* Parent container */
 .ag-format-container {
-  width: 1142px;
+  width: 96%;
+  max-width: 1142px; /* Ensure the container does not exceed 1142px */
   margin: 0 auto;
+  padding: 0 10px; /* Add padding for better spacing on smaller screens */
 }
 
 body {
@@ -202,20 +207,19 @@ body {
   margin: 0 15px 30px;
   overflow: hidden;
   border-radius: 28px;
+  transition: transform 0.3s ease-in-out; /* Add transition for smoother scaling */
 }
 
 .ag-courses-item_link {
-  display: block;
-  padding: 30px 20px;
-  background-color: #000000;
-  overflow: hidden;
-  position: relative;
-  
-  /* Flexbox settings to center children */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 30px 20px;
+  background-color: #000000;
+  overflow: hidden;
+  position: relative;
+  transition: background-color 0.3s ease-in-out; /* Transition for hover effect */
 }
 
 .ag-courses-item_link:hover,
@@ -223,6 +227,7 @@ body {
   text-decoration: none;
   color: #000000;
 }
+
 .ag-courses-item_title {
   display: grid;
   place-items: center;
@@ -232,11 +237,9 @@ body {
   overflow: hidden;
   z-index: 2;
   position: relative;
-  background-color: rgb(255, 255, 255);
+  background-color: #FFF;
   border-radius: 10%;
-  
-  /* Add the scaling and transition effects */
-  transition: transform .5s ease;
+  transition: transform 0.5s ease;
 }
 
 .ag-courses-item_link:hover .ag-courses-item_title {
@@ -244,11 +247,11 @@ body {
 }
 
 .ag-courses-item_date-box {
-  display: flex;           /* Enables flexbox on this element */
-  flex-direction: column;  /* Arranges children vertically */
-  align-items: center;     /* Centers children horizontally */
-  justify-content: center; /* Centers children vertically */
-  text-align: center;      /* Centers text within children */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   font-size: 18px;
   color: #FFF;
   background-color: white;
@@ -258,8 +261,9 @@ body {
   width: 250px;
   border-radius: 20px;
 }
-.ag-courses-item_date-box h4{
-  background-color:  white;
+
+.ag-courses-item_date-box h4 {
+  background-color: white;
   color: #000;
   border-radius: 20%;
 }
@@ -267,7 +271,7 @@ body {
 .ag-courses-item_date {
   font-weight: bold;
   color: #f9b234;
-  transition: color .5s ease;
+  transition: color 0.5s ease;
   border-radius: 20%;
   background-color: white;
 }
@@ -281,21 +285,22 @@ body {
   top: -75px;
   right: -75px;
   border-radius: 50%;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .ag-courses_item:nth-child(2n) .ag-courses-item_bg {
-  background-color: #3ecd5e;
+  background-color:  #00ff43;
 }
 
 .ag-courses_item:nth-child(3n) .ag-courses-item_bg {
-  background-color: #e44002;
+  background-color: #e41102;
 }
 
 .ag-courses-item_link:hover .ag-courses-item_bg {
   transform: scale(10);
 }
 
+/* Media Queries for Responsive Design */
 @media only screen and (max-width: 979px) {
   .ag-courses_item {
     flex-basis: calc(50% - 30px);
@@ -307,7 +312,31 @@ body {
 
 @media only screen and (max-width: 767px) {
   .ag-format-container {
-    width: 96%;
+    width: 100%; /* Use the full width on smaller screens */
+  }
+  .ag-courses_item {
+    flex-basis: calc(50% - 20px); /* Adjust basis for better fit */
+    margin: 0 10px 20px;
+  }
+  .ag-courses-item_title {
+    height: 150px; /* Adjust height for better fit */
+    width: 100%;
+    font-size: 20px; /* Adjust font size for readability */
+  }
+  .ag-courses-item_link {
+    padding: 20px 10px;
+  }
+  .ag-courses-item_date-box {
+    font-size: 16px;
+    height: auto; /* Make it responsive */
+    width: 100%; /* Make it responsive */
+    border-radius: 10px; /* Adjust radius for smaller screens */
+  }
+  .ag-courses-item_bg {
+    height: 100px;
+    width: 100px;
+    top: -60px;
+    right: -60px;
   }
 }
 
@@ -316,14 +345,117 @@ body {
     flex-basis: 100%;
   }
   .ag-courses-item_title {
+    height: 100px; /* Reduce height further for very small screens */
     min-height: 72px;
-    line-height: 1;
-    font-size: 24px;
+    font-size: 18px; /* Smaller font size for very small screens */
   }
   .ag-courses-item_link {
-    padding: 22px 40px;
+    padding: 15px 20px;
   }
   .ag-courses-item_date-box {
-    font-size: 16px;
+    font-size: 14px; /* Smaller font size for very small screens */
+  }
+}.scroll {
+  position: relative;
+  display: flex;
+  max-width: 100%; /* Adjusted for responsiveness */
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+}
+
+.scroll div {
+  white-space: nowrap;
+  animation: scroll var(--time) linear infinite;
+  animation-delay: calc(var(--time) * -1);
+}
+
+.scroll div:nth-child(2) {
+  animation: scroll2 var(--time) linear infinite;
+  animation-delay: calc(var(--time) / -2);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+.scroll div span {
+  display: inline-flex;
+  margin: 10px;
+  letter-spacing: 0.2em;
+  background: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.scroll div span:hover {
+  background: #3fd2f9;
+  cursor: pointer;
+}
+
+.imgBox div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgBox img {
+  max-width: 100px;
+  scale: 0.8;
+}
+
+/* Media Query for screens smaller than 700px */
+@media (max-width: 700px) {
+  .scroll {
+    max-width: 100%; /* Ensure it fills the screen */
+  }
+
+  .scroll div {
+    animation: scroll-mobile var(--time) linear infinite;
+    animation-delay: calc(var(--time) * -1);
+  }
+
+  .scroll div:nth-child(2) {
+    animation: scroll2-mobile var(--time) linear infinite;
+    animation-delay: calc(var(--time) / -2);
+  }
+
+  @keyframes scroll-mobile {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes scroll2-mobile {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
+  }
+
+  .scroll div span {
+    margin: 5px; /* Adjust margin for smaller screens */
+    padding: 3px 6px; /* Adjust padding for smaller screens */
+    font-size: 12px; /* Example of reducing font size for smaller screens */
   }
 }
