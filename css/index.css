@@ -8,19 +8,18 @@
     height: 300px; 
     width: 300px; 
     margin-top: 4%;
+    margin-bottom: 1%;
     border-radius: 50%; 
-    border-style: dashed; 
-    border-color: white;
-    border-width: 3px;
+    border-style:solid; 
+    border-color: rgb(255, 0, 0);
+    border-width: 5px;
+    box-shadow: 3px 0px 20px rgba(239, 86, 86, 0.727);
 }
 .photo{
-    border-color: white;
+    border-color: #ff0000;
     border-width: 0.5px;
     border-style:solid;
     border-right: 0;
-}
-.link{
-    justify-content: space-between;
 }
 .btn-img-1{
     height: 50px;
@@ -37,7 +36,7 @@
 }
 
 .intro{
-    border-color: white;
+    border-color: #ff0000;
     border-width: 0.5px;
     border-style:solid;
     border-left: 0;
@@ -45,7 +44,7 @@
     border-right: 0;
 }
 .blank{
-    border-color: white;
+    border-color: #ff0000;
     border-width: 0.5px;
     border-style:solid;
     border-left: 0;
@@ -61,7 +60,7 @@
     text-align: justify;
 }
 .intro p:hover{
-    color: yellow;
+    color: #ff0000;
 }
 
 
@@ -114,7 +113,7 @@
     }
 }
 .education{
-    border-color: white;
+    border-color: #ff0000;
     border-width: 0.5px;
     border-style:solid;
 }
@@ -144,33 +143,30 @@
     70%  {fill: rgba(72,138,20,0); stroke: rgb(255, 255, 255); }
     80%  {fill: rgba(72,138,20,0); stroke: rgb(255, 255, 255); stroke-width: 3; }
     100% {
-      fill: yellow; stroke: rgba(54,95,160,0); 
-      stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+      fill: #ff0000; stroke: rgba(0, 0, 0, 0); 
+      stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0px;
     }
   }
   .skills{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    border-color: white;
+    border-color: #ff0000;
     border-width: 0.5px;
     border-style:solid;
   }
   .projects{
-    border-color: white;
+    border-color: #ff0000;
     border-width: 0.5px;
     border-style:solid;
   }
   .certification{
     height: 300px;
-    border-color: white;
+    border-color: #ff0000;
     border-width: 0.5px;
     border-style:solid;
   }
   .contacts{
     height: 300px;
-    border-color: white;
+    border-color: #ff0000;
     border-width: 0.5px;
     border-style:solid;
   }
@@ -254,7 +250,7 @@ body {
   text-align: center;
   font-size: 18px;
   color: #FFF;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   z-index: 2;
   position: relative;
   height: 100%;
@@ -263,8 +259,8 @@ body {
 }
 
 .ag-courses-item_date-box h4 {
-  background-color: white;
-  color: #000;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
   border-radius: 20%;
 }
 
@@ -279,7 +275,7 @@ body {
 .ag-courses-item_bg {
   height: 128px;
   width: 128px;
-  background-color: #f9b234;
+  background-color: #000000;
   z-index: 1;
   position: absolute;
   top: -75px;
@@ -289,11 +285,11 @@ body {
 }
 
 .ag-courses_item:nth-child(2n) .ag-courses-item_bg {
-  background-color:  #00ff43;
+  background-color:  #000000;
 }
 
 .ag-courses_item:nth-child(3n) .ag-courses-item_bg {
-  background-color: #e41102;
+  background-color: #000000;
 }
 
 .ag-courses-item_link:hover .ag-courses-item_bg {
@@ -355,7 +351,10 @@ body {
   .ag-courses-item_date-box {
     font-size: 14px; /* Smaller font size for very small screens */
   }
-}.scroll {
+}
+.scroll {
+  margin-top: 1.5%;
+  margin-bottom: 1%;
   position: relative;
   display: flex;
   max-width: 100%; /* Adjusted for responsiveness */
@@ -404,7 +403,7 @@ body {
 }
 
 .scroll div span:hover {
-  background: #3fd2f9;
+  background: #ff0000;
   cursor: pointer;
 }
 
@@ -423,6 +422,8 @@ body {
 @media (max-width: 700px) {
   .scroll {
     max-width: 100%; /* Ensure it fills the screen */
+    margin-top: 1.5%;
+    margin-bottom: 1%;
   }
 
   .scroll div {
@@ -454,8 +455,19 @@ body {
   }
 
   .scroll div span {
-    margin: 5px; /* Adjust margin for smaller screens */
+    margin-top: 1%; /* Adjust margin for smaller screens */
+    margin-bottom: 1%;
     padding: 3px 6px; /* Adjust padding for smaller screens */
     font-size: 12px; /* Example of reducing font size for smaller screens */
   }
+}
+::-webkit-scrollbar{
+  width: 3px;
+}
+::-webkit-scrollbar-track{
+  background-color: white;
+}
+::-webkit-scrollbar-thumb{
+  background: #ff0000;
+  border-radius: 10px;
 }
