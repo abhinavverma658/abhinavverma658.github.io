@@ -11,15 +11,16 @@
     margin-bottom: 1%;
     border-radius: 50%; 
     border-style:solid; 
-    border-color: rgb(255, 0, 0);
+    border-color: #8f00ff;
     border-width: 5px;
-    box-shadow: 3px 0px 20px rgba(239, 86, 86, 0.727);
+    box-shadow: 3px 0px 20px rgba(143, 0, 255, 0.727);
 }
 .photo{
-    border-color: #ff0000;
+    border-color: #8f00ff;
     border-width: 0.5px;
     border-style:solid;
     border-right: 0;
+    border-left: 0;
 }
 .btn-img-1{
     height: 50px;
@@ -36,7 +37,7 @@
 }
 
 .intro{
-    border-color: #ff0000;
+    border-color: #8f00ff;
     border-width: 0.5px;
     border-style:solid;
     border-left: 0;
@@ -44,25 +45,26 @@
     border-right: 0;
 }
 .blank{
-    border-color: #ff0000;
+    border-color: #8f00ff;
     border-width: 0.5px;
     border-style:solid;
     border-left: 0;
+    border-right: 0;
 }
 .intro span{
     font-weight: bold;
-}
-.intro span:hover{
-    color: orange;
 }
 .intro p{
     font-size: large;
     text-align: justify;
 }
-.intro p:hover{
-    color: #ff0000;
+.intro p:hover {
+  color: white; /* Keeps paragraph text color white on hover */
 }
 
+.intro p:hover span {
+  color: #8F00FF; /* Changes span color on hover within a paragraph */
+}
 
 *,:before,:after {
     box-sizing: border-box;
@@ -113,9 +115,12 @@
     }
 }
 .education{
-    border-color: #ff0000;
+    border-color: #8f00ff;
     border-width: 0.5px;
     border-style:solid;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
 }
 .mlzslogo{
     display: flex;
@@ -143,30 +148,32 @@
     70%  {fill: rgba(72,138,20,0); stroke: rgb(255, 255, 255); }
     80%  {fill: rgba(72,138,20,0); stroke: rgb(255, 255, 255); stroke-width: 3; }
     100% {
-      fill: #ff0000; stroke: rgba(0, 0, 0, 0); 
+      fill: #8f00ff; stroke: rgba(0, 0, 0, 0); 
       stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0px;
     }
   }
   .skills{
     flex-direction: column;
-    border-color: #ff0000;
+    border-color: #8f00ff;
     border-width: 0.5px;
     border-style:solid;
+    border-left: 0;
+    border-right: 0;
   }
   .projects{
-    border-color: #ff0000;
+    border-color: #8f00ff;
     border-width: 0.5px;
     border-style:solid;
   }
   .certification{
     height: 300px;
-    border-color: #ff0000;
+    border-color: #8f00ff;
     border-width: 0.5px;
     border-style:solid;
   }
   .contacts{
     height: 300px;
-    border-color: #ff0000;
+    border-color: #8f00ff;
     border-width: 0.5px;
     border-style:solid;
   }
@@ -234,7 +241,7 @@ body {
   z-index: 2;
   position: relative;
   background-color: #FFF;
-  border-radius: 10%;
+  border-radius: 20px;
   transition: transform 0.5s ease;
 }
 
@@ -258,11 +265,6 @@ body {
   border-radius: 20px;
 }
 
-.ag-courses-item_date-box h4 {
-  background-color: rgb(0, 0, 0);
-  color: #ffffff;
-  border-radius: 20%;
-}
 
 .ag-courses-item_date {
   font-weight: bold;
@@ -403,7 +405,7 @@ body {
 }
 
 .scroll div span:hover {
-  background: #ff0000;
+  background: #8f00ff;
   cursor: pointer;
 }
 
@@ -462,12 +464,12 @@ body {
   }
 }
 ::-webkit-scrollbar{
-  width: 3px;
+  width: 5px;
 }
 ::-webkit-scrollbar-track{
-  background-color: white;
+  background-color:#9000ff4b;
 }
 ::-webkit-scrollbar-thumb{
-  background: #ff0000;
-  border-radius: 10px;
+  background: rgb(143, 0, 255);
+  border-radius: 20px;
 }
