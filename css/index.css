@@ -11,12 +11,12 @@
     margin-bottom: 1%;
     border-radius: 50%; 
     border-style:solid; 
-    border-color: #8f00ff;
-    border-width: 5px;
-    box-shadow: 3px 0px 20px rgba(143, 0, 255, 0.727);
+    border-color: #923cb5 ;
+    border-width: 7px;
+    box-shadow: 3px 0px 30px #933cb5b9 ;
 }
 .photo{
-    border-color: #8f00ff;
+    border-color: #923cb5 ;
     border-width: 0.5px;
     border-style:solid;
     border-right: 0;
@@ -37,7 +37,7 @@
 }
 
 .intro{
-    border-color: #8f00ff;
+    border-color: #923cb5 ;
     border-width: 0.5px;
     border-style:solid;
     border-left: 0;
@@ -45,7 +45,7 @@
     border-right: 0;
 }
 .blank{
-    border-color: #8f00ff;
+    border-color: #923cb5 ;
     border-width: 0.5px;
     border-style:solid;
     border-left: 0;
@@ -63,7 +63,7 @@
 }
 
 .intro p:hover span {
-  color: #8F00FF; /* Changes span color on hover within a paragraph */
+  color: #923cb5 ; /* Changes span color on hover within a paragraph */
 }
 
 *,:before,:after {
@@ -115,7 +115,7 @@
     }
 }
 .education{
-    border-color: #8f00ff;
+    border-color: #923cb5 ;
     border-width: 0.5px;
     border-style:solid;
     border-left: 0;
@@ -148,32 +148,34 @@
     70%  {fill: rgba(72,138,20,0); stroke: rgb(255, 255, 255); }
     80%  {fill: rgba(72,138,20,0); stroke: rgb(255, 255, 255); stroke-width: 3; }
     100% {
-      fill: #8f00ff; stroke: rgba(0, 0, 0, 0); 
+      fill: #923cb5 ; stroke: rgba(0, 0, 0, 0); 
       stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0px;
     }
   }
   .skills{
     flex-direction: column;
-    border-color: #8f00ff;
+    border-color: #923cb5 ;
     border-width: 0.5px;
     border-style:solid;
     border-left: 0;
     border-right: 0;
   }
   .projects{
-    border-color: #8f00ff;
+    border-color: #923cb5 ;
     border-width: 0.5px;
     border-style:solid;
+    border-left: 0;
+    border-right: 0;
   }
   .certification{
     height: 300px;
-    border-color: #8f00ff;
+    border-color: #923cb5 ;
     border-width: 0.5px;
     border-style:solid;
   }
   .contacts{
     height: 300px;
-    border-color: #8f00ff;
+    border-color: #923cb5 ;
     border-width: 0.5px;
     border-style:solid;
   }
@@ -268,7 +270,7 @@ body {
 
 .ag-courses-item_date {
   font-weight: bold;
-  color: #f9b234;
+  color: #923cb5 ;
   transition: color 0.5s ease;
   border-radius: 20%;
   background-color: white;
@@ -405,7 +407,7 @@ body {
 }
 
 .scroll div span:hover {
-  background: #8f00ff;
+  background: #923cb5 ;
   cursor: pointer;
 }
 
@@ -467,9 +469,131 @@ body {
   width: 5px;
 }
 ::-webkit-scrollbar-track{
-  background-color:#9000ff4b;
+  background-color:#933cb56a ;
 }
 ::-webkit-scrollbar-thumb{
-  background: rgb(143, 0, 255);
+  background: #923cb5 ;
   border-radius: 20px;
+}
+.container1 {
+  width: auto;
+  position: relative;
+  display: flex;
+  justify-content: center; /* Center the cards */
+  gap: 30px; /* Adjust gap between cards */
+  flex-wrap: wrap;
+  border-radius: 20px;
+  padding: 16px; /* Optional padding */
+}
+
+.container1 .card {
+  position: relative;
+  background-color: #000;
+  border-radius: 30px;
+  margin: 8px; /* Adjust margin for spacing */
+  flex: 1 1 calc(33.333% - 32px); /* Adjust width for responsiveness */
+  max-width: 300px; /* Max width to prevent overflow */
+}
+
+.container1 .card .face {
+  width: 100%; /* Use full width */
+  height: 200px;
+  transition: .4s;
+}
+
+.container1 .card .face.face1 {
+  position: relative;
+  background-color: #923cb5 ;
+  background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+  border-radius: 30px;
+}
+
+.container1 .card:hover .face.face1 {
+  transform: translateY(0);
+  box-shadow: inset 0 0 60px whitesmoke,
+              inset 20px 0 80px #f0f,
+              inset -20px 0 80px #0ff,
+              inset 20px 0 300px #f0f,
+              inset -20px 0 300px #0ff,
+              0 0 50px #fff,
+              -10px 0 80px #f0f,
+              10px 0 80px #0ff;
+}
+
+.container1 .card .face.face1 .content {
+  opacity: 1;
+  transition: 0.5s;
+  text-align: center;
+  background-color: transparent;
+}
+
+.container1 .card:hover .face.face1 .content {
+  opacity: 1;
+}
+.container1 .card .face.face1 .content h3{
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  background-color: transparent;
+}
+
+.container1 .card .face.face2 {
+  position: relative;
+  background: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, .8);
+  transform: translateY(-100px);
+  border-radius: 30px;
+}
+
+.container1 .card:hover .face.face2 {
+  transform: translateY(0);
+}
+
+.container1 .card .face.face2 .content p {
+  font-size: 10pt;
+  margin-top: 30px;
+  padding: 0;
+  color: #ffffff;
+  text-align: justify;
+
+}
+
+.container1 .card .face.face2 .content a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  outline: 1px dashed #ffffff;
+  padding: 10px;
+  margin: 5px 0 0;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+.container1 .card .face.face2 .content a:hover {
+  background: #000000;
+  color: #8f00ff;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container1 .card {
+    flex: 1 1 calc(50% - 32px); /* 2 cards per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .container1 .card {
+    flex: 1 1 calc(100% - 32px); /* 1 card per row */
+  }
 }
