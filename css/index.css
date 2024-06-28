@@ -619,7 +619,7 @@ body {
     position: relative;
     width: 250px;
     height: 250px;
-    background-image: url("/abhinavverma658.github.io/assets/internship.jpg");
+    background-image: url("../assets/internship.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -670,7 +670,7 @@ body {
      transform: translateX(-147px);
 }
 .certificate2{
-    background-image: url("/abhinavverma658.github.io/assets/rcpl.jpg");
+    background-image: url("../assets/rcpl.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -690,7 +690,7 @@ body {
 background:  linear-gradient(147deg, #923cb5 0%, #000000 74%);
 }
 .certificate3{
-     background-image: url("/abhinavverma658.github.io/assets/basicsOfJava.jpg");
+     background-image: url("../assets/basicsOfJava.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -710,7 +710,7 @@ background:  linear-gradient(147deg, #923cb5 0%, #000000 74%);
 background:  linear-gradient(147deg, #923cb5 0%, #000000 74%);
 }
 .certificate4 {
-  background-image: url("/abhinavverma658.github.io/assets/SoftPro\ Certificate\ .jpg");
+  background-image: url("../assets/SoftPro\ Certificate\ .jpg");
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
@@ -731,7 +731,7 @@ background:  linear-gradient(147deg, #923cb5 0%, #000000 74%);
 }
 
 .certificate5 {
-  background-image: url("/abhinavverma658.github.io/assets/git&github.png");
+  background-image: url("../assets/git&github.png");
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
