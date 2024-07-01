@@ -4,3 +4,4 @@ document.addEventListener('DOMContentLoaded', function() {
         preloader.style.display = 'none';
     }, 2000); // 3 seconds delay
 });
+// Progress bar

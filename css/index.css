@@ -172,13 +172,25 @@
     border-width: 0.5px;
     border-style:solid;
     border-left: 0;
-    border-right: 0;;
-  }
+    border-right: 0;  }
   .contacts{
-    height: 300px;
     border-color: #923cb5 ;
     border-width: 0.5px;
     border-style:solid;
+    border-left: 0;
+    border-right: 0;
+  }
+  .contacts a{
+    text-decoration: none;
+    color: white;
+  }
+  .contacts a:hover{
+    color: #923cb5;
+  }
+  .contacts h3{
+    text-decoration: underline;
+    text-decoration-style:dashed;
+    text-decoration-thickness: 2px;
   }
   #preloader{
     background: #000000 url("../assets/preloader.gif") no-repeat center center;
@@ -619,7 +631,7 @@ body {
     position: relative;
     width: 250px;
     height: 250px;
-    background-image: url("../assets/internship.jpg");
+    background-image: url("../assets/img/intenship.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -670,7 +682,7 @@ body {
      transform: translateX(-147px);
 }
 .certificate2{
-    background-image: url("../assets/rcpl.jpg");
+    background-image: url("../assets/img/DSA.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -690,7 +702,7 @@ body {
 background:  linear-gradient(147deg, #923cb5 0%, #000000 74%);
 }
 .certificate3{
-     background-image: url("../assets/basicsOfJava.jpg");
+     background-image: url("../assets/img/java.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -710,7 +722,7 @@ background:  linear-gradient(147deg, #923cb5 0%, #000000 74%);
 background:  linear-gradient(147deg, #923cb5 0%, #000000 74%);
 }
 .certificate4 {
-  background-image: url("../assets/SoftPro\ Certificate\ .jpg");
+  background-image: url("../assets/img/softpro.jpg");
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
@@ -731,7 +743,7 @@ background:  linear-gradient(147deg, #923cb5 0%, #000000 74%);
 }
 
 .certificate5 {
-  background-image: url("../assets/git&github.png");
+  background-image: url("../assets/img/git.png");
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
@@ -812,4 +824,73 @@ box-shadow:  30px 30px 40px #141313,
     100% {
          transform: rotate(-45deg) translateY(0px);
     }
+}/* Base styles */
+.progress1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px; /* Set a fixed height */
+  width: 100%;
+  transform-origin: left;
+  animation: scaleProgress 0.3s linear forwards, colorChange 0.3s linear forwards;
+  animation-timeline: scroll(root);
+  z-index: 100;
+  border-radius: 10px;
+}
+
+@keyframes scaleProgress {
+  0% {
+      transform: scaleX(0);
+  }
+  100% {
+      transform: scaleX(1);
+  }
+}
+
+@keyframes colorChange {
+  0% {
+      background-color: #923cb5;
+  }
+  25% {
+      background-color: #eaff00;
+  }
+  50% {
+      background-color: #0011ff;
+  }
+  75% {
+      background-color: #ff00bf;
+  }
+  100% {
+      background-color: #ff0000;
+  }
+}
+
+@media (min-width: 420px) {
+  .progress1{
+    height: 2px;
+  }
+  
+}
+/* Media Queries for responsiveness */
+@media (max-width: 767px) {
+  .progress1 {
+      height: 3px; /* Smaller height for small screens */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .progress1 {
+      height: 4px; /* Slightly larger height for medium screens */
+  }
+}
+
+@media (min-width: 992px) {
+  .progress1 {
+      height: 5px; /* Original height for larger screens */
+  }
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
