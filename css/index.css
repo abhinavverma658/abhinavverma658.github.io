@@ -8,12 +8,12 @@
     height: 300px; 
     width: 300px; 
     margin-top: 4%;
-    margin-bottom: 1%;
+    margin-bottom: 3%;
     border-radius: 50%; 
     border-style:solid; 
     border-color: #923cb5 ;
     border-width: 7px;
-    box-shadow: 3px 0px 30px #933cb5b9 ;
+    box-shadow: 5px 0px 30px #933cb5b9 ;
 }
 .photo{
     border-color: #923cb5 ;
