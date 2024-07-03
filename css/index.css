@@ -952,3 +952,53 @@ box-shadow:  30px 30px 40px #141313,
     height: 60%; /* Maintain aspect ratio */
   }
 }
+.workExperience {
+  font-size: 16px;
+  padding: 15px;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .workExperience {
+    font-size: 20px;
+    padding: 30px;
+  }
+}
+
+.workExperience #date,#techStack {
+  float: none;
+  display: block;
+  margin-top: 10px;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .workExperience #date {
+    float: right;
+    margin-top: 0;
+    text-align: right;
+  }
+}
+
+.workExperience a {
+  text-decoration: none;
+  color: #fff;
+  box-sizing: border-box;
+  outline: 0.3px dashed #ffffff;
+  padding: 5px;
+  margin: 1px 0 0;
+  display: inline-block;
+  border-radius: 10px;  
+}
+
+.workExperience a:hover {
+  color: #923cb5;
+}
+
+.workExperience h6:hover {
+  color: white;
+}
+
+.workExperience h6:hover span {
+  color: #923cb5;
+}
