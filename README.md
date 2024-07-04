@@ -32,8 +32,8 @@ Explore the updated portfolio and see how my skills and projects have evolved. Y
 ## 📞 Contact
 
 Feel free to reach out if you have any questions or suggestions:
-- **Email**: [your-email@example.com](mailto:abhinavverma658@gmail.com)
-- **LinkedIn**: [Your LinkedIn](https://www.linkedin.com/in/abhinavverma658/)
+- **Email**: [abhinavverma658@gmail.com](mailto:abhinavverma658@gmail.com)
+- **LinkedIn**: [abhinavverma658](https://www.linkedin.com/in/abhinavverma658/)
 
 ## 📝 License
 
