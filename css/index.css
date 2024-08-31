@@ -54,16 +54,20 @@
 .intro span{
     font-weight: bold;
 }
-.intro p{
-    font-size: large;
-    text-align: justify;
+.intro ul{
+  list-style-type:none;
 }
-.intro p:hover {
+.intro li:hover {
   color: white; /* Keeps paragraph text color white on hover */
 }
 
-.intro p:hover span {
+.intro li:hover span {
   color: #923cb5 ; /* Changes span color on hover within a paragraph */
+}
+@media (max-width: 768px){
+  .intro li{
+    font-size: medium;
+  }
 }
 
 *,:before,:after {
@@ -1018,4 +1022,58 @@ box-shadow:  30px 30px 40px #141313,
 
 .workExperience h6:hover span {
   color: #923cb5;
+}
+.min-vh-20{
+  min-height:50vh;
+}
+
+.text-light {
+  color: #f8f9fa !important;
+}
+
+.form-control {
+  background-color: #f8f9fa;
+  color: #212529;
+  border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+  background-color: #ffffff;
+  color: #212529;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+.text-muted {
+  color: #6c757d !important;
+}
+.lam{
+  border-color: #923cb5 ;
+    border-width: 0.5px;
+    border-style:solid;
+    border-right: 0;
+    border-left: 0;
+}
+.sam{
+  color: #fff;
+  box-sizing: border-box;
+  outline: 0.3px dashed #ffffff;
+  padding: 5px;
+  margin: 1px 0 0;
+  display: inline-block;
+  border-radius: 10px;  
+}
+.sam:hover{
+  border-color: #923cb5;
 }

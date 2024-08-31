@@ -14,16 +14,16 @@
 
   </div>
   <!-- Preloader Section End -->
-<div class="progress1 sticky-top" style="height: 2px;"></div>
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-lg">
+      <div class="progress1" style="height: 2px;"></div>
         <div class="container-fluid">
           <a class="navbar-brand " href="index.html">Portfolio V2.0</a>
           <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0  fs-4">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0  fs-5">
               <li class="nav-item">
                 <a class="nav-link"  href="#home">Home</a>
               </li>
@@ -46,7 +46,10 @@
                 <a class="nav-link" href="#githubStats">GitHub Stats</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contacts">Contact Details </a>
+                <a class="nav-link" href="#leaveamessage">Leave a message</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacts">Contact Info</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://drive.google.com/uc?export=download&id=1-anGhgRiBocVDU6XyfsURCdAAff9KKBR">Resume</a>
@@ -61,7 +64,7 @@
       <div class="container-fluid" id="home">
         <div class="row" >
             <div class="col-md-6 photo float-left text-center">
-                <img src="assets/Abhinav-3.jpg " alt="Abhinav"  class="mx-auto d-block abhinav_photo">
+                <img src="assets/Abhinav-4 (1).jpg" alt="Abhinav"  class="mx-auto d-block abhinav_photo">
                 <div class=" container name_animation d-flex justify-content-center">
                   <svg viewBox="0 0 1000 300">
                     <text x="50%" y="50%" dy=".35em" text-anchor="middle">
@@ -85,10 +88,23 @@
             </div>
             <div class="col-md-5  intro float-right">
                 <h4> LET ME SHARE A BIT ABOUT MYSELF :-</h4> 
-                <p>Welcome to my portfolio! I'm <span>Abhinav Verma</span>, hailing from <span>Bihar</span>, with a passionate drive to carve out a rewarding career in <span>Computer Science</span>. My journey in this field is marked by an affable nature that naturally fosters meaningful professional relationships. This personal trait is powerfully complemented by my robust technical skills and a pragmatic approach to problem-solving.</p>
-                <p>My thirst for knowledge extends far beyond formal education. In my leisure hours, I'm ardently committed to staying updated with the latest technological advancements and industry trends. This passion fuels my joy in the ever-evolving world of technology. </p>
-                <p>Professionally, I specialize in <span>Java</span> and <span>Spring</span>, which serves as my primary programming language. My skill set also extends to diverse technologies like Android development(<span>Kotlin</span>,<span>XML</span>), Web development (including <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span>, <span>Bootstrap</span>,<span> React Js</span> and <span>Tailwind CSS</span>), and database management with <Span>SQL</Span>. Additionally, I'm proficient in utilizing <span>Git and Github</span>, crucial tools for collaborative software development and I have familiarity with <span>Linux</span> environments. </p>
-                <p>What sets me apart is my unwavering commitment to lifelong learning. I'm always eager to elevate my skills and adapt to new challenges. Combined with my genial disposition, this commitment positions me favorably for success in the dynamic and competitive realm of Computer Science.</p>
+                <ul class="fs-5">
+                  <li>-><strong>👤 Name: </strong><span> Abhinav Verma</span>, from <span>Bihar</span>, with a deep passion for <span>Computer Science.</span> </li>
+                  <li>-><strong>😊 Personality: </strong> Affable nature, fostering meaningful professional relationships.</li>
+                  <li>-><strong>💻 Professional Focus: </strong>  Specializes in <span>Java</span> and <span>Spring</span>, with strong problem-solving skills.</li>
+                  <li>-><strong>🔧 Technical Skills:</strong> 
+                    <ul>
+                      <li>-><span> Java, Spring</span></li>
+                      <li>-> Android development <span>(Kotlin, XML,Firebase)</span></li>
+                      <li>-> Web development <Span>(HTML, CSS, JavaScript, Bootstrap, React.js, Tailwind CSS, Node.js)</Span></li>
+                      <li>-> Database management with <span>SQL</span></li>
+                      <li>-> <span>Git, GitHub</span>  for collaborative development</li>
+                      <li>-> Familiar with <span>Linux</span> environments</li>
+                    </ul>
+                  </li>
+                  <li>-> <strong>📚 Learning Approach: </strong>  Dedicated to continuous learning and staying updated with the latest technological trends.</li>
+                  <li>-> <strong>🌟 Unique Qualities: </strong>  Combines a genial disposition with a commitment to lifelong learning, positioning for success in the dynamic world of Computer Science.</li>
+                </ul>
             </div>
             <div class="col-md-1 blank"></div>
         </div>
@@ -475,7 +491,57 @@
       </div>
       <!-- Github Stats Section End -->
        </div>
-     
+     <!-- Leave a Message Section Start -->
+      <div class="container-fluid lam" id="leaveamessage" >
+        <div class="d-flex align-items-center min-vh-20">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-6 col-md-8 col-sm-10  p-4 rounded shadow">
+                <div class="text-center">
+                  <h1 class="mb-3 text-light">Leave a Message</h1>  
+                  <p class="text-muted">Fill up the form below to send me a message.</p>
+                </div>
+                <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                  <input type="hidden" name="access_key" value="8601b9e3-5ebc-45f0-9d01-584e4cb83236" />
+                  <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                  <input type="checkbox" name="botcheck" id="" style="display: none;" />
+        
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label for="name" class="form-label text-light">Full Name</label>
+                        <input type="text" name="name" id="name" placeholder="abc" required class="form-control" />
+                      </div>
+                      <div class="mb-3">
+                        <label for="email" class="form-label text-light">Email Address</label>
+                        <input type="email" name="email" id="email" placeholder="abc@gmail.com" required class="form-control" />
+                      </div>
+                      <div class="mb-3">
+                        <label for="phone" class="form-label text-light">Phone Number</label>
+                        <input type="text" name="phone" id="phone" placeholder="+91-1234567890" required class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label for="message" class="form-label text-light">Your Message</label>
+                        <textarea rows="5" name="message" id="message" placeholder="Your Message" class="form-control" required></textarea>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn sam btn-lg">Send Message</button>
+                  </div>
+                  <p class="text-center text-muted mt-3" id="result"></p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <!-- Leave a Message Section End -->
+
       <!-- Contacts Section Start -->
       <div class="container-fluid contacts " id="contacts">
         <div class="row">
