@@ -53,22 +53,34 @@ const cards = document.querySelector('.cards');
 const cardElements = document.querySelectorAll('.card2');
 const cardCount = cardElements.length;
 
-const cardWidth = 250; // Width of a card
-const marginBetweenCards = 50; // Margin between cards
-const moveDistance = cardWidth + marginBetweenCards; // Total distance a card moves
-
 // Function to calculate the number of visible cards based on screen size
 function getVisibleCards() {
-  if (window.innerWidth <= 768) {
-    return 1; // Show only 1 card at a time on mobile
+  if (window.innerWidth <= 425) {
+    return 1; // Show only 1 card at a time on screens <= 425px
+  } else if (window.innerWidth <= 768) {
+    return 2; // Show 2 cards on tablet screens <= 768px
   }
-  return 3; // Show 3 cards at a time on larger screens
+  return 3; // Show 3 cards on larger screens
 }
 
-// Update the slider position based on the current index
+// Function to calculate the width of the cards dynamically
+function getCardWidth() {
+  if (window.innerWidth <= 425) {
+    return window.innerWidth - 40; // Full width of the mobile screen with some margin
+  } else if (window.innerWidth <= 768) {
+    return window.innerWidth - 40; // Adjust card width for tablet screens
+  }
+  return 250; // Default card width for larger screens
+}
+
+// Update the slider position based on the current index and visible cards
 function updateSlider() {
   const visibleCards = getVisibleCards();
+  const cardWidth = getCardWidth();
+  const marginBetweenCards = 20; // Margin between cards
+  const moveDistance = cardWidth + marginBetweenCards; // Total distance a card moves
   cards.style.transform = `translateX(-${moveDistance * currentIndex}px)`;
+  cards.style.transition = 'transform 0.3s ease-in-out'; // Smooth sliding effect
 }
 
 // Next Button Click
@@ -90,3 +102,6 @@ document.getElementById('prevBtn').addEventListener('click', () => {
 
 // Adjust the slider when the window is resized
 window.addEventListener('resize', updateSlider);
+
+// Initial setup to position the slider
+updateSlider();

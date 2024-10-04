@@ -730,6 +730,23 @@ box-shadow:  30px 30px 40px #141313,
          transform: rotate(-45deg) translateY(0px);
     }
 }
+@media (max-width: 768px) {
+  /* Hide colour and colour-bottom by default on smaller screens */
+  .colour, .colour-bottom {
+    display: none; /* Hide the elements initially */
+  }
+
+  /* Display them only on hover */
+  .card2:hover .colour, .card2:hover .colour-bottom {
+    display: block; /* Show them when hovering over the card */
+  }
+
+  /* Adjust card-text visibility on hover */
+  .card2:hover .card-text {
+    opacity: 1;
+  }
+}
+
 /* Main container styling */
 .container2 {
   display: flex;
@@ -804,47 +821,99 @@ a {
 
 /* Button styling */
 .slider-btn {
-  background-color: #923cb5;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  margin: 0 10px;
+  background-color: #000;
+  text-decoration: none;
+  color: #fff;
+  box-sizing: border-box;
+  outline: 0.3px dashed #ffffff;
+  padding: 10px;
+  margin: 1%;
+  display: inline-block;
+  border-radius: 10px;  
+}
+.slider-btn:active{
+  border-style: outset;
 }
 
 .slider-btn:hover {
-  background-color: #8f00ff;
+  background-color:  #923cb5;
 }
-
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .container2 {
     flex-direction: column;
     padding: 10px;
+    align-items: center; /* Center content horizontally */
   }
-  .card-text h5,h6{
-    font-size: small;
+
+  .card-text h5, h6 {
+    font-size: small; /* Smaller text for mobile */
   }
+
   .cards-wrapper {
-    width: 50%;
+    width: 100%; /* Full width for the card wrapper */
+    overflow: hidden; /* Hide any overflow to ensure smooth sliding */
   }
+
   .cards {
     display: flex;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.5s ease-in-out; /* Smooth transition for sliding effect */
+    justify-content: flex-start; /* Start from the left when sliding */
+    width: 100%; /* Full width for the container holding the cards */
   }
-  .card2 {
 
-    width: 70%; /* Take more space on mobile */
-    margin: 5% /* Center the card with some margin */
+  .card2 {
+    width: 70%; /* Each card takes the full width of the mobile screen */
+    margin: 6%; /* Remove horizontal margin to ensure full-width view */
+    box-sizing: border-box; /* Ensure padding and borders are included in the width */
   }
 
   .slider-btn {
-    width: 50%;
-    margin:  0;
-    padding: 12px;
+    width: 100%; /* Buttons take full width */
+    margin: 10px 0; /* Adjust button margins for better spacing */
+    padding: 12px; /* Padding for better touch experience on mobile */
+    text-align: center; /* Center text on buttons */
   }
 }
+
+/* Mobile responsiveness for max-width: 425px */
+@media (max-width: 425px) {
+  .container2 {
+    flex-direction: column;
+    padding: 10px;
+    align-items: center; /* Center content horizontally */
+  }
+
+  .card-text h5, h6 {
+    font-size: small; /* Smaller text for mobile */
+  }
+
+  .cards-wrapper {
+    width: 100%; /* Full width for the card wrapper */
+    overflow: hidden; /* Hide any overflow to ensure smooth sliding */
+  }
+
+  .cards {
+    display: flex;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for sliding effect */
+    justify-content: flex-start; /* Start from the left when sliding */
+    width: 100%; /* Full width for the container holding the cards */
+  }
+
+  .card2 {
+    width: 70%; /* Each card takes the full width of the mobile screen */
+    margin: 6%; /* Remove horizontal margin to ensure full-width view */
+    box-sizing: border-box; /* Ensure padding and borders are included in the width */
+  }
+
+  .slider-btn {
+    width: 100%; /* Buttons take full width */
+    margin: 10px 0; /* Adjust button margins for better spacing */
+    padding: 12px; /* Padding for better touch experience on mobile */
+    text-align: center; /* Center text on buttons */
+  }
+}
+
 
 .progress1 {
   position: fixed;
