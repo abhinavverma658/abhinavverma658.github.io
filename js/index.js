@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(function() {
-        const preloader = document.getElementById('preloader');
-        preloader.style.display = 'none';
-    }, 2000); // 3 seconds delay
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(function () {
+    const preloader = document.getElementById("preloader");
+    preloader.style.display = "none";
+  }, 2000); // 3 seconds delay
 });
 
 const form = document.getElementById("form");
@@ -10,7 +10,7 @@ const result = document.getElementById("result");
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-  
+
   const formData = new FormData(form);
   const object = Object.fromEntries(formData);
   const json = JSON.stringify(object);
@@ -49,8 +49,8 @@ form.addEventListener("submit", function (e) {
     });
 });
 let currentIndex = 0;
-const cards = document.querySelector('.cards');
-const cardElements = document.querySelectorAll('.card2');
+const cards = document.querySelector(".cards");
+const cardElements = document.querySelectorAll(".card2");
 const cardCount = cardElements.length;
 
 // Function to calculate the number of visible cards based on screen size
@@ -80,11 +80,11 @@ function updateSlider() {
   const marginBetweenCards = 20; // Margin between cards
   const moveDistance = cardWidth + marginBetweenCards; // Total distance a card moves
   cards.style.transform = `translateX(-${moveDistance * currentIndex}px)`;
-  cards.style.transition = 'transform 0.3s ease-in-out'; // Smooth sliding effect
+  cards.style.transition = "transform 0.3s ease-in-out"; // Smooth sliding effect
 }
 
 // Next Button Click
-document.getElementById('nextBtn').addEventListener('click', () => {
+document.getElementById("nextBtn").addEventListener("click", () => {
   const visibleCards = getVisibleCards();
   if (currentIndex < cardCount - visibleCards) {
     currentIndex++;
@@ -93,7 +93,7 @@ document.getElementById('nextBtn').addEventListener('click', () => {
 });
 
 // Previous Button Click
-document.getElementById('prevBtn').addEventListener('click', () => {
+document.getElementById("prevBtn").addEventListener("click", () => {
   if (currentIndex > 0) {
     currentIndex--;
     updateSlider();
@@ -101,7 +101,16 @@ document.getElementById('prevBtn').addEventListener('click', () => {
 });
 
 // Adjust the slider when the window is resized
-window.addEventListener('resize', updateSlider);
+window.addEventListener("resize", updateSlider);
 
 // Initial setup to position the slider
 updateSlider();
+function openNav() {
+  document.getElementById("sidebar").classList.add("open");
+  document.getElementById("hamburger-menu").style.display = "none";
+}
+
+function closeNav() {
+  document.getElementById("sidebar").classList.remove("open");
+  document.getElementById("hamburger-menu").style.display = "block";
+}
