@@ -1,4 +1,4 @@
-# My Portfolio V2.0 🚀
+# My Portfolio V2.1 🚀
 
 Welcome to my newly redesigned portfolio! I'm excited to share the latest features and enhancements with you. This portfolio showcases my journey, contributions, and projects in a more interactive and user-friendly manner.
 
@@ -15,6 +15,9 @@ A progress bar at the top of the page provides a visual indication of your curre
 
 ### 4. Mobile Responsiveness 📱
 The portfolio is now fully responsive, ensuring a seamless experience whether you’re browsing on a desktop, tablet, or smartphone.
+
+### 5. Added Side navigation
+Gives a clean look and added hover animation.
 
 ## 💻 Tech Stack
 
