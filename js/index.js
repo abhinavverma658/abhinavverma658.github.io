@@ -114,3 +114,6 @@ function closeNav() {
   document.getElementById("sidebar").classList.remove("open");
   document.getElementById("hamburger-menu").style.display = "block";
 }
+document
+  .querySelector('meta[name="theme-color"]')
+  .setAttribute("content", "#923cb5");

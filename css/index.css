@@ -141,6 +141,15 @@
   border-width: 7px;
   box-shadow: 5px 0px 30px #933cb5b9;
 }
+@media (max-width: 425px) {
+  .abhinav_photo {
+    height: 250px;
+    width: 250px;
+  }
+  svg text {
+    font-size: 100px;
+  }
+}
 .photo {
   border-color: #923cb5;
   border-width: 0.5px;
