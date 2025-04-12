@@ -36,6 +36,7 @@
         <nav class="nav">
           <ul>
             <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -55,7 +56,7 @@
   <!-- Introduction Start -->
   <div class="container-fluid" id="home">
     <div class="container">
-      <h2 class="text-center pt-3">Portfolio V2.2</h2>
+      <h2 class="text-center pt-3">Portfolio V2.3</h2>
     </div>
     <div class="row">
       <div class="col-md-12 photo float-left text-center mt-2">
@@ -73,14 +74,8 @@
             <h3 class="flicker">Code, Develope, Innovate</h3>
           </div>
         </div>
-        <h4>"The only limits that exist are the ones in your own mind."</h4>
-        <div class="links">
-          <a href="https://www.linkedin.com/in/abhinavverma658/"> <img src="assets/linkedin-icon.png"
-              class="btn-img-1"></a>
-          <a href="https://github.com/abhinavverma658"> <img src="assets/g.png" class="btn-img-2"></a>
-          <a href="mailto: abhinavverma658@gmail.com"><img src="assets/mail.png" class="btn-img-3"></a>
-        </div>
-
+        <h4 class="mb-4">"The only limits that exist are the ones in your own mind."</h4>
+        
       </div>
 
       <!-- <div class="col-md-1 blank mt-2 d-none d-md-block"></div> -->
@@ -88,7 +83,7 @@
   </div>
   <!-- Introduction End -->
   <!-- About Section Start -->
-  <section>
+  <section id="about">
     <div class="container-fluid intro">
       <div class="container">
         <div class="row">
@@ -444,6 +439,8 @@
         <h6>- Revamped and optimized client UI design, elevating user experience and overall functionality.</h6>
         <h6>- Contributing to <span id="strength">10+ client projects</span>, solving <span id="strength">real-time
             challenges</span>, and delivering <span id="strength">efficient solutions</span>.</h6>
+            <h6>- Delivered <span id="strength">4+ web projects</span> with <span id="strength">high client satisfaction</span>.
+            </h6>
       </div>
       <div class="col-md-1 d-none d-md-block"></div>
     </div>
@@ -671,10 +668,35 @@
     </div>
   </div>
   <!-- Footer Section End -->
+  <div class="links">
+    <div class="floater">
+      <a href="https://www.linkedin.com/in/abhinavverma658/"> <img src="assets/linkedin-icon.png"
+        class="btn-img-1"></a>
+    <a href="https://github.com/abhinavverma658"> <img src="assets/g.png" class="btn-img-2"></a>
+    <a href="mailto: abhinavverma658@gmail.com"><img src="assets/mail.png" class="btn-img-3"></a>
+
+    </div>
+
+  </div>
+
   <script src="js/index.js"></script>
   <script src="js/bootstrap.bundle.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script>
+  window.addEventListener("scroll", () => {
+    const floater = document.querySelector(".floater");
+    const scrollPosition = window.scrollY + window.innerHeight;
+    const documentHeight = document.body.offsetHeight;
+
+    if (scrollPosition >= documentHeight - 10) {
+      floater.classList.add("hidden");
+    } else {
+      floater.classList.remove("hidden");
+    }
+  });
+</script>
+
 </body>
 
 </html>

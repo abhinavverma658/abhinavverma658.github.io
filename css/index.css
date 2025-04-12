@@ -133,7 +133,7 @@
 .abhinav_photo {
   height: 350px;
   width: 350px;
-  margin-top: 4%;
+  margin-top: 1%;
   margin-bottom: 22px;
   border-radius: 50%;
   border-style: solid;
@@ -143,8 +143,8 @@
 }
 @media (max-width: 425px) {
   .abhinav_photo {
-    height: 250px;
-    width: 250px;
+    height: 280px;
+    width: 28   0px;
   }
   svg text {
     font-size: 100px;
@@ -159,17 +159,16 @@
   border-top: 0;
 }
 .btn-img-1 {
-  height: 50px;
-  width: 50px;
+  height: 35px;
+  width: 35px;
 }
 .btn-img-2 {
-  height: 50px;
-  width: 50px;
-  margin: 2%;
+  height: 35px;
+  width: 35px;
 }
 .btn-img-3 {
-  height: 50px;
-  width: 50px;
+  height: 35px;
+  width: 35px;
 }
 .about {
   border-color: #923cb5;
@@ -1366,3 +1365,37 @@ a {
     transform: rotate(0deg);
   }
 }
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  background: none;
+  pointer-events: none; /* make it non-clickable unless it's the floater */
+}
+
+.floater {
+  background-color: black;
+  border-radius: 20px;
+  border: 2px double #923cb5;
+  box-shadow: 0 0 15px #933cb5a2;
+  padding: 10px;
+  z-index: 2;
+  gap: 5px;
+  width: 138px;
+  pointer-events: auto; /* clickable */
+  transition: opacity 0.3s ease;
+}
+
+
+.floater.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.floater img:hover{
+  scale: 1.1;
+  transition: scale 0.5s ease;
+}
+
