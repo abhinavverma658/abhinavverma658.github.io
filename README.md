@@ -1,4 +1,4 @@
-# My Portfolio V2.2 🚀
+# My Portfolio V2.4 🚀
 
 Welcome to my newly redesigned portfolio! I'm excited to share the latest features and enhancements with you. This portfolio showcases my journey, contributions, and projects in a more interactive and user-friendly manner.
 
