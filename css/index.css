@@ -1427,6 +1427,9 @@ a {
   #popupToggle {
     display: none !important;
   }
+  .sidebar{
+    margin-left: 0 !important;
+  }
 }
 .pop{
   padding: 10px !important;
