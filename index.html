@@ -43,9 +43,8 @@
             <li><a href="#workExperience">Work Experiences</a></li>
             <li><a href="#certification">Certifications</a></li>
             <li><a href="#githubStats">GitHub Stats</a></li>
-            <li><a href="#leaveamessage">Leave a message</a></li>
+            <li class="d-block d-lg-none"><a href="#leaveamessage">Leave a message</a></li>
             <li><a href="#contacts">Contact Info</a></li>
-            <li><a href="https://drive.google.com/uc?export=download&id=1-anGhgRiBocVDU6XyfsURCdAAff9KKBR">Resume</a>
             </li>
           </ul>
         </nav>
@@ -56,7 +55,7 @@
   <!-- Introduction Start -->
   <div class="container-fluid" id="home">
     <div class="container">
-      <h2 class="text-center pt-3">Portfolio V2.3</h2>
+      <h2 class="text-center pt-3">Portfolio V2.4</h2>
     </div>
     <div class="row">
       <div class="col-md-12 photo float-left text-center mt-2">
@@ -70,7 +69,7 @@
         </div>
         <div class="wrapper six">
           <div>
-            <h3>Hi! <span class="wave">👋🏻</span> I'm a <span>Cyber Warrior</span> Who ❤️ To </h3>
+            <h3>Hi! <span class="wave">👋🏻</span> I'm a <span>Frontend Developer</span> Who ❤️ To </h3>
             <h3 class="flicker">Code, Develope, Innovate</h3>
           </div>
         </div>
@@ -430,8 +429,8 @@
         <span>Quantum IT Innovation, Noida, Uttar Pradesh, India (Remote)</span>
         <span id="date" class="d-block d-md-inline-block">(Oct 2024 - <i>Present</i>)</span>
         <br>
-        <span>(Role: Frontend Developer Trainee)</span>
-        <span id="techStack" class="d-block d-md-inline-block">(Tech Stack: HTML, CSS, JavaScript, Bootstrap,
+        <span>( Role: Frontend Developer Trainee -> <span style="color: #923cb5;">Frontend Developer</span> )</span>
+        <span id="techStack" class="d-block d-md-inline-block ">(Tech Stack: HTML, CSS, Tailwind CSS, JavaScript, ReactJS, Bootstrap,
           Wordpress)</span>
         <br>
         <h6>- Enhanced client website performance, <span id="strength">achieving a 25% improvement</span> in speed and
@@ -580,7 +579,7 @@
     <!-- Github Stats Section End -->
   </div>
   <!-- Leave a Message Section Start -->
-  <div class="container-fluid lam" id="leaveamessage">
+  <div class="container-fluid lam d-block d-lg-none" id="leaveamessage">
     <div class="d-flex align-items-center min-vh-20">
       <div class="container">
         <div class="row justify-content-center">
@@ -633,26 +632,90 @@
 
   </div>
   <!-- Leave a Message Section End -->
+<!-- leave a message section popup start -->
+ <div>
+  <!-- Popup Button (Optional) -->
+<button id="popupToggle" class="btn pop" style="position: fixed; bottom: 13px; right: 20px; z-index: 50">
+  Leave a Message
+</button>
 
+<!-- Popup Container -->
+<div id="popupForm" class="popup-container shadow">
+  <div class="popup-header d-flex justify-content-between align-items-center text-light px-3 py-2">
+    <h5 class="mb-0">Leave a Message</h5>
+    <button id="popupClose" class="btn-close btn-close-white" aria-label="Close"></button>
+  </div>
+  <div class="popup-body text-light p-3">
+    <!-- Your existing form goes here -->
+    <form action="https://api.web3forms.com/submit" method="POST" id="form">
+      <input type="hidden" name="access_key" value="8601b9e3-5ebc-45f0-9d01-584e4cb83236" />
+      <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+      <input type="checkbox" name="botcheck" style="display: none;" />
+
+      <div class="mb-2">
+        <label for="name" class="form-label text-light">Full Name</label>
+        <input type="text" name="name" id="name" required class="form-control" />
+      </div>
+      <div class="mb-2">
+        <label for="email" class="form-label text-light">Email</label>
+        <input type="email" name="email" id="email" required class="form-control" />
+      </div>
+      <div class="mb-2">
+        <label for="phone" class="form-label text-light">Phone</label>
+        <input type="text" name="phone" id="phone" required class="form-control" />
+      </div>
+      <div class="mb-2">
+        <label for="message" class="form-label text-light">Message</label>
+        <textarea name="message" id="message" rows="3" required class="form-control"></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn sam mt-2">Send Message</button>
+      </div>
+    </form>
+  </div>
+</div>
+ </div>
+ <!-- leave a message section popup end -->
   <!-- Contacts Section Start -->
-  <div class="container-fluid contacts " id="contacts">
+  <div class="container-fluid contacts" id="contacts">
     <div class="row">
       <div class="col-md-1"></div>
-      <div class="col-md-5 mt-4 mb-4 justify-content-center">
-        <h3>Social Media Handles:-</h3>
-        <h5> <ion-icon name="logo-whatsapp"></ion-icon> <a href="https://alvo.chat/4CnO">+91-9924133658</a></h5>
-        <h5><ion-icon name="logo-instagram"></ion-icon><a href="https://www.instagram.com/cyberwarrior039/">
-            cyberwarrior039</a></h5>
-        <h5><ion-icon name="logo-linkedin"></ion-icon><a href="https://www.linkedin.com/in/abhinavverma658/">
-            abhinavverma658</a></h5>
-        <h5><ion-icon name="logo-github"></ion-icon> <a href="https://github.com/abhinavverma658">abhinavverma658</a>
-        </h5>
+      <div class="col-md-5 mt-4 mb-4">
+        <h3>Social Media Handles</h3>
+        <ul class="list-unstyled">
+          <li class="d-flex align-items-center"></li>
+            <span class="me-2 d-flex align-items-center" style="font-size: 1.3em;"><ion-icon name="logo-whatsapp" class="mx-2"></ion-icon> <a href="https://alvo.chat/4CnO" target="_blank" rel="noopener"> +91-9924133658</a></span>
+            
+          </li>
+          <li class="d-flex align-items-center">
+            <span class="me-2 d-flex align-items-center" style="font-size: 1.3em;"><ion-icon name="logo-instagram" class="mx-2"></ion-icon> <a href="https://www.instagram.com/cyberwarrior039/" target="_blank" rel="noopener"> cyberwarrior039</a></span>
+            
+          </li>
+          <li class="d-flex align-items-center ">
+            <span class="me-2 d-flex align-items-center" style="font-size: 1.3em;"><ion-icon name="logo-linkedin" class="mx-2"></ion-icon>  <a href="https://www.linkedin.com/in/abhinavverma658/" target="_blank" rel="noopener"> abhinavverma658</a></span>
+          
+          </li>
+          <li class="d-flex align-items-center"></li>
+            <span class="me-2 d-flex align-items-center" style="font-size: 1.3em;"><ion-icon name="logo-github" class="mx-2"></ion-icon> <a href="https://github.com/abhinavverma658" target="_blank" rel="noopener"> abhinavverma658</a></span>
+          </li>
+        </ul>
       </div>
       <div class="col-md-5 mt-4 mb-2">
-        <h3>Contact Info:-</h3>
-        <h5><ion-icon name="call-outline"></ion-icon> <a href="tel:9924133658">+91-9924133658</a></h5>
-        <h5><ion-icon name="mail-outline"></ion-icon> <a
-            href="mailto:abhinavverma658@gmail.com">abhinavverma658@gmail.com</a> </h5>
+        <h3>Contact Info</h3>
+        <ul class="list-unstyled">
+          <li class="d-flex align-items-center">
+            <span class="me-2 d-flex align-items-center" style="font-size: 1.3em;"><ion-icon name="call-outline" class="mx-2"></ion-icon>  <a href="tel:9924133658">+91-9924133658</a></span>
+           
+          </li>
+          <li class="d-flex align-items-center ">
+            <span class="me-2 d-flex align-items-center" style="font-size: 1.3em;"><ion-icon name="mail-outline" class="mx-2"></ion-icon><a href="mailto:abhinavverma658@gmail.com">abhinavverma658@gmail.com</a></span>
+          </li>
+        </ul>
+        <h3>Resume</h3>
+        <p class="d-flex align-items-center">
+            <span class="me-2 d-flex align-items-center" style="font-size: 1.3em;"><ion-icon name="arrow-down-circle-outline" class="mx-2"></ion-icon> <a href="https://drive.google.com/uc?export=download&id=1tcP0QFbMNF1Hw045xWOkwjylLjrO_cbw" target="_blank" rel="noopener">Download</a></span>
+          
+        </p>
       </div>
       <div class="col-md-1"></div>
     </div>
@@ -660,23 +723,29 @@
   <!-- Contacts section end -->
   <!-- Footer Section Start -->
   <div class="footer">
-    <h5>Made With ❤️ By- Abhinav Verma</h5>
-    <div class="count">
+      <div class="count mb-2">
       <img
         src="https://visit-counter.vercel.app/counter.png?page=https%3A%2F%2Fabhinavverma658.tech%2F&s=30&c=ffffff&bg=923cb5&no=2&ff=electrolize&tb=&ta=+Visitors+%21+"
         alt="visits">
     </div>
+    <h5>Made with ❤️ by Abhinav Verma &copy; 2025</h5>
   </div>
   <!-- Footer Section End -->
-  <div class="links">
-    <div class="floater">
-      <a href="https://www.linkedin.com/in/abhinavverma658/"> <img src="assets/linkedin-icon.png"
-        class="btn-img-1"></a>
-    <a href="https://github.com/abhinavverma658"> <img src="assets/g.png" class="btn-img-2"></a>
-    <a href="mailto: abhinavverma658@gmail.com"><img src="assets/mail.png" class="btn-img-3"></a>
-
+  <div class="links d-flex justify-content-center">
+    <div class="floater d-flex align-items-center">
+      <a href="https://www.linkedin.com/in/abhinavverma658/">
+        <img src="assets/linkedin-icon.png" class="btn-img-1">
+      </a>
+      <a href="https://github.com/abhinavverma658">
+        <img src="assets/g.png" class="btn-img-2">
+      </a>
+      <a href="mailto: abhinavverma658@gmail.com">
+        <img src="assets/mail.png" class="btn-img-3">
+      </a>
+      <div class="resume" style="display:inline;">
+        <a href="https://drive.google.com/uc?export=download&id=1tcP0QFbMNF1Hw045xWOkwjylLjrO_cbw" class="rounded-pill p-2 text-decoration-none border text-white">Resume</a>
+      </div>
     </div>
-
   </div>
 
   <script src="js/index.js"></script>

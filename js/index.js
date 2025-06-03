@@ -117,3 +117,22 @@ function closeNav() {
 document
   .querySelector('meta[name="theme-color"]')
   .setAttribute("content", "#923cb5");
+
+  const popup = document.getElementById("popupForm");
+  const toggleBtn = document.getElementById("popupToggle");
+  const closeBtn = document.getElementById("popupClose");
+
+  toggleBtn.addEventListener("click", () => {
+    popup.style.display = "block";
+  });
+
+  closeBtn.addEventListener("click", () => {
+    popup.style.display = "none";
+  });
+
+  window.addEventListener("click", function (e) {
+    if (e.target === popup) {
+      popup.style.display = "none";
+    }
+  });
+

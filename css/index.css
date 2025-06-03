@@ -1250,12 +1250,12 @@ a {
   }
 }
 
-.workExperience #date,
+ #date,
 #techStack {
   float: none;
-  display: block;
+  display: inline;
   margin-top: 10px;
-  text-align: left;
+  text-align: right;
 }
 
 @media (min-width: 768px) {
@@ -1337,7 +1337,7 @@ a {
   padding: 5px;
   margin: 1px 0 0;
   display: inline-block;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 .sam:hover {
   border-color: #923cb5;
@@ -1384,7 +1384,7 @@ a {
   padding: 10px;
   z-index: 2;
   gap: 5px;
-  width: 138px;
+  width:215px;
   pointer-events: auto; /* clickable */
   transition: opacity 0.3s ease;
 }
@@ -1398,4 +1398,66 @@ a {
   scale: 1.1;
   transition: scale 0.5s ease;
 }
+.resume {
+  transition: color 0.3s, border-color , transform 0.5s;
+}
 
+.resume:hover  {
+  color: #923cb5 !important;
+  transform: scale(1.08);
+}
+
+.popup-container {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 350px;
+  background-color: #1f1f1f;
+  color: white;
+  border-radius: 10px;
+  z-index: 1040;
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .popup-container {
+    display: none !important; /* hide on small screens */
+  }
+
+  #popupToggle {
+    display: none !important;
+  }
+}
+.pop{
+  padding: 10px !important;
+  background-color: black !important;
+  border: 2px double #923cb5 !important;
+  box-shadow: 0 0 15px #933cb5a2;
+  color:white !important;
+  border-radius: 20px !important;
+}
+.pop:hover {
+  transform: scale(1.08);
+   transition: transform 0.5s;
+}
+#popupForm{
+   border: 2px double #923cb5 !important;
+   box-shadow: 0 0 15px #933cb5a2 !important;
+  background-color: black !important;
+  border-radius: 20px !important;
+}
+
+ .popup-header{
+  border-top-left-radius: 22px !important;
+  border-top-right-radius: 22px !important;
+ }
+ .popup-body{
+  border-bottom-right-radius: 22px !important;
+  border-bottom-left-radius: 22px !important;
+ }
+ .sidebar{
+   border: 2px double #923cb5 !important;
+   box-shadow: 0 0 15px #933cb5a2 !important;
+   border-radius: 20px !important;
+   margin-left: -5px !important;
+ }
