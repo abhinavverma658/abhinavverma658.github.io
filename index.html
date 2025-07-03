@@ -11,6 +11,24 @@
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <link rel="icon" type="image/x-icon" href="assets/favicon-32x32.png">
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <script>
+    const killElfsightBadge = () => {
+      const badge = document.querySelector('a[href*="elfsight.com/linkedin-feed-widget"]');
+      if (badge) {
+        badge.removeAttribute("style"); // remove inline styles
+        badge.style.display = "none";   // hide via JS
+      }
+    };
+  
+    // Try immediately and again every 500ms (in case it's injected later)
+    killElfsightBadge();
+    const interval = setInterval(killElfsightBadge, 500);
+  
+    // Stop trying after 10 seconds
+    setTimeout(() => clearInterval(interval), 10000);
+  </script>  
+  
 </head>
 
 <body>
@@ -42,6 +60,7 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#workExperience">Work Experiences</a></li>
             <li><a href="#certification">Certifications</a></li>
+            <li><a href="#linkedin">LinkedIn</a></li>
             <li><a href="#githubStats">GitHub Stats</a></li>
             <li class="d-block d-lg-none"><a href="#leaveamessage">Leave a message</a></li>
             <li><a href="#contacts">Contact Info</a></li>
@@ -55,7 +74,7 @@
   <!-- Introduction Start -->
   <div class="container-fluid" id="home">
     <div class="container">
-      <h2 class="text-center pt-3">Portfolio V2.4</h2>
+      <h2 class="text-center pt-3">Portfolio V2.5</h2>
     </div>
     <div class="row">
       <div class="col-md-12 photo float-left text-center mt-2">
@@ -550,6 +569,9 @@
       </div>
     </div>
   </div>
+  <!-- LinkedIn Post Start-->
+  <div class="elfsight-app-b80abc54-a784-49aa-bdd1-30080d6ccee2" id="linkedin" data-elfsight-app-lazy></div>
+   <!-- Linkedind Post Section End -->
   <!-- Certification section end -->
   <div class="container-fluid" id="githubStats">
     <!-- Github Contribution Section Start -->
@@ -758,7 +780,6 @@
     }
   });
 </script>
-
 </body>
 
 </html>

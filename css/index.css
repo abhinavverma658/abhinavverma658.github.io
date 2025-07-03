@@ -25,7 +25,7 @@
   margin: 0 auto;
   width: 20%;
   text-align: left;
-  top: 45%;
+  top: 40%;
   left: 100%;
   transform: translateY(-50%);
   font-weight: bold;
@@ -1209,13 +1209,14 @@ a {
   }
 }
 
-.githubStats {
+#githubStats {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap; /* Allow items to wrap */
   gap: 10px; /* Optional: Space between images */
   padding: 20px; /* Optional: Padding around the container */
+  border-top: 1px solid #923cb5; /* Add a top border */
 }
 
 .githubStats img {
@@ -1269,6 +1270,10 @@ a {
     margin-top: 0;
     text-align: right;
   }
+    .elfsight-app-b80abc54-a784-49aa-bdd1-30080d6ccee2 {
+      z-index: 0 !important;
+      padding-top: 20px;
+      padding-bottom: 20px; }
 }
 
 .workExperience a {
@@ -1466,3 +1471,78 @@ a {
    border-radius: 20px !important;
    margin-left: -5px;
  }
+ .ShortenedText__ShortenedTextComponent-sc-1x39ulp-1{
+  background-color: rgb(0, 0, 0) !important;
+  color: rgb(255, 255, 255) !important;
+ }
+ .Block-sc-3maawy-0{
+  background-color: rgb(0, 0, 0) !important;
+ }
+ .kDbgMN.kDbgMN.kDbgMN img,
+ .kDbgMN svg{
+  fill: rgb(255 255 255) !important;
+ }
+ .boouZO, .hSwJgP, .cPwQDS{
+  background-color: rgb(0, 0, 0) !important;
+  color: rgb(255, 255, 255) !important;
+ }
+ .boouZO{
+  border-radius: 20px !important;
+  border-color: #923cb5 !important;
+    border-width: 2px !important;
+    border-style: solid !important;
+    box-shadow: 0 0 15px #933cb5a2 !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transform: scale(1);
+ }
+ .boouZO:hover {
+   transform: scale(0.95);
+   /* shrink slightly */
+   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+   /* optional shadow effect */
+ }
+ .Layer-sc-15p239i-0{
+  background-color: transparent !important;
+ }
+ .Icon__IconContainer-sc-11wrh3u-0{
+  fill: rgb(255, 255, 255) !important;
+ }
+ .Carousel__CarouselArrowControlContainer-sc-f2ox7y-8{
+  border-radius: 20px;
+  transition: opacity 0.3s ease !important;
+ }
+ .Carousel__CarouselArrowControlContainer-sc-f2ox7y-8[aria-hidden="true"] svg {
+   fill: white !important;
+ }
+.ArrowControl__ArrowControlContainer-sc-ps7sz3-0{
+  border-color: #923cb5 !important;
+    border-width: 2px !important;
+    border-style: solid !important;
+    box-shadow: 0 0 15px #933cb5a2 !important;
+}
+.Carousel__CarouselArrowControlContainer-sc-f2ox7y-8[aria-hidden="true"] {
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.Carousel__CarouselArrowControlContainer-sc-f2ox7y-8[aria-hidden="false"] {
+  visibility: visible;
+  pointer-events: auto;
+  opacity: 1;
+}
+.JzAxx:not(:last-child)::after{
+  opacity: 1.1 !important;
+  background: rgb(0 0 0) !important;
+}
+.elfsight-app-b80abc54-a784-49aa-bdd1-30080d6ccee2{
+  z-index: 0 !important;
+  padding-top: 50px ;
+  padding-bottom: 50px;
+}
+@media (max-width: 768px) {
+  .elfsight-app-b80abc54-a784-49aa-bdd1-30080d6ccee2 {
+    z-index: 0 !important;
+   padding: 25px;
+  }
+}
