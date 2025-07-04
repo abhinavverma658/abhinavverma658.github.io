@@ -27,7 +27,8 @@
   
     // Stop trying after 10 seconds
     setTimeout(() => clearInterval(interval), 10000);
-  </script>  
+  </script> 
+  
   
 </head>
 
@@ -72,11 +73,11 @@
   <!-- Navbar end -->
 
   <!-- Introduction Start -->
-  <div class="container-fluid" id="home">
-    <div class="container">
+  <div class="container-fluid " id="home">
+    <div class="container fade-in">
       <h2 class="text-center pt-3">Portfolio V2.5</h2>
     </div>
-    <div class="row">
+    <div class="row fade-in">
       <div class="col-md-12 photo float-left text-center mt-2">
         <img src="assets/Abhinav-4 (1).jpg" alt="Abhinav" class="mx-auto d-block abhinav_photo">
         <div class=" container name_animation d-flex justify-content-center">
@@ -102,7 +103,7 @@
   <!-- Introduction End -->
   <!-- About Section Start -->
   <section id="about">
-    <div class="container-fluid intro">
+    <div class="container-fluid intro fade-in">
       <div class="container">
         <div class="row">
           <div class="col-md-12   mt-2">
@@ -136,7 +137,7 @@
   <!-- About Section End -->
   <!-- Education Section Start -->
   <div class="container-fluid education" id="education">
-    <div class="ag-format-container">
+    <div class="ag-format-container fade-in">
       <div class="ag-courses_box">
         <div class="ag-courses_item">
           <a href="#" class="ag-courses-item_link">
@@ -189,7 +190,7 @@
   <!-- Education Section End -->
   <!-- Skill Section Start -->
   <div class="container-fluid skills" id="skills">
-    <div class="scroll" style="--time:20s">
+    <div class="scroll fade-in" style="--time:20s">
       <div>
         <span>HTML</span>
         <span>CSS</span>
@@ -223,7 +224,7 @@
         <span>Linux</span>
       </div>
     </div>
-    <div class="scroll" style="--time:30s">
+    <div class="scroll fade-in" style="--time:30s">
       <div>
         <span>HTML</span>
         <span>CSS</span>
@@ -257,7 +258,7 @@
         <span>Linux</span>
       </div>
     </div>
-    <div class="scroll" style="--time:25s">
+    <div class="scroll fade-in" style="--time:25s">
       <div>
         <span>HTML</span>
         <span>CSS</span>
@@ -291,7 +292,7 @@
         <span>Linux</span>
       </div>
     </div>
-    <div class="scroll" style="--time:40s">
+    <div class="scroll fade-in" style="--time:40s">
       <div>
         <span>HTML</span>
         <span>CSS</span>
@@ -326,7 +327,7 @@
       </div>
     </div>
 
-    <div class="scroll imgBox" style="--time:25s">
+    <div class="scroll imgBox fade-in" style="--time:25s">
       <div>
         <img src="./assets/html.png" alt="">
         <img src="./assets/css1.png" alt="">
@@ -364,7 +365,7 @@
   <!-- skill section end -->
   <!-- Project Section Start -->
   <div class="container-fluid projects" id="projects">
-    <div class="container1">
+    <div class="container1 fade-in">
       <div class="card">
         <div class="face face1">
           <div class="content">
@@ -433,10 +434,10 @@
   </div>
   <!-- Project section end -->
   <!-- Work Experiences Section Start -->
-  <div class="container-fluid workExperience" id="workExperience">
-    <div class="row">
-      <div class="col-md-1 d-none d-md-block"></div>
-      <div class="col-12 col-md-10">
+  <div class="container-fluid workExperience " id="workExperience">
+    <div class="row ">
+      <div class="col-md-1 d-none d-md-block fade-in"></div>
+      <div class="col-12 col-md-10 fade-in">
         <h4><u>Work Experience:</u></h4>
         <span>Quantum IT Innovation, Noida, Uttar Pradesh, India (Remote)</span>
         <span id="date" class="d-block d-md-inline-block">(Oct 2024 - <i>Present</i>)</span>
@@ -453,12 +454,12 @@
             <h6>- Delivered <span id="strength">4+ web projects</span> with <span id="strength">high client satisfaction</span>.
             </h6>
       </div>
-      <div class="col-md-1 d-none d-md-block"></div>
+      <div class="col-md-1 d-none d-md-block fade-in"></div>
     </div>
     <br>
     <div class="row">
-      <div class="col-md-1 d-none d-md-block"></div>
-      <div class="col-12 col-md-10">
+      <div class="col-md-1 d-none d-md-block fade-in"></div>
+      <div class="col-12 col-md-10 fade-in">
         <h4><u>Internships:</u></h4>
         <span>Basket Hunt PVT LTD (Startup), Jharkhand, India</span>
         <span class="d-block d-sm-inline-block"><a
@@ -481,14 +482,14 @@
         <h6>- Commended for proactively <span id="strength">solving problems</span> and <span id="strength">dedicating
             to milestones</span>.</h6>
       </div>
-      <div class="col-md-1 d-none d-md-block"></div>
+      <div class="col-md-1 d-none d-md-block fade-in"></div>
     </div>
   </div>
   <!-- Work Experience Section End -->
   <!-- Certification Section Start -->
   <div class="container-fluid certification" id="certification">
     <div class="row justify-content-center">
-      <div class="container2">
+      <div class="container2 fade-in">
         <!-- Previous Button -->
         <button id="prevBtn" class="slider-btn">Previous</button>
         <!-- Cards Wrapper -->
@@ -571,16 +572,30 @@
   </div>
   <!-- LinkedIn Post Start-->
   <div class="elfsight-app-b80abc54-a784-49aa-bdd1-30080d6ccee2" id="linkedin" data-elfsight-app-lazy></div>
-   <!-- Linkedind Post Section End -->
+  <script>
+    // Wait for the widget to load and then add fade-in to the generated feed container
+    document.addEventListener("DOMContentLoaded", function () {
+      const observer = new MutationObserver(() => {
+        const linkedinFeed = document.querySelector('.eapps-linkedin-feed-b80abc54-a784-49aa-bdd1-30080d6ccee2');
+        if (linkedinFeed && !linkedinFeed.classList.contains('fade-in')) {
+          linkedinFeed.classList.add('fade-in');
+        }
+      });
+      observer.observe(document.body, { childList: true, subtree: true });
+      // Optionally disconnect after 10s to avoid performance issues
+      setTimeout(() => observer.disconnect(), 10000);
+    });
+  </script>
+  <!-- Linkedind Post Section End -->
   <!-- Certification section end -->
   <div class="container-fluid" id="githubStats">
     <!-- Github Contribution Section Start -->
-    <div class="githubContribution">
+    <div class="githubContribution fade-in">
       <img src="https://ghchart.rshah.org/923cb5/abhinavverma658" alt="Abhinav's Github chart" />
     </div>
     <!-- Github Contribution Section End -->
     <!-- Github Stats Section Start -->
-    <div class="githubStats">
+    <div class="githubStats fade-in">
       <img
         src="https://github-readme-stats.vercel.app/api?username=abhinavverma658&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=true"
         height="100" alt="stats graph" style="border-radius: 10px;" />
@@ -597,7 +612,7 @@
   <div class="container-fluid lam d-block d-lg-none" id="leaveamessage">
     <div class="d-flex align-items-center min-vh-20">
       <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center fade-in">
           <div class="col-lg-6 col-md-8 col-sm-10  p-4 rounded shadow">
             <div class="text-center">
               <h1 class="mb-3 text-light">Leave a Message</h1>
@@ -694,8 +709,8 @@
   <!-- Contacts Section Start -->
   <div class="container-fluid contacts" id="contacts">
     <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-5 mt-4 mb-4">
+      <div class="col-md-1 fade-in"></div>
+      <div class="col-md-5 mt-4 mb-4 fade-in">
         <h3>Social Media Handles</h3>
         <ul class="list-unstyled">
           <li class="d-flex align-items-center"></li>
@@ -715,7 +730,7 @@
           </li>
         </ul>
       </div>
-      <div class="col-md-5 mt-4 mb-2">
+      <div class="col-md-5 mt-4 mb-2 fade-in">
         <h3>Contact Info</h3>
         <ul class="list-unstyled">
           <li class="d-flex align-items-center">
@@ -732,13 +747,13 @@
           
         </p>
       </div>
-      <div class="col-md-1"></div>
+      <div class="col-md-1 fade-in"></div>
     </div>
   </div>
   <!-- Contacts section end -->
   <!-- Footer Section Start -->
   <div class="footer">
-      <div class="count mb-2">
+      <div class="count mb-2 fade-in">
       <img
         src="https://visit-counter.vercel.app/counter.png?page=https%3A%2F%2Fabhinavverma658.tech%2F&s=30&c=ffffff&bg=923cb5&no=2&ff=electrolize&tb=&ta=+Visitors+%21+"
         alt="visits">
@@ -762,7 +777,8 @@
       </div>
     </div>
   </div>
-
+  <div class="cursor-dot-outline"></div>
+<div class="cursor-dot"></div>
   <script src="js/index.js"></script>
   <script src="js/bootstrap.bundle.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

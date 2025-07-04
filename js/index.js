@@ -3,6 +3,21 @@ document.addEventListener("DOMContentLoaded", function () {
     const preloader = document.getElementById("preloader");
     preloader.style.display = "none";
   }, 2000); // 3 seconds delay
+
+  const fadeEls = document.querySelectorAll('.fade-in');
+  const observer = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible');
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+  fadeEls.forEach(el => observer.observe(el));
 });
 
 const form = document.getElementById("form");
@@ -135,3 +150,110 @@ document
       popup.style.display = "none";
     }
   });
+
+
+// Improved custom cursor logic for sync and scroll issues
+(function() {
+  var delay = 8;
+  var _x = window.innerWidth / 2;
+  var _y = window.innerHeight / 2;
+  var endX = window.innerWidth / 2;
+  var endY = window.innerHeight / 2;
+  var cursorVisible = true;
+  var cursorEnlarged = false;
+  var $dot = document.querySelector('.cursor-dot');
+  var $outline = document.querySelector('.cursor-dot-outline');
+
+  function setDotPosition(x, y) {
+    $dot.style.left = x + 'px';
+    $dot.style.top = y + 'px';
+  }
+  function setOutlinePosition(x, y) {
+    $outline.style.left = x + 'px';
+    $outline.style.top = y + 'px';
+  }
+
+  function animateDotOutline() {
+    _x += (endX - _x) / delay;
+    _y += (endY - _y) / delay;
+    setOutlinePosition(_x, _y);
+    requestAnimationFrame(animateDotOutline);
+  }
+
+  function toggleCursorSize() {
+    if (cursorEnlarged) {
+      $dot.style.transform = 'translate(-50%, -50%) scale(0.75)';
+      $outline.style.transform = 'translate(-50%, -50%) scale(1.5)';
+    } else {
+      $dot.style.transform = 'translate(-50%, -50%) scale(1)';
+      $outline.style.transform = 'translate(-50%, -50%) scale(1)';
+    }
+  }
+
+  function toggleCursorVisibility() {
+    if (cursorVisible) {
+      $dot.style.opacity = 1;
+      $outline.style.opacity = 1;
+    } else {
+      $dot.style.opacity = 0;
+      $outline.style.opacity = 0;
+    }
+  }
+
+  // Anchor hovering
+  document.querySelectorAll('a').forEach(function(el) {
+    el.addEventListener('mouseover', function() {
+      cursorEnlarged = true;
+      toggleCursorSize();
+    });
+    el.addEventListener('mouseout', function() {
+      cursorEnlarged = false;
+      toggleCursorSize();
+    });
+  });
+
+  // Click events
+  document.addEventListener('mousedown', function() {
+    cursorEnlarged = true;
+    toggleCursorSize();
+  });
+  document.addEventListener('mouseup', function() {
+    cursorEnlarged = false;
+    toggleCursorSize();
+  });
+
+  document.addEventListener('mousemove', function(e) {
+    cursorVisible = true;
+    toggleCursorVisibility();
+    // Use clientX/clientY for fixed position
+    endX = e.clientX;
+    endY = e.clientY;
+    setDotPosition(endX, endY);
+  });
+
+  // Hide/show cursor on window enter/leave
+  document.addEventListener('mouseenter', function(e) {
+    cursorVisible = true;
+    toggleCursorVisibility();
+    $dot.style.opacity = 1;
+    $outline.style.opacity = 1;
+  });
+  document.addEventListener('mouseleave', function(e) {
+    cursorVisible = false;
+    toggleCursorVisibility();
+    $dot.style.opacity = 0;
+    $outline.style.opacity = 0;
+  });
+
+  // Ensure cursor stays visible after scroll
+  window.addEventListener('scroll', function() {
+    // Keep dot and outline in sync with last known position
+    setDotPosition(endX, endY);
+    setOutlinePosition(_x, _y);
+  });
+
+  // Initial position
+  setDotPosition(endX, endY);
+  setOutlinePosition(_x, _y);
+  animateDotOutline();
+})();
