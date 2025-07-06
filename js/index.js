@@ -1,4 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Wait for the X share button to appear (in case it's loaded dynamically)
+  function setShareOnXColor() {
+    const shareOnX = document.querySelector('[aria-label="Share on X"] svg path');
+    if (shareOnX) {
+      shareOnX.style.fill = '#ffffff';
+    } else {
+      // Try again after a short delay if not found
+      setTimeout(setShareOnXColor, 500);
+    }
+  }
+  setShareOnXColor();
   setTimeout(function () {
     const preloader = document.getElementById("preloader");
     preloader.style.display = "none";

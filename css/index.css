@@ -1494,14 +1494,24 @@ a {
   background-color: rgb(0, 0, 0) !important;
  }
  .kDbgMN.kDbgMN.kDbgMN img,
- .kDbgMN svg{
+ .kDbgMN svg, .jAuOPR.jAuOPR.jAuOPR img,
+.jAuOPR svg{
   fill: rgb(255 255 255) !important;
  }
- .boouZO, .hSwJgP, .cPwQDS, .WidgetTitle__Header-sc-ruy1gu-2{
+ .boouZO, .hSwJgP, .cPwQDS, .WidgetTitle__Header-sc-ruy1gu-2, .fiMAOr, .njPxN{
   background-color: rgb(0, 0, 0) !important;
   color: rgb(255, 255, 255) !important;
  }
- .boouZO{
+ .fiMAOr:hover{
+color: #923cb5 !important;
+  transform: scale(1.08);
+  transition: transform 0.2s;
+ }
+ .dkJIJd{
+  z-index: 0 !important;
+  border-radius: 20px !important;
+ }
+ .boouZO,.njPxN{
   border-radius: 20px !important;
   border-color: #923cb5 !important;
     border-width: 2px !important;
