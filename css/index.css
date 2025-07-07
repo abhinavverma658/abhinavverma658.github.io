@@ -1570,6 +1570,10 @@ color: #923cb5 !important;
     z-index: 0 !important;
    padding: 25px;
   }
+  .dkJIJd{
+    z-index: 21 !important;
+    border-radius: 20px !important;
+  }
 }
 .cursor-dot,
 .cursor-dot-outline {
