@@ -132,13 +132,13 @@ window.addEventListener("resize", updateSlider);
 // Initial setup to position the slider
 updateSlider();
 function openNav() {
-  document.getElementById("sidebar").classList.add("open");
-  document.getElementById("hamburger-menu").style.display = "none";
+  document.getElementById('sidebar').classList.add('open');
+  document.getElementById('close-icon').style.display = 'flex';
 }
 
 function closeNav() {
-  document.getElementById("sidebar").classList.remove("open");
-  document.getElementById("hamburger-menu").style.display = "block";
+  document.getElementById('sidebar').classList.remove('open');
+  document.getElementById('close-icon').style.display = 'none';
 }
 document
   .querySelector('meta[name="theme-color"]')
