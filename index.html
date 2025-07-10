@@ -20,16 +20,16 @@
         badge.style.display = "none";   // hide via JS
       }
     };
-  
+
     // Try immediately and again every 500ms (in case it's injected later)
     killElfsightBadge();
     const interval = setInterval(killElfsightBadge, 500);
-  
+
     // Stop trying after 10 seconds
     setTimeout(() => clearInterval(interval), 10000);
-  </script> 
-  
-  
+  </script>
+
+
 </head>
 
 <body>
@@ -62,6 +62,7 @@
             <li><a href="#workExperience">Work Experiences</a></li>
             <li><a href="#certification">Certifications</a></li>
             <li><a href="#linkedin">LinkedIn</a></li>
+            <li><a href="#github-projects">GitHub Repositories</a></li>
             <li><a href="#githubStats">GitHub Stats</a></li>
             <li class="d-block d-lg-none"><a href="#leaveamessage">Leave a message</a></li>
             <li><a href="#contacts">Contact Info</a></li>
@@ -75,7 +76,7 @@
   <!-- Introduction Start -->
   <div class="container-fluid " id="home">
     <div class="container fade-in">
-      <h2 class="text-center pt-3">Portfolio V2.5</h2>
+      <h2 class="text-center pt-3">Portfolio V2.6</h2>
     </div>
     <div class="row fade-in">
       <div class="col-md-12 photo float-left text-center mt-2">
@@ -94,7 +95,7 @@
           </div>
         </div>
         <h4 class="mb-4">"The only limits that exist are the ones in your own mind."</h4>
-        
+
       </div>
 
       <!-- <div class="col-md-1 blank mt-2 d-none d-md-block"></div> -->
@@ -125,7 +126,8 @@
                   <li>-> Environment: Comfortable with<span> Linux</span> systems</li>
                 </ul>
               </li>
-              <li>-> <strong>📚 Learning Approach: </strong> Always exploring the latest in frontend trends and UI/UX best practices</li>
+              <li>-> <strong>📚 Learning Approach: </strong> Always exploring the latest in frontend trends and UI/UX
+                best practices</li>
               <li>-> <strong>🌟 Unique Qualities: </strong> Combines a genial disposition with a commitment to lifelong
                 learning, positioning for success in the dynamic world of Computer Science.</li>
             </ul>
@@ -136,7 +138,8 @@
   </section>
   <!-- About Section End -->
   <!-- Education Section Start -->
-  <div class="container-fluid education" id="education">
+  <div class="container-fluid education text-center" id="education">
+    <h2 class="pt-3">Education</h2>
     <div class="ag-format-container fade-in">
       <div class="ag-courses_box">
         <div class="ag-courses_item">
@@ -443,7 +446,8 @@
         <span id="date" class="d-block d-md-inline-block">(Oct 2024 - <i>Present</i>)</span>
         <br>
         <span>( Role: Frontend Developer Trainee -> <span style="color: #923cb5;">Frontend Developer</span> )</span>
-        <span id="techStack" class="d-block d-md-inline-block ">(Tech Stack: HTML, CSS, Tailwind CSS, JavaScript, ReactJS, Bootstrap,
+        <span id="techStack" class="d-block d-md-inline-block ">(Tech Stack: HTML, CSS, Tailwind CSS, JavaScript,
+          ReactJS, Bootstrap,
           Wordpress)</span>
         <br>
         <h6>- Enhanced client website performance, <span id="strength">achieving a 25% improvement</span> in speed and
@@ -451,8 +455,9 @@
         <h6>- Revamped and optimized client UI design, elevating user experience and overall functionality.</h6>
         <h6>- Contributing to <span id="strength">10+ client projects</span>, solving <span id="strength">real-time
             challenges</span>, and delivering <span id="strength">efficient solutions</span>.</h6>
-            <h6>- Delivered <span id="strength">4+ web projects</span> with <span id="strength">high client satisfaction</span>.
-            </h6>
+        <h6>- Delivered <span id="strength">4+ web projects</span> with <span id="strength">high client
+            satisfaction</span>.
+        </h6>
       </div>
       <div class="col-md-1 d-none d-md-block fade-in"></div>
     </div>
@@ -488,7 +493,8 @@
   <!-- Work Experience Section End -->
   <!-- Certification Section Start -->
   <div class="container-fluid certification" id="certification">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center text-center">
+      <h2 class="pt-4">Certifications</h2>
       <div class="container2 fade-in">
         <!-- Previous Button -->
         <button id="prevBtn" class="slider-btn">Previous</button>
@@ -589,13 +595,16 @@
   <!-- Linkedind Post Section End -->
   <!-- Certification section end -->
   <div class="container-fluid" id="githubStats">
+    <div class="text-center">
+      <h2 class="d-block" style="display: block;">My GitHub Stats</h2>
+    </div>
     <!-- Github Contribution Section Start -->
-    <div class="githubContribution fade-in">
+    <div class="githubContribution fade-in pb-3">
       <img src="https://ghchart.rshah.org/923cb5/abhinavverma658" alt="Abhinav's Github chart" />
     </div>
     <!-- Github Contribution Section End -->
     <!-- Github Stats Section Start -->
-    <div class="githubStats fade-in">
+    <div class="githubStats fade-in text-center">
       <img
         src="https://github-readme-stats.vercel.app/api?username=abhinavverma658&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=true"
         height="100" alt="stats graph" style="border-radius: 10px;" />
@@ -608,6 +617,10 @@
     </div>
     <!-- Github Stats Section End -->
   </div>
+  <section id="github-projects" class="text-center pb-5">
+    <h2 class="pb-3">My GitHub Repositories</h2>
+    <div id="repo-container" class="repo-grid fade-in"></div>
+  </section>
   <!-- Leave a Message Section Start -->
   <div class="container-fluid lam d-block d-lg-none" id="leaveamessage">
     <div class="d-flex align-items-center min-vh-20">
@@ -662,50 +675,50 @@
 
   </div>
   <!-- Leave a Message Section End -->
-<!-- leave a message section popup start -->
- <div>
-  <!-- Popup Button (Optional) -->
-<button id="popupToggle" class="btn pop" style="position: fixed; bottom: 13px; right: 20px; z-index: 50">
-  Leave a Message
-</button>
+  <!-- leave a message section popup start -->
+  <div>
+    <!-- Popup Button (Optional) -->
+    <button id="popupToggle" class="btn pop" style="position: fixed; bottom: 13px; right: 20px; z-index: 50">
+      Leave a Message
+    </button>
 
-<!-- Popup Container -->
-<div id="popupForm" class="popup-container shadow">
-  <div class="popup-header d-flex justify-content-between align-items-center text-light px-3 py-2">
-    <h5 class="mb-0">Leave a Message</h5>
-    <button id="popupClose" class="btn-close btn-close-white" aria-label="Close"></button>
-  </div>
-  <div class="popup-body text-light p-3">
-    <!-- Your existing form goes here -->
-    <form action="https://api.web3forms.com/submit" method="POST" id="form">
-      <input type="hidden" name="access_key" value="8601b9e3-5ebc-45f0-9d01-584e4cb83236" />
-      <input type="hidden" name="subject" value="New Submission from Web3Forms" />
-      <input type="checkbox" name="botcheck" style="display: none;" />
+    <!-- Popup Container -->
+    <div id="popupForm" class="popup-container shadow">
+      <div class="popup-header d-flex justify-content-between align-items-center text-light px-3 py-2">
+        <h5 class="mb-0">Leave a Message</h5>
+        <button id="popupClose" class="btn-close btn-close-white" aria-label="Close"></button>
+      </div>
+      <div class="popup-body text-light p-3">
+        <!-- Your existing form goes here -->
+        <form action="https://api.web3forms.com/submit" method="POST" id="form">
+          <input type="hidden" name="access_key" value="8601b9e3-5ebc-45f0-9d01-584e4cb83236" />
+          <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+          <input type="checkbox" name="botcheck" style="display: none;" />
 
-      <div class="mb-2">
-        <label for="name" class="form-label text-light">Full Name</label>
-        <input type="text" name="name" id="name" required class="form-control" />
+          <div class="mb-2">
+            <label for="name" class="form-label text-light">Full Name</label>
+            <input type="text" name="name" id="name" required class="form-control" />
+          </div>
+          <div class="mb-2">
+            <label for="email" class="form-label text-light">Email</label>
+            <input type="email" name="email" id="email" required class="form-control" />
+          </div>
+          <div class="mb-2">
+            <label for="phone" class="form-label text-light">Phone</label>
+            <input type="text" name="phone" id="phone" required class="form-control" />
+          </div>
+          <div class="mb-2">
+            <label for="message" class="form-label text-light">Message</label>
+            <textarea name="message" id="message" rows="3" required class="form-control"></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn sam mt-2">Send Message</button>
+          </div>
+        </form>
       </div>
-      <div class="mb-2">
-        <label for="email" class="form-label text-light">Email</label>
-        <input type="email" name="email" id="email" required class="form-control" />
-      </div>
-      <div class="mb-2">
-        <label for="phone" class="form-label text-light">Phone</label>
-        <input type="text" name="phone" id="phone" required class="form-control" />
-      </div>
-      <div class="mb-2">
-        <label for="message" class="form-label text-light">Message</label>
-        <textarea name="message" id="message" rows="3" required class="form-control"></textarea>
-      </div>
-      <div class="text-center">
-        <button type="submit" class="btn sam mt-2">Send Message</button>
-      </div>
-    </form>
+    </div>
   </div>
-</div>
- </div>
- <!-- leave a message section popup end -->
+  <!-- leave a message section popup end -->
   <!-- Contacts Section Start -->
   <div class="container-fluid contacts" id="contacts">
     <div class="row">
@@ -714,19 +727,27 @@
         <h3>Social Media Handles</h3>
         <ul class="list-unstyled">
           <li class="d-flex align-items-center"></li>
-            <span class="me-2 d-flex align-items-center" style="font-size: 1.3em;"><ion-icon name="logo-whatsapp" class="mx-2"></ion-icon> <a href="https://alvo.chat/4CnO" target="_blank" rel="noopener"> +91-9924133658</a></span>
-            
+          <span class="me-2 d-flex align-items-center" style="font-size: 1.3em;"><ion-icon name="logo-whatsapp"
+              class="mx-2"></ion-icon> <a href="https://alvo.chat/4CnO" target="_blank" rel="noopener">
+              +91-9924133658</a></span>
+
           </li>
           <li class="d-flex align-items-center">
-            <span class="me-2 d-flex align-items-center" style="font-size: 1.3em;"><ion-icon name="logo-instagram" class="mx-2"></ion-icon> <a href="https://www.instagram.com/cyberwarrior039/" target="_blank" rel="noopener"> cyberwarrior039</a></span>
-            
+            <span class="me-2 d-flex align-items-center" style="font-size: 1.3em;"><ion-icon name="logo-instagram"
+                class="mx-2"></ion-icon> <a href="https://www.instagram.com/cyberwarrior039/" target="_blank"
+                rel="noopener"> cyberwarrior039</a></span>
+
           </li>
           <li class="d-flex align-items-center ">
-            <span class="me-2 d-flex align-items-center" style="font-size: 1.3em;"><ion-icon name="logo-linkedin" class="mx-2"></ion-icon>  <a href="https://www.linkedin.com/in/abhinavverma658/" target="_blank" rel="noopener"> abhinavverma658</a></span>
-          
+            <span class="me-2 d-flex align-items-center" style="font-size: 1.3em;"><ion-icon name="logo-linkedin"
+                class="mx-2"></ion-icon> <a href="https://www.linkedin.com/in/abhinavverma658/" target="_blank"
+                rel="noopener"> abhinavverma658</a></span>
+
           </li>
           <li class="d-flex align-items-center"></li>
-            <span class="me-2 d-flex align-items-center" style="font-size: 1.3em;"><ion-icon name="logo-github" class="mx-2"></ion-icon> <a href="https://github.com/abhinavverma658" target="_blank" rel="noopener"> abhinavverma658</a></span>
+          <span class="me-2 d-flex align-items-center" style="font-size: 1.3em;"><ion-icon name="logo-github"
+              class="mx-2"></ion-icon> <a href="https://github.com/abhinavverma658" target="_blank" rel="noopener">
+              abhinavverma658</a></span>
           </li>
         </ul>
       </div>
@@ -734,17 +755,22 @@
         <h3>Contact Info</h3>
         <ul class="list-unstyled">
           <li class="d-flex align-items-center">
-            <span class="me-2 d-flex align-items-center" style="font-size: 1.3em;"><ion-icon name="call-outline" class="mx-2"></ion-icon>  <a href="tel:9924133658">+91-9924133658</a></span>
-           
+            <span class="me-2 d-flex align-items-center" style="font-size: 1.3em;"><ion-icon name="call-outline"
+                class="mx-2"></ion-icon> <a href="tel:9924133658">+91-9924133658</a></span>
+
           </li>
           <li class="d-flex align-items-center ">
-            <span class="me-2 d-flex align-items-center" style="font-size: 1.3em;"><ion-icon name="mail-outline" class="mx-2"></ion-icon><a href="mailto:abhinavverma658@gmail.com">abhinavverma658@gmail.com</a></span>
+            <span class="me-2 d-flex align-items-center" style="font-size: 1.3em;"><ion-icon name="mail-outline"
+                class="mx-2"></ion-icon><a href="mailto:abhinavverma658@gmail.com">abhinavverma658@gmail.com</a></span>
           </li>
         </ul>
         <h3>Resume</h3>
         <p class="d-flex align-items-center">
-            <span class="me-2 d-flex align-items-center" style="font-size: 1.3em;"><ion-icon name="arrow-down-circle-outline" class="mx-2"></ion-icon> <a href="https://drive.google.com/uc?export=download&id=1tcP0QFbMNF1Hw045xWOkwjylLjrO_cbw" target="_blank" rel="noopener">Download</a></span>
-          
+          <span class="me-2 d-flex align-items-center" style="font-size: 1.3em;"><ion-icon
+              name="arrow-down-circle-outline" class="mx-2"></ion-icon> <a
+              href="https://drive.google.com/uc?export=download&id=1tcP0QFbMNF1Hw045xWOkwjylLjrO_cbw" target="_blank"
+              rel="noopener">Download</a></span>
+
         </p>
       </div>
       <div class="col-md-1 fade-in"></div>
@@ -753,7 +779,7 @@
   <!-- Contacts section end -->
   <!-- Footer Section Start -->
   <div class="footer">
-      <div class="count mb-2 fade-in">
+    <div class="count mb-2 fade-in">
       <img
         src="https://visit-counter.vercel.app/counter.png?page=https%3A%2F%2Fabhinavverma658.tech%2F&s=30&c=ffffff&bg=923cb5&no=2&ff=electrolize&tb=&ta=+Visitors+%21+"
         alt="visits">
@@ -773,29 +799,30 @@
         <img src="assets/mail.png" class="btn-img-3">
       </a>
       <div class="resume" style="display:inline;">
-        <a href="https://drive.google.com/uc?export=download&id=1tcP0QFbMNF1Hw045xWOkwjylLjrO_cbw" class="rounded-pill p-2 text-decoration-none border text-white">Resume</a>
+        <a href="https://drive.google.com/uc?export=download&id=1tcP0QFbMNF1Hw045xWOkwjylLjrO_cbw"
+          class="rounded-pill p-2 text-decoration-none border text-white">Resume</a>
       </div>
     </div>
   </div>
   <div class="cursor-dot-outline"></div>
-<div class="cursor-dot"></div>
+  <div class="cursor-dot"></div>
   <script src="js/index.js"></script>
   <script src="js/bootstrap.bundle.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script>
-  window.addEventListener("scroll", () => {
-    const floater = document.querySelector(".floater");
-    const scrollPosition = window.scrollY + window.innerHeight;
-    const documentHeight = document.body.offsetHeight;
+    window.addEventListener("scroll", () => {
+      const floater = document.querySelector(".floater");
+      const scrollPosition = window.scrollY + window.innerHeight;
+      const documentHeight = document.body.offsetHeight;
 
-    if (scrollPosition >= documentHeight - 10) {
-      floater.classList.add("hidden");
-    } else {
-      floater.classList.remove("hidden");
-    }
-  });
-</script>
+      if (scrollPosition >= documentHeight - 10) {
+        floater.classList.add("hidden");
+      } else {
+        floater.classList.remove("hidden");
+      }
+    });
+  </script>
 </body>
 
 </html>

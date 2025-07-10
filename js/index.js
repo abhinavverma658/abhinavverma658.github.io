@@ -268,3 +268,33 @@ document
   setOutlinePosition(_x, _y);
   animateDotOutline();
 })();
+async function showGitHubRepos() {
+  const username = "abhinavverma658";
+  const repoContainer = document.getElementById("repo-container");
+
+  try {
+    const res = await fetch(`https://api.github.com/users/${username}/repos?sort=updated`);
+    const repos = await res.json();
+
+    repos.forEach(repo => {
+      const card = document.createElement("div");
+      card.className = "repo-card";
+
+      card.innerHTML = `
+          <h3 ><a href="${repo.html_url}" class="repo-url" target="_blank">${repo.name}</a></h3>
+          <p>${repo.description ? repo.description : "No description provided."}</p>
+          <img src="https://img.shields.io/github/commit-activity/m/${username}/${repo.name}" alt="Commit Activity">
+          <img src="https://img.shields.io/github/languages/top/${username}/${repo.name}" alt="Top Language">
+          <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/${username}/${repo.name}">
+
+        `;
+
+      repoContainer.appendChild(card);
+    });
+  } catch (error) {
+    console.error("Failed to load repos:", error);
+    repoContainer.innerHTML = "<p>Failed to fetch repositories. Please try again later.</p>";
+  }
+}
+
+showGitHubRepos();

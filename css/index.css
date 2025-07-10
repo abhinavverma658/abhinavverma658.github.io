@@ -393,7 +393,7 @@ body {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
-  padding: 50px 0;
+  padding: 20px 0;
   z-index: 0;
 }
 
@@ -938,6 +938,7 @@ h5 {
   overflow: hidden;
   position: relative;
   padding: 30px;
+  padding-top: 10px;
 }
 .dsa {
   background-image: url("../assets/img/DSA.jpg");
@@ -1214,9 +1215,9 @@ a {
 }
 
 #githubStats {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   flex-wrap: wrap; /* Allow items to wrap */
   gap: 10px; /* Optional: Space between images */
   padding: 20px; /* Optional: Padding around the container */
@@ -1634,4 +1635,95 @@ color: #923cb5 !important;
 .scroll.fade-in.visible {
   opacity: 1;
   transform: none !important;
+}
+#github-projects{
+  padding-top: 20px;
+  border-color: #923cb5;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left: 0;
+    border-right: 0;
+    border-style: solid;;
+}
+#repo-container {
+  padding-left: 80px;
+  padding-right: 80px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-top: 20px;
+}
+
+.repo-card {
+  padding: 1rem;
+  background: #000000;
+  border: 1px solid #923cb5;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #933cb5a2;
+}
+
+.repo-card:hover {
+  transform: scale(1.08);
+  transition: transform 0.5s ease;
+}
+
+.repo-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.repo-card p {
+  font-size: 0.95rem;
+  color: #ffffff;
+}
+
+.repo-card a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.repo-meta {
+  font-size: 0.85rem;
+  color: #ffffff;
+  margin-top: 0.5rem;
+}
+.repo-url:hover {
+  color: #923cb5;
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+  #repo-container {
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+  .repo-card h3 {
+    font-size: 1.05rem;
+  }
+  .repo-card p,
+  .repo-meta {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #repo-container {
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 10px;
+    grid-template-columns: 1fr;
+  }
+  .repo-card {
+    padding: 0.7rem;
+  }
+  .repo-card h3 {
+    font-size: 1rem;
+  }
+  .repo-card p,
+  .repo-meta {
+    font-size: 0.85rem;
+  }
 }
