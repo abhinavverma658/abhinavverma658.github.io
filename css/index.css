@@ -121,8 +121,9 @@
 @media (max-width: 768px) {
   .sidebar {
     width: 75%; /* Make sidebar take more space on smaller screens */
-    z-index: 10;
+    z-index: 52;
     padding-top: 0; /* Remove top padding */
+    scrollbar-width: none;
   }
 
   .nav {
@@ -144,7 +145,7 @@
   .close-icon {
     font-size: 1.5em; /* Adjust close icon size */
     top: 1.5em;
-    left: 13em;
+    left: 325px; /* Adjust position for smaller screens */
     padding: 0.3em;
   }
 }
