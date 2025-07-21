@@ -29,7 +29,7 @@ Gives a clean look and added hover animation.
 - **HTML**: Markup for structuring the web content.
 - **CSS**: Styling and layout.
 - **JavaScript**: Interactive elements and dynamic content.
-- **Bootstrap**: Framework for responsive design and pre-built components.
+- **Bootstrap**: Framework for responsive design and pre-built components .
 
 ## 🌟 Check It Out!
 
