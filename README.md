@@ -24,6 +24,8 @@ The portfolio is now fully responsive, ensuring a seamless experience whether yo
 
 Gives a clean look and added hover animation.
 
+### 6. Added Cursor animation
+
 ## 💻 Tech Stack
 
 - **HTML**: Markup for structuring the web content.
