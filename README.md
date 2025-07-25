@@ -26,6 +26,8 @@ Gives a clean look and added hover animation.
 
 ### 6. Added Cursor animation
 
+### 7. Integrated GitHub API for dynamic fetching of repositories.
+
 ## 💻 Tech Stack
 
 - **HTML**: Markup for structuring the web content.
