@@ -1548,7 +1548,7 @@ color: #923cb5 !important;
   background-color: transparent !important;
  }
  .Icon__IconContainer-sc-11wrh3u-0{
-  fill: rgb(255, 255, 255) !important;
+  fill: transparent !important;
  }
  .Carousel__CarouselArrowControlContainer-sc-f2ox7y-8{
   border-radius: 20px;
@@ -1743,4 +1743,17 @@ color: #923cb5 !important;
   .repo-meta {
     font-size: 0.85rem;
   }
+}
+.gkJUHZ{
+  background-color: black !important;
+  border: 1px solid #923cb5 !important;
+  box-shadow: #5e42a67d 0px 0px 15px ;
+}
+.gbgSTs.gbgSTs.gbgSTs img,
+.gbgSTs svg{
+  fill: rgb(255 255 255) !important;
+}
+.gkJUHZ:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
 }
