@@ -1,8 +1,25 @@
 const statsNumber = () => {
   return (
-    <div className="stats-number">
-      <h3 className="text-3xl font-bold text-white">150+</h3>
-      <p className="text-gray-400">Projects Completed</p>
+    <div className="max-w-full border-t border-b border-gray-800 mt-20">
+      <div className="flex grid-cols-4 max-w-5xl py-10 justify-center mx-auto gap-10  ">
+        <div className="text-white w-1/4 flex flex-col items-center">
+          <h1 className="text-3xl">120+</h1>
+          <h5 className="text-xl text-[#923cb5]">Projects Completed</h5>
+        </div>
+        <div className="text-white w-1/4 flex flex-col items-center">
+          <h1 className="text-3xl">8.5k</h1>
+          <h5 className="text-xl text-[#923cb5]">GitHub Contributions</h5>
+        </div>
+        <div className="text-white w-1/4 flex flex-col items-center">
+          <h1 className="text-3xl">5k</h1>
+          <h5 className="text-xl text-[#923cb5]">LinkedIn Followers</h5>
+        </div>
+        <div className="text-white w-1/4 flex flex-col items-center">
+          <h1 className="text-3xl">6+</h1>
+          <h5 className="text-xl text-[#923cb5]">Certifications</h5>
+        </div>
+      </div>
     </div>
   );
 };
+export default statsNumber;

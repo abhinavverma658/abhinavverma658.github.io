@@ -20,7 +20,7 @@ const heroSection = () => {
           transforming ideas into engaging digital realities.
         </p>
         <div className="flex gap-4">
-          <button className="bg-[rgb(146,60,181)] hover:bg-[#7a2fa3] text-white font-bold py-3 px-6 rounded-full mt-4">
+          <button className="bg-[#923cb5] hover:bg-[#7a2fa3] text-white font-bold py-3 px-6 rounded-full mt-4">
             View Work
           </button>
           <a className="bg-[#121212] border-2 border-gray-800 hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-full mt-4 flex items-center gap-1">

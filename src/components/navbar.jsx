@@ -7,7 +7,20 @@ function Navbar() {
         <div className="flex items-center justify-between h-10">
           <div className=" text-white font-bold text-xl flex items-center gap-4">
             <img src={logo} alt="Logo" className="w-8 h-8" />
-            <h4>Abhinav Verma</h4>
+            <div className="text-center">
+              <h4>
+                <a href="/"> Abhinav Verma</a>
+              </h4>
+              <div className="flex justify-center items-center gap-px">
+                <div className="p-1 rounded-full bg-gray-300 w-px h-px "></div>
+                <div className="w-1/4 bg-gray-300 h-0.5 rounded-4xl"></div>
+                <div>
+                  <p className="text-[8px] text-gray-300">Portfolio 3.0</p>
+                </div>
+                <div className="w-1/4 bg-gray-300 h-0.5 rounded-4xl"></div>
+                <div className="p-1 rounded-full bg-gray-300 w-px h-px "></div>
+              </div>
+            </div>
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
