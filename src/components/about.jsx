@@ -1,6 +1,8 @@
+import Img1 from "../assets/img1.webp";
+import Img2 from "../assets/img3.webp";
 const aboutUs = () => {
   return (
-    <div className="max-w-full">
+    <div className="max-w-full border-b border-gray-800 pb-16 ">
       <div className="max-w-5xl flex flex-col items-center mx-auto mt-20 gap-10 px-4 md:flex-row">
         <div className="w-1/2 text-white">
           <h1 className="text-4xl font-bold mb-4 underline underline-offset-8 decoration-5 decoration-[#923cb5] text-[#923cb5]">
@@ -15,7 +17,22 @@ const aboutUs = () => {
             digital solutions.
           </p>
         </div>
-        <div className="w-1/2"></div>
+        <div className="w-1/2 flex">
+          <div className="w-1/2 p-3 pt-10">
+            <img
+              src={Img1}
+              alt="tech"
+              className="rounded-3xl hover:scale-105 hover:transition-all duration-500"
+            />
+          </div>
+          <div className="w-1/2 p-3 ">
+            <img
+              src={Img2}
+              alt="tech"
+              className="rounded-3xl hover:scale-105 hover:transition-all duration-500"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
