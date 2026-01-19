@@ -5,7 +5,7 @@ const heroSection = () => {
       <div className="w-1/2 flex flex-col gap-4">
         <div className="max-w-[50%] rounded-full bg-[#121212] p-2 border-2 border-gray-800 flex items-center gap-3">
           <div className="bg-green-500 rounded-full p-1.5 w-2"> </div>
-          <h1 className="text-white">Available For New Projects</h1>
+          <h2 className="text-white">Available For New Projects</h2>
         </div>
         <h1 className="text-white text-left text-6xl font-bold ">
           Frontend Developer with an{" "}
@@ -43,7 +43,7 @@ const heroSection = () => {
                   {" "}
                   <path
                     id="Vector"
-                    d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12"
+                    d="M6 21h28M12 3V17M12 17L17 12M12 17L7 12"
                     stroke="#ffffff"
                     stroke-width="2"
                     stroke-linecap="round"
@@ -97,7 +97,7 @@ const heroSection = () => {
           </div>
           <div className="text-md text-gray-400">
             <h6> Experience</h6>
-            <h1 className="text-xl text-white">1+ Years</h1>
+            <h2 className="text-xl text-white">1+ Years</h2>
           </div>
         </div>
       </div>

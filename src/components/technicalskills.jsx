@@ -3,9 +3,9 @@ const TechnicalSkills = () => {
   return (
     <div className="border-b border-gray-800">
       <div className="max-w-5xl mx-auto pb-16">
-        <h1 className="text-4xl font-bold mb-4 mt-16 underline underline-offset-8 decoration-5 decoration-[#923cb5] text-[#923cb5]">
+        <h2 className="text-4xl font-bold mb-4 mt-16 underline underline-offset-8 decoration-5 decoration-[#923cb5] text-[#923cb5]">
           Technical Skills
-        </h1>
+        </h2>
         <h2 className="text-2xl text-gray-400 mt-5 mb-5 font-bold">
           Frontend Development
         </h2>

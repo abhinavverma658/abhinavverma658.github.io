@@ -5,9 +5,9 @@ const aboutUs = () => {
     <div className="max-w-full border-b border-gray-800 pb-16 ">
       <div className="max-w-5xl flex flex-col items-center mx-auto mt-20 gap-10 px-4 md:flex-row">
         <div className="w-1/2 text-white">
-          <h1 className="text-4xl font-bold mb-4 underline underline-offset-8 decoration-5 decoration-[#923cb5] text-[#923cb5]">
+          <h2 className="text-4xl font-bold mb-4 underline underline-offset-8 decoration-5 decoration-[#923cb5] text-[#923cb5]">
             About Me
-          </h1>
+          </h2>
           <p className="text-lg mb-6">
             I'm Abhinav Verma, a passionate web developer with expertise in
             crafting dynamic and responsive websites. With a strong foundation
