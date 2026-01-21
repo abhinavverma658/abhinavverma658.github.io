@@ -6,7 +6,9 @@ function Navbar() {
       <div className="container mx-auto px-4 ">
         <div className="flex items-center justify-between h-10">
           <div className=" text-white font-bold text-xl flex items-center gap-4">
-            <img src={logo} alt="Logo" className="w-8 h-8" />
+            <a href="/">
+              <img src={logo} alt="Logo" className="w-8 h-8" />
+            </a>
             <div className="text-center">
               <h4>
                 <a href="/"> Abhinav Verma</a>

@@ -7,6 +7,7 @@ import TechnicalSkills from "./components/technicalskills.jsx";
 import Project from "./components/featured.jsx";
 import Experience from "./components/experience.jsx";
 import Message from "./components/leaveMessage.jsx";
+import Contact from "./components/contact.jsx";
 function App() {
   return (
     <>
@@ -18,6 +19,7 @@ function App() {
       <Project />
       <Experience />
       <Message />
+      <Contact />
     </>
   );
 }

@@ -73,7 +73,9 @@ const Message = () => {
                 Send Message
               </button>
             </div>
-            <span className="text-white text-center mx-auto">{result}</span>
+            <span className="text-green-500 flex justify-center mt-4 text-center mx-auto">
+              {result}
+            </span>
           </form>
         </div>
       </div>
