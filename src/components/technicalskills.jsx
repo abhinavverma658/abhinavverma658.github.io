@@ -9,7 +9,7 @@ const TechnicalSkills = () => {
         <h2 className="text-2xl text-gray-400 mt-5 mb-5 font-bold">
           Frontend Development
         </h2>
-        <div className="flex gap-4">
+        <div className=" md:flex gap-4">
           <Skills skill="HTML5" />
           <Skills skill="CSS3" />
           <Skills skill="JavaScript" />
@@ -21,7 +21,7 @@ const TechnicalSkills = () => {
         <h2 className="text-2xl text-gray-400 mt-5 mb-5 font-bold">
           Design & Tools
         </h2>
-        <div className="flex gap-4">
+        <div className=" md:flex gap-4">
           <Skills skill="Figma" />
           <Skills skill="GitHub" />
           <Skills skill="Lighthouse" />

@@ -1,9 +1,9 @@
 import Abhinav from "../assets/abhinav.webp";
 const heroSection = () => {
   return (
-    <div className="max-w-5xl pt-42 mx-auto flex justify-center items-center  bg-amber">
-      <div className="w-1/2 flex flex-col gap-4">
-        <div className="max-w-[50%] rounded-full bg-[#121212] p-2 border-2 border-gray-800 flex items-center gap-3">
+    <div className="w-full md:max-w-5xl pt-42 mx-auto block md:flex justify-center items-center  bg-amber">
+      <div className="w-full md:w-1/2 relative  md:flex md:flex-col gap-4">
+        <div className="w-[70%] md:max-w-[50%]  rounded-full bg-[#121212] p-2 border-2 border-gray-800 flex items-center justify-center md:justify-normal gap-3 ml-7 mr-7 md:ml-0 md:mr-0 mb-4 ">
           <div className="bg-green-500 rounded-full p-1.5 w-2"> </div>
           <h2 className="text-white">Available For New Projects</h2>
         </div>
@@ -56,7 +56,7 @@ const heroSection = () => {
           </a>
         </div>
       </div>
-      <div className="w-1/2 flex justify-end items-center">
+      <div className="w-full md:w-1/2 flex justify-end items-center">
         <img
           src={Abhinav}
           alt="Abhinav Verma"
