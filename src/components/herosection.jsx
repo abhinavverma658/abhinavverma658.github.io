@@ -3,23 +3,23 @@ const heroSection = () => {
   return (
     <div className="w-full md:max-w-5xl pt-42 mx-auto block md:flex justify-center items-center  bg-amber">
       <div className="w-full md:w-1/2 relative  md:flex md:flex-col gap-4">
-        <div className="w-[70%] md:max-w-[50%]  rounded-full bg-[#121212] p-2 border-2 border-gray-800 flex items-center justify-center md:justify-normal gap-3 ml-7 mr-7 md:ml-0 md:mr-0 mb-4 ">
+        <div className="max-w-full md:max-w-[50%]  rounded-full bg-[#121212] p-2 border-2 border-gray-800 flex items-center justify-center mx-auto md:justify-normal gap-3 ml-7 mr-7 md:ml-0 md:mr-0 mb-4 ">
           <div className="bg-green-500 rounded-full p-1.5 w-2"> </div>
           <h2 className="text-white">Available For New Projects</h2>
         </div>
-        <h1 className="text-white text-left text-6xl font-bold ">
+        <h1 className="text-white text-center md:text-left text-6xl font-bold md:p-0 p-4x">
           Frontend Developer with an{" "}
           <span className="underline underline-offset-8 decoration-10  decoration-[#923cb5]">
             eye for detail
           </span>
         </h1>
-        <p className="text-gray-400 mt-3">
+        <p className="text-gray-400 mt-3 md:text-left text-center md:p-0 p-4">
           I'm Abhinav Verma, a passionate frontend developer dedicated to
           crafting visually stunning and user-friendly web experiences. With a
           keen eye for detail and a commitment to excellence, I specialize in
           transforming ideas into engaging digital realities.
         </p>
-        <div className="flex gap-4">
+        <div className="flex gap-4 mx-auto md:mx-0 md:justify-start justify-center flex-wrap mt-4">
           <button className="bg-[#923cb5] hover:bg-[#7a2fa3] text-white font-bold py-3 px-6 rounded-full mt-4">
             View Work
           </button>
@@ -56,13 +56,13 @@ const heroSection = () => {
           </a>
         </div>
       </div>
-      <div className="w-full md:w-1/2 flex justify-end items-center">
+      <div className="w-full md:w-1/2 flex justify-center mt-6 md:mt-0 md:justify-end items-center">
         <img
           src={Abhinav}
           alt="Abhinav Verma"
           className="w-96 h-96 rounded-full"
         />
-        <div className="absolute top-130 right-72 w-36 h-20 flex justify-center gap-3 items-center rounded-full bg-[#121212] border-2 border-gray-800 ">
+        <div className="absolute top-240 right-20 md:top-130 md:right-72 w-36 h-20 flex justify-center gap-3 items-center rounded-full bg-[#121212] border-2 border-gray-800 ">
           <div>
             <svg
               width="34px"

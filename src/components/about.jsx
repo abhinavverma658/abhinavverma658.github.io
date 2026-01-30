@@ -3,9 +3,9 @@ import Img2 from "../assets/img3.webp";
 const aboutUs = () => {
   return (
     <div className="max-w-full border-b border-gray-800 pb-16 ">
-      <div className="max-w-5xl flex flex-col items-center mx-auto mt-20 gap-10 px-4 md:flex-row">
-        <div className="w-1/2 text-white">
-          <h2 className="text-4xl font-bold mb-4 underline underline-offset-8 decoration-5 decoration-[#923cb5] text-[#923cb5]">
+      <div className="max-w-5xl flex flex-col items-center mx-auto mt-20 gap-10 px-4 ">
+        <div className="w-1/2 text-white text-left">
+          <h2 className="text-4xl  font-bold mb-4 underline underline-offset-8 decoration-5 decoration-[#923cb5] text-[#923cb5]">
             About Me
           </h2>
           <p className="text-lg mb-6">
