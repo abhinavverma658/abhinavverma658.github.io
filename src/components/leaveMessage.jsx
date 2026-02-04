@@ -31,37 +31,37 @@ const Message = () => {
         </h2>
         <div className=" p-6 pt-8 rounded-lg shadow-md">
           <form onSubmit={onSubmit}>
-            <div className="flex justify-center gap-4">
-              <div className="w-1/2 flex flex-col  ">
+            <div className="md:flex justify-center gap-4">
+              <div className="md:w-1/2 flex flex-col  ">
                 <label className="text-white pb-3">Full Name</label>
                 <input
                   type="text"
                   placeholder="Enter Name"
                   name="name"
-                  className="rounded-2xl pb-3 mb-3 text-white border-amber-50 border-2 placeholder:text-gray-400 placeholder:pl-5 pt-2 placeholder:vertical-center pl-3"
+                  className="rounded-2xl pb-3 mb-3 text-white border-amber-50 border-2 placeholder:text-gray-400 placeholder:pl-2 pt-2 placeholder:vertical-center pl-3"
                 />
                 <label className="text-white pb-3">Email</label>
                 <input
                   type="email"
                   placeholder="Enter Email"
                   name="email"
-                  className="rounded-2xl pb-3 mb-3 text-white border-amber-50 border-2 placeholder:text-gray-400 placeholder:pl-5 pt-2 placeholder:vertical-center pl-3"
+                  className="rounded-2xl pb-3 mb-3 text-white border-amber-50 border-2 placeholder:text-gray-400 placeholder:pl-2 pt-2 placeholder:vertical-center pl-3"
                 />
               </div>
-              <div className="w-1/2  flex flex-col">
+              <div className="md:w-1/2  flex flex-col">
                 <label className="text-white pb-3">Phone</label>
                 <input
                   type="tel"
-                  placeholder="Enter Phone Number"
+                  placeholder="Enter Number"
                   name="phone"
-                  className="rounded-2xl pb-3 mb-3 text-white border-amber-50 border-2 placeholder:text-gray-400 placeholder:pl-5 pt-2 placeholder:vertical-center pl-3"
+                  className="rounded-2xl pb-3 mb-3 text-white border-amber-50 border-2 placeholder:text-gray-400 placeholder:pl-2 pt-2 placeholder:vertical-center pl-3"
                 />
                 <label className="text-white pb-3">Message</label>
                 <textarea
                   rows="1"
-                  placeholder="Enter your message"
+                  placeholder="Enter Message"
                   name="message"
-                  className="rounded-2xl pb-3 mb-3 text-white border-amber-50 border-2 placeholder:text-gray-400 placeholder:pl-5 pt-2 placeholder:vertical-center pl-3"
+                  className="rounded-2xl pb-3 mb-3 text-white border-amber-50 border-2 placeholder:text-gray-400 placeholder:pl-2 pt-2 placeholder:vertical-center pl-3"
                 />
               </div>
             </div>

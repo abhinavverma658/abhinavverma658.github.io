@@ -12,9 +12,9 @@ const Contact = () => {
     localStorage.setItem("visitorCount", newCount.toString());
   }, []);
   return (
-    <div>
+    <div className="pl-6 pr-6">
       <div
-        className="max-w-5xl mx-auto p-26 mt-16 mb-8  bg-gradient-to-b from-black-900 from-85% to-purple-500  rounded-4xl border border-gray-500"
+        className="max-w-5xl mx-auto p-12 md:p-26 mt-16 mb-8  bg-linear-to-b from-black-900 from-85% to-purple-500  rounded-4xl border border-gray-500"
         id="contact"
       >
         <h2 className="text-4xl font-bold mb-4 text-center text-white">
@@ -25,7 +25,7 @@ const Contact = () => {
           <br />
           next big thing? Let's Chat
         </p>
-        <div className="flex justify-center mt-8 gap-4">
+        <div className="max-w-full flex-wrap flex justify-center items-center  mt-8 gap-4">
           <a
             href="mailto:abhinavverma658@gmail.com"
             className="bg-purple text-white px-6 py-3 rounded-full text-lg font-medium hover:bg-gray-800 transition-colors duration-300"

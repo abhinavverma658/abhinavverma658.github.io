@@ -2,8 +2,8 @@ import DotCard from "./dotCard";
 const Experience = () => {
   return (
     <div className=" border-2 border-b-gray-500">
-      <div className="max-w-5xl mx-auto flex">
-        <div className="w-1/2 text-left mt-16 mb-8">
+      <div className="max-w-5xl mx-auto flex p-4 md:flex-row flex-col gap-10 pb-16">
+        <div className="w-full md:w-1/2 text-left mt-16 mb-8">
           <div flex className="flex justify-start gap-4 items-center pb-4">
             <svg
               width="40px"
@@ -44,7 +44,7 @@ const Experience = () => {
             description="Led a full-stack web project as Project Leader, earned promotion to Communication Executive for strong communication skills, and received recognition for proactive problem-solving and consistent milestone delivery."
           />
         </div>
-        <div className="w-1/2 mt-16 mb-8 text-left">
+        <div className="w-full md:w-1/2 mt-16 mb-8 text-left">
           <div flex className="flex justify-start gap-4 items-center pb-4">
             <svg
               width="40px"

@@ -65,7 +65,7 @@ const ProjectCard = (props) => {
           {props.projectDescription}
         </p>
       </div>
-      <div className=" md:flex gap-4 ">
+      <div className="md:flex grid grid-cols-3 gap-4 ">
         <Skill skill="Node.js" />
         <Skill skill="Node.js" />
         <Skill skill="Node.js" />
