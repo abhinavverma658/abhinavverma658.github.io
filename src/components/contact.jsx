@@ -41,6 +41,7 @@ const Contact = () => {
         </div>
         <div className="flex justify-center mt-10 gap-5 ">
           <a
+            className="hover:scale-110 hover:transition-transform duration-300"
             href="https://github.com/abhinavverma658"
             target="_blank"
             rel="noreferrer"
@@ -93,6 +94,7 @@ const Contact = () => {
             </svg>
           </a>
           <a
+            className="hover:scale-110 hover:transition-transform duration-300"
             href="https://www.linkedin.com/in/abhinavverma658/"
             target="_blank"
             rel="noreferrer"
@@ -122,6 +124,7 @@ const Contact = () => {
             </svg>
           </a>
           <a
+            className="hover:scale-110 hover:transition-transform duration-300"
             href="https://www.instagram.com/cyberwarrior039/"
             target="_blank"
             rel="noreferrer"
@@ -151,6 +154,7 @@ const Contact = () => {
             </svg>
           </a>
           <a
+            className="hover:scale-110 hover:transition-transform duration-300"
             href=" https://wa.me/9924133658?text=Hi!%20<Name>%20This%20Side.%20I%20Got%20Your%20Number%20From%20Your%20Portfolio. "
             target="_blank"
             rel="noreferrer"
