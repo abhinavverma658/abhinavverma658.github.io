@@ -21,7 +21,7 @@ const Project = () => {
         <div className="text-center mt-8 mb-8 flex items-center justify-center">
           <div className="flex justify-between gap-2">
             <a
-              className="text-white underline underline-offset-4 decoration-1 decoration-gray-400 transition-colors duration-300 font-bold"
+              className="dark:text-white underline underline-offset-4 decoration-1 dark:decoration-gray-400 transition-colors duration-300 font-bold"
               href="https://github.com/abhinavverma658?tab=repositories"
               target="_blank"
             >

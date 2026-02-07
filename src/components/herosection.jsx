@@ -1,25 +1,34 @@
 import Abhinav from "../assets/abhinav.webp";
 const heroSection = () => {
   return (
-    <div className="w-full md:max-w-5xl pt-42 mx-auto block md:flex justify-center items-center  bg-amber">
+    <div className="w-full md:max-w-5xl pt-42 mx-auto block md:flex justify-center items-center">
       <div className="w-full md:w-1/2 relative  md:flex md:flex-col gap-4">
-        <div className="max-w-full md:max-w-[50%]  rounded-full bg-[#121212] p-2 border-2 border-gray-800 flex items-center justify-center mx-auto md:justify-normal gap-3 ml-7 mr-7 md:ml-0 md:mr-0 mb-4 ">
+        <div className="max-w-full md:max-w-[50%]  rounded-full dark:bg-[#121212] p-2 border-2 border-gray-800 flex items-center justify-center mx-auto md:justify-normal gap-3 ml-7 mr-7 md:ml-0 md:mr-0 mb-4 ">
           <div className="bg-green-500 rounded-full p-1.5 w-2"> </div>
-          <h2 className="text-white">Available For New Projects</h2>
+          <h2 className="dark:text-white">Available For New Projects</h2>
         </div>
-        <h1 className="text-white text-center md:text-left text-6xl font-bold md:p-0 p-4x">
+        <h1 className="dark:text-white text-center md:text-left text-6xl font-bold md:p-0 p-4x">
           Frontend Developer with an{" "}
           <span className="underline underline-offset-8 decoration-10  decoration-[#923cb5]">
             eye for detail
           </span>
         </h1>
-        <p className="text-gray-400 mt-3 md:text-left text-center md:p-0 p-4">
+        <p className="dark:text-white mt-3 md:text-left text-center  p-4 md:p-0 ">
           I'm Abhinav Verma, a passionate frontend developer dedicated to
           crafting visually stunning and user-friendly web experiences. With a
           keen eye for detail and a commitment to excellence, I specialize in
           transforming ideas into engaging digital realities.
         </p>
-        <div className="flex gap-4 mx-auto md:mx-0 md:justify-start justify-center flex-wrap mt-4">
+        <div className="philosophy dark:text-white">
+          <h3 className="text-xl font-bold mb-2 text-center md:text-left">
+            My Philosophy
+          </h3>
+          <p className="italic pl-2 pr-2 md:pl-0 text-center md:text-left">
+            "The only limits that exist are the ones in your own mind."
+          </p>
+        </div>
+
+        <div className="flex gap-4 mx-auto md:mx-0 md:justify-start justify-center flex-wrap">
           <button className="bg-[#923cb5] hover:bg-[#7a2fa3] text-white font-bold py-3 px-6 rounded-full mt-4">
             View Work
           </button>
@@ -60,9 +69,9 @@ const heroSection = () => {
         <img
           src={Abhinav}
           alt="Abhinav Verma"
-          className="w-96 h-96 rounded-full"
+          className="w-96 h-96 rounded-full hover:scale-105 transition-transform duration-500"
         />
-        <div className="absolute top-240 right-20 md:top-130 md:right-72 w-36 h-20 flex justify-center gap-3 items-center rounded-full bg-[#121212] border-2 border-gray-800 ">
+        <div className="absolute top-240 right-20 md:top-140 md:right-68 w-36 h-20 flex justify-center gap-2 items-center rounded-full bg-[#FAF9F6] dark:bg-[#121212] border-2 border-gray-800 ">
           <div>
             <svg
               width="34px"
@@ -95,9 +104,9 @@ const heroSection = () => {
               </g>
             </svg>
           </div>
-          <div className="text-md text-gray-400">
+          <div className="text-md  dark:text-gray-400">
             <h6> Experience</h6>
-            <h2 className="text-xl text-white">1+ Years</h2>
+            <h2 className="text-xl dark:text-white">1+ Years</h2>
           </div>
         </div>
       </div>

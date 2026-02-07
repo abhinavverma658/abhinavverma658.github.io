@@ -8,9 +8,9 @@ const ProjectCard = (props) => {
           className="w-full max-h-max hover:scale-105 trasition duration-300 ease-in-out"
         />
       </div>
-      <div className="mt-4 text-white flex justify-between gap-10 items-center">
+      <div className="mt-4 dark:text-white flex justify-between gap-10 items-center">
         <div>
-          <h2 className="text-xl text-white">{props.projectName}</h2>
+          <h2 className="text-xl dark:text-white">{props.projectName}</h2>
         </div>
         <div className="w-10 h-10 rounded-full bg-[#121212] flex items-center justify-center hover:bg-[#923cb5] transition-colors duration-300">
           <div className="p-3">
@@ -61,7 +61,7 @@ const ProjectCard = (props) => {
         </div>
       </div>
       <div className="w-full mt-3 mb-2">
-        <p className="text-md text-gray-300 font-semibold">
+        <p className="text-md dark:text-gray-300 font-semibold">
           {props.projectDescription}
         </p>
       </div>

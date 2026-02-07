@@ -29,46 +29,53 @@ const Message = () => {
         <h2 className="text-4xl font-bold mb-3 text-[#923cb5] underline underline-offset-4 text-center">
           Leave a Message
         </h2>
-        <div className=" p-6 pt-8 rounded-lg shadow-md">
+        <div className="mt-8 p-6 pt-8 rounded-2xl shadow-xl dark:shadow-md dark:border-gray-500 border border-gray-700">
           <form onSubmit={onSubmit}>
             <div className="md:flex justify-center gap-4">
               <div className="md:w-1/2 flex flex-col  ">
-                <label className="text-white pb-3">Full Name</label>
+                <label className="dark:text-white pb-3">First Name</label>
                 <input
                   type="text"
                   placeholder="Enter Name"
                   name="name"
-                  className="rounded-2xl pb-3 mb-3 text-white border-amber-50 border-2 placeholder:text-gray-400 placeholder:pl-2 pt-2 placeholder:vertical-center pl-3"
+                  className="rounded-2xl pb-3 mb-3 dark:text-white dark:border-amber-50 border placeholder:text-gray-400 placeholder:pl-2 pt-2 placeholder:vertical-center pl-3"
                 />
-                <label className="text-white pb-3">Email</label>
+                <label className="dark:text-white pb-3">Last Name</label>
+                <input
+                  type="text"
+                  placeholder="Enter Name"
+                  name="name"
+                  className="rounded-2xl pb-3 mb-3 dark:text-white dark:border-amber-50 border placeholder:text-gray-400 placeholder:pl-2 pt-2 placeholder:vertical-center pl-3"
+                />
+                <label className="dark:text-white pb-3">Email</label>
                 <input
                   type="email"
                   placeholder="Enter Email"
                   name="email"
-                  className="rounded-2xl pb-3 mb-3 text-white border-amber-50 border-2 placeholder:text-gray-400 placeholder:pl-2 pt-2 placeholder:vertical-center pl-3"
+                  className="rounded-2xl pb-3 mb-3 dark:text-white dark:border-amber-50 border placeholder:text-gray-400 placeholder:pl-2 pt-2 placeholder:vertical-center pl-3"
                 />
               </div>
               <div className="md:w-1/2  flex flex-col">
-                <label className="text-white pb-3">Phone</label>
+                <label className="dark:text-white pb-3">Phone</label>
                 <input
                   type="tel"
                   placeholder="Enter Number"
                   name="phone"
-                  className="rounded-2xl pb-3 mb-3 text-white border-amber-50 border-2 placeholder:text-gray-400 placeholder:pl-2 pt-2 placeholder:vertical-center pl-3"
+                  className="rounded-2xl pb-3 mb-3 dark:text-white dark:border-amber-50 border placeholder:text-gray-400 placeholder:pl-2 pt-2 placeholder:vertical-center pl-3"
                 />
-                <label className="text-white pb-3">Message</label>
+                <label className="dark:text-white pb-3">Message</label>
                 <textarea
-                  rows="1"
+                  rows="5"
                   placeholder="Enter Message"
                   name="message"
-                  className="rounded-2xl pb-3 mb-3 text-white border-amber-50 border-2 placeholder:text-gray-400 placeholder:pl-2 pt-2 placeholder:vertical-center pl-3"
+                  className="rounded-2xl pb-3 mb-3 dark:text-white dark:border-amber-50 border placeholder:text-gray-400 placeholder:pl-2 pt-2 placeholder:vertical-center pl-3"
                 />
               </div>
             </div>
             <div className="mx-auto text-center">
               <button
                 type="submit"
-                className="bg-purple text-white rounded-4xl px-4 py-2 mt-4 hover:bg-purple-800 transition-colors duration-300"
+                className="bg-[#923cb5] text-white rounded-4xl px-4 py-2 mt-4 hover:bg-[#7a2fa3] transition-colors duration-300"
               >
                 Send Message
               </button>

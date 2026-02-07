@@ -7,5 +7,5 @@ import Navbar from "./components/navbar.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <App />
-  </StrictMode>
+  </StrictMode>,
 );

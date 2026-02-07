@@ -7,11 +7,15 @@ const DotCard = (props) => {
       </div>
 
       <div className="flex-1 pb-8 pl-8">
-        <h2 className="text-2xl font-bold text-white mb-2">{props.title}</h2>
+        <h2 className="text-2xl font-bold dark:text-white mb-2">
+          {props.title}
+        </h2>
         <h3 className="text-[#923cb5] text-lg font-semibold mb-4">
           {props.subtitle}
         </h3>
-        <p className="text-gray-300 leading-relaxed">{props.description}</p>
+        <p className="dark:text-gray-300 leading-relaxed">
+          {props.description}
+        </p>
       </div>
     </div>
   );

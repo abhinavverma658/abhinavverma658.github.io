@@ -1,26 +1,16 @@
 import { useState, useEffect } from "react";
 
 const Contact = () => {
-  const [vistor, setVisitor] = useState(() => {
-    const saved = localStorage.getItem("visitorCount");
-    return saved ? parseInt(saved) : 0;
-  });
-
-  useEffect(() => {
-    const newCount = vistor + 1;
-    setVisitor(newCount);
-    localStorage.setItem("visitorCount", newCount.toString());
-  }, []);
   return (
     <div className="pl-6 pr-6">
       <div
         className="max-w-5xl mx-auto p-12 md:p-26 mt-16 mb-8  bg-linear-to-b from-black-900 from-85% to-purple-500  rounded-4xl border border-gray-500"
         id="contact"
       >
-        <h2 className="text-4xl font-bold mb-4 text-center text-white">
+        <h2 className="text-4xl font-bold mb-4 text-center dark:text-white">
           Let's work Together
         </h2>
-        <p className="text-2xl text-center capitalize text-white leading-relaxed">
+        <p className="text-2xl text-center capitalize dark:text-white leading-relaxed">
           Have Project in mind? Looking for a partner to help build your
           <br />
           next big thing? Let's Chat
@@ -41,7 +31,7 @@ const Contact = () => {
         </div>
         <div className="flex justify-center mt-10 gap-5 ">
           <a
-            className="hover:scale-110 hover:transition-transform duration-300"
+            className="hover:scale-110 hover:transition-transform duration-300 dark:fill-white fill-black"
             href="https://github.com/abhinavverma658"
             target="_blank"
             rel="noreferrer"
@@ -210,9 +200,8 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="text-center text-white mb-8">
-        <h3> {vistor} Vistors </h3>© {new Date().getFullYear()} Abhinav Verma.
-        All Rights Reserved.
+      <div className="text-center dark:text-white pb-4">
+        © {new Date().getFullYear()} Abhinav Verma. All Rights Reserved.
       </div>
     </div>
   );

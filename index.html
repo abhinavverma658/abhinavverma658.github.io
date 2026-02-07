@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
   <meta charset="UTF-8" />
@@ -13,6 +13,19 @@
   <meta name="theme-color" content="#923cb5">
   <meta name="author" content="Abhinav Verma">
   <meta name="publisher" content="Abhinav Verma">
+
+  <!-- Theme initialization script - prevents FOUC -->
+  <script>
+    (function () {
+      const theme = localStorage.getItem('theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    })();
+  </script>
 
 
   <!-- Open Graph meta tags -->

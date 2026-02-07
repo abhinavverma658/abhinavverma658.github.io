@@ -6,7 +6,7 @@ const TechnicalSkills = () => {
         <h2 className="text-4xl font-bold mb-4 mt-16 underline underline-offset-8 decoration-5 decoration-[#923cb5] text-[#923cb5]">
           Technical Skills
         </h2>
-        <h2 className="text-2xl text-gray-400 mt-5 mb-5 font-bold">
+        <h2 className="text-2xl dark:text-gray-400 mt-5 mb-5 font-bold">
           Frontend Development
         </h2>
         <div className="md:flex grid grid-cols-3 gap-4">
@@ -18,7 +18,7 @@ const TechnicalSkills = () => {
           <Skills skill="Bootstrap" />
           <Skills skill="Tailwind CSS" />
         </div>
-        <h2 className="text-2xl text-gray-400 mt-5 mb-5 font-bold">
+        <h2 className="text-2xl dark:text-gray-400 mt-5 mb-5 font-bold">
           Design & Tools
         </h2>
         <div className=" md:flex grid grid-cols-3 gap-4">
