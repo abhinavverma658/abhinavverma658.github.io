@@ -36,15 +36,15 @@ const Message = () => {
                 <label className="dark:text-white pb-3">First Name</label>
                 <input
                   type="text"
-                  placeholder="Enter Name"
-                  name="name"
+                  placeholder="Enter First Name"
+                  name="firstName"
                   className="rounded-2xl pb-3 mb-3 dark:text-white dark:border-amber-50 border placeholder:text-gray-400 placeholder:pl-2 pt-2 placeholder:vertical-center pl-3"
                 />
                 <label className="dark:text-white pb-3">Last Name</label>
                 <input
                   type="text"
-                  placeholder="Enter Name"
-                  name="name"
+                  placeholder="Enter Last Name"
+                  name="lastName"
                   className="rounded-2xl pb-3 mb-3 dark:text-white dark:border-amber-50 border placeholder:text-gray-400 placeholder:pl-2 pt-2 placeholder:vertical-center pl-3"
                 />
                 <label className="dark:text-white pb-3">Email</label>

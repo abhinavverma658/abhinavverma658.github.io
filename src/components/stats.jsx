@@ -96,41 +96,43 @@ const statsNumber = () => {
   if (loading) return <p className="text-center">Loading...</p>;
 
   return (
-    <div className="border-b border-t border-gray-800 mt-10 p-3">
+    <div className="bg-[#923cb5] dark:bg-black border-b border-t border-gray-800 mt-10 p-3">
       <div className="max-w-5xl  md:flex justify-center gap-3 mx-auto">
         <div className="md:flex grid grid-cols-2 p-4 text-center  md:py-10 justify-center  gap-4 md:gap-16 ">
-          <div className="dark:text-white  md:w-1/4 flex flex-col items-center text-center">
+          <div className="text-white  md:w-1/4 flex flex-col items-center text-center">
             <h2 className="text-2xl md:text-3xl">
               <AnimatedNumber target={120} suffix="+" />
             </h2>
-            <h5 className="text-md md:text-xl text-[#923cb5]">
+            <h5 className="text-md md:text-xl text-white dark:text-[#923cb5]">
               Projects Completed
             </h5>
           </div>
-          <div className="dark:text-white  md:w-1/4 flex flex-col items-center text-center">
+          <div className="text-white  md:w-1/4 flex flex-col items-center text-center">
             <h2 className="text-2xl md:text-3xl">
               {contributions && (
                 <AnimatedNumber target={contributions} suffix="+" />
               )}
             </h2>
-            <h5 className="text-md md:text-xl text-[#923cb5]">
+            <h5 className="text-md md:text-xl text-white dark:text-[#923cb5]">
               GitHub Contributions
             </h5>
-            <p className="text-sm text-[#923cb5]">(Last Year)</p>
+            <p className="text-sm text-white  dark:text-[#923cb5]">
+              (Last Year)
+            </p>
           </div>
-          <div className="dark:text-white  md:w-1/4 flex flex-col items-center text-center">
+          <div className="text-white  md:w-1/4 flex flex-col items-center text-center">
             <h2 className="text-2xl md:text-3xl">
               <AnimatedNumber target={5000} suffix="+" />
             </h2>
-            <h5 className="text-md md:text-xl text-[#923cb5]">
+            <h5 className="text-md md:text-xl text-white dark:text-[#923cb5]">
               LinkedIn Followers
             </h5>
           </div>
-          <div className="dark:text-white  md:w-1/4 flex flex-col items-center text-center">
+          <div className="text-white  md:w-1/4 flex flex-col items-center text-center">
             <h2 className="text-2xl md:text-3xl">
               <AnimatedNumber target={6} suffix="+" />
             </h2>
-            <h5 className="text-md md:text-xl text-[#923cb5]">
+            <h5 className="text-md md:text-xl text-white dark:text-[#923cb5]">
               Certifications
             </h5>
           </div>

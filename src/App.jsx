@@ -16,7 +16,7 @@ function App() {
     <ThemeProvider>
       <Cursor />
       <Navbar />
-      <div className=" bg-[#FAF9F6] dark:bg-black">
+      <div className=" bg-[#f8f8f5] dark:bg-black">
         <HeroSection />
         <Stats />
         <AboutUs />

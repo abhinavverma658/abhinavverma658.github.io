@@ -69,7 +69,7 @@ const heroSection = () => {
         <img
           src={Abhinav}
           alt="Abhinav Verma"
-          className="w-96 h-96 rounded-full hover:scale-105 transition-transform duration-500"
+          className="w-96 h-96 rounded-full hover:scale-105 transition-transform duration-500 shadow-[#923cb5] shadow-lg"
         />
         <div className="absolute top-240 right-20 md:top-140 md:right-68 w-36 h-20 flex justify-center gap-2 items-center rounded-full bg-[#FAF9F6] dark:bg-[#121212] border-2 border-gray-800 ">
           <div>
