@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div className="pl-6 pr-6 bg-[#923cb5] dark:bg-black pt-16">
       <div
-        className="max-w-5xl mx-auto p-12 md:p-26  mb-8 dark:bg-linear-to-b from-black-900 from-85% to-purple-500  rounded-4xl border border-gray-500"
+        className="max-w-5xl mx-auto p-12 md:p-26  mb-8 bg-gradient-to-b from-white from-85% to-[#923cb5] dark:bg-gradient-to-b dark:from-black dark:from-85% dark:to-purple-500  rounded-4xl border border-gray-500"
         id="contact"
       >
         <h2 className="text-4xl font-bold mb-4 text-center dark:text-white">
@@ -200,7 +200,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="text-center dark:text-white pb-4">
+      <div className="text-center text-white pb-4">
         © {new Date().getFullYear()} Abhinav Verma. All Rights Reserved.
       </div>
     </div>
