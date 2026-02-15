@@ -1,7 +1,7 @@
 import Abhinav from "../assets/abhinav.webp";
 const heroSection = () => {
   return (
-    <div className="w-full md:max-w-5xl pt-42 mx-auto block md:flex justify-center items-center">
+    <div className="w-full md:max-w-5xl pt-38 mx-auto block md:flex justify-center items-center">
       <div className="w-full md:w-1/2 relative  md:flex md:flex-col gap-4">
         <div className="max-w-full md:max-w-[50%]  rounded-full dark:bg-[#121212] p-2 border-2 border-gray-800 flex items-center justify-center mx-auto md:justify-normal gap-3 ml-7 mr-7 md:ml-0 md:mr-0 mb-4 ">
           <div className="bg-green-500 rounded-full p-1.5 w-2"> </div>
