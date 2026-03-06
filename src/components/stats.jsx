@@ -101,7 +101,7 @@ const statsNumber = () => {
         <div className="md:flex grid grid-cols-2 p-4 text-center  md:py-10 justify-center  gap-4 md:gap-16 ">
           <div className="text-white  md:w-1/4 flex flex-col items-center text-center">
             <h2 className="text-2xl md:text-3xl">
-              <AnimatedNumber target={120} suffix="+" />
+              <AnimatedNumber target={25} suffix="+" />
             </h2>
             <h5 className="text-md md:text-xl text-white dark:text-[#923cb5]">
               Projects Completed
