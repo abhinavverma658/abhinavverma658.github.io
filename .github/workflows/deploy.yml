@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      VITE_API_URL: ${{ secrets.VITE_API_URL }}
+      VITE_GITHUB_TOKEN: ${{ secrets.VITE_GITHUB_TOKEN }}
 
     steps:
       - uses: actions/checkout@v4
