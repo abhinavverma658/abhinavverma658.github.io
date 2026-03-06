@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Abhinav Verma - Portfolio showcasing my work as a developer, including projects, technical skills, and professional experience." />
+  <meta name="keywords"
+    content="Abhinav Verma, developer, portfolio, web development, software engineer, projects, technical skills, programming" />
+  <link rel="canonical" href="https://abhinavverma658.me/" />
+  <meta name="theme-color" content="#923cb5">
+  <meta name="author" content="Abhinav Verma">
+  <meta name="publisher" content="Abhinav Verma">
+
+  <!-- Theme initialization script - prevents FOUC -->
+  <script>
+    (function () {
+      const theme = localStorage.getItem('theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    })();
+  </script>
+
+
+  <!-- Open Graph meta tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://abhinavverma658.me/" />
+  <meta property="og:title" content="Abhinav Verma - Developer Portfolio | Projects & Skills" />
+  <meta property="og:description"
+    content="Portfolio showcasing my work as a developer, including projects, technical skills, and professional experience." />
+  <meta property="og:image" content="https://abhinavverma658.me/og-image.jpg" />
+
+  <!-- Twitter meta tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://abhinavverma658.me/" />
+  <meta name="twitter:title" content="Abhinav Verma - Developer Portfolio | Projects & Skills" />
+  <meta name="twitter:description"
+    content="Portfolio showcasing my work as a developer, including projects, technical skills, and professional experience." />
+  <meta name="twitter:image" content="https://abhinavverma658.me/og-image.jpg" />
+
+  <link rel="stylesheet" href="/src/index.css" />
+  <link rel="icon" href="/src/assets/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/src/assets/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/src/assets/favicon-16x16.png" type="image/png" sizes="16x16">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Abhinav Verma",
+      "url": "https://abhinavverma658.me/",
+      "jobTitle": "Developer",
+      "description": "Portfolio showcasing my work as a developer, including projects, technical skills, and professional experience.",
+      "sameAs": [
+        "https://github.com/abhinavverma658/",
+        "https://www.linkedin.com/in/abhinavverma658/"
+      ]
+    }
+  </script>
+  <title>Abhinav Verma - Developer Portfolio | Projects & Skills</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
