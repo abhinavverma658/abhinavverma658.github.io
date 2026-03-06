@@ -81,9 +81,17 @@ const statsNumber = () => {
       }
 
       try {
-        const total = await getGithubContributions("abhinavverma658");
-        cachedContributions = total;
-        setContributions(total);
+        // const total = await getGithubContributions("abhinavverma658");
+        // cachedContributions = total;
+        // setContributions(total);
+        const data = await getGithubContributions("abhinavverma658");
+
+        const totalContributions = Object.values(data.total).reduce(
+          (sum, value) => sum + value,
+          0,
+        );
+        cachedContributions = totalContributions;
+        setContributions(totalContributions);
       } catch (error) {
         console.error("Error fetching GitHub data", error);
       } finally {
@@ -116,9 +124,6 @@ const statsNumber = () => {
             <h5 className="text-md md:text-xl text-white dark:text-[#923cb5]">
               GitHub Contributions
             </h5>
-            <p className="text-sm text-white  dark:text-[#923cb5]">
-              (Last Year)
-            </p>
           </div>
           <div className="text-white  md:w-1/4 flex flex-col items-center text-center">
             <h2 className="text-2xl md:text-3xl">
