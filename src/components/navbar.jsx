@@ -10,7 +10,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-gray-900/40 shadow-md shadow-gray-500 dark:shadow-none dark:bg-gray-900/40 backdrop-blur-2xl flex items-center justify-between md:justify-center p-4 z-999 rounded-[52px] md:rounded-full max-w-2xl md:max-w-5xl mx-auto border-amber-50 top-5 fixed left-0 right-0">
+    <nav className="bg-gray-900/40 shadow-md shadow-gray-500 dark:shadow-none dark:bg-gray-900/40 backdrop-blur-2xl flex items-center justify-between md:justify-center ml-4 mr-4 md:mx-auto p-4 z-999 rounded-[52px] md:rounded-full max-w-2xl md:max-w-5xl mx-auto border-amber-50 top-5 fixed left-0 right-0">
       <div className="container mx-auto px-4 hidden md:block">
         <div className="flex items-center justify-between h-10">
           <div className="text-white font-bold text-xl flex items-center gap-4">
@@ -183,9 +183,9 @@ function Navbar() {
             <a href="/">
               <img src={logo} alt="Logo" className="w-8 h-8" />
             </a>
-            <div className="text-center ">
+            <div className="text-center align-middle">
               <h4>
-                <a href="/" className="text-white">
+                <a href="/" className="text-white text-sm md:text-lg">
                   Abhinav Verma
                 </a>
               </h4>
@@ -193,7 +193,7 @@ function Navbar() {
                 <div className="p-1 rounded-full bg-gray-300 w-px h-px "></div>
                 <div className="w-1/4 bg-gray-300 h-0.5 rounded-4xl"></div>
                 <div>
-                  <p className="text-[8px] text-white">Portfolio 3.0</p>
+                  <p className="text-[5px] text-white">Portfolio 3.0</p>
                 </div>
                 <div className="w-1/4 bg-gray-300 h-0.5 rounded-4xl"></div>
                 <div className="p-1 rounded-full bg-gray-300 w-px h-px "></div>

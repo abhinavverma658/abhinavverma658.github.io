@@ -1,13 +1,13 @@
 import Abhinav from "../assets/abhinav.webp";
 const heroSection = () => {
   return (
-    <div className="w-full md:max-w-5xl pt-38 mx-auto block md:flex justify-center items-center">
-      <div className="w-full md:w-1/2 relative  md:flex md:flex-col gap-4">
+    <div className="w-full md:max-w-5xl pt-30 md:pt-38 mx-auto flex flex-col-reverse md:flex md:flex-row justify-center items-center">
+      <div className="w-full md:w-1/2 relative  md:flex md:flex-col gap-4 mt-4 md:mt-0">
         <div className="max-w-full md:max-w-[50%]  rounded-full dark:bg-[#121212] p-2 border-2 border-gray-800 flex items-center justify-center mx-auto md:justify-normal gap-3 ml-7 mr-7 md:ml-0 md:mr-0 mb-4 ">
           <div className="bg-green-500 rounded-full p-1.5 w-2"> </div>
           <h2 className="dark:text-white">Available For New Projects</h2>
         </div>
-        <h1 className="dark:text-white text-center md:text-left text-6xl font-bold md:p-0 p-4x">
+        <h1 className="dark:text-white text-center md:text-left text-3xl md:text-6xl font-bold md:p-0 p-4">
           Frontend Developer with an{" "}
           <span className="underline underline-offset-8 decoration-10  decoration-[#923cb5]">
             eye for detail
@@ -65,13 +65,13 @@ const heroSection = () => {
           </a>
         </div>
       </div>
-      <div className="w-full md:w-1/2 flex justify-center mt-6 md:mt-0 md:justify-end items-center">
+      <div className="w-full md:w-1/2 flex justify-center mt-0 md:justify-end items-center p-4 md:p-0 relative">
         <img
           src={Abhinav}
           alt="Abhinav Verma"
-          className="w-96 h-96 rounded-full hover:scale-105 transition-transform duration-500 shadow-[#923cb5] shadow-lg"
+          className="w-80 h-80 md:w-96 md:h-96 rounded-full object-cover hover:scale-105 transition-transform duration-500 shadow-[#923cb5] shadow-lg"
         />
-        <div className="absolute top-240 right-20 md:top-140 md:right-68 w-36 h-20 flex justify-center gap-2 items-center rounded-full bg-[#FAF9F6] dark:bg-[#121212] border-2 border-gray-800 ">
+        <div className="absolute bottom-4 right-4 md:top-80 md:right-5  w-36 h-20 flex justify-center gap-2 items-center rounded-full bg-[#FAF9F6] dark:bg-[#121212] border-2 border-gray-800 ">
           <div>
             <svg
               width="34px"

@@ -3,7 +3,7 @@ import ProjectImg2 from "../assets/resumailerpu.webp";
 import Card from "./projectCard.jsx";
 const Project = () => {
   return (
-    <div className="border-b border-gray-800 pb-8 pt-16">
+    <div className="border-b border-gray-800 pb-8 pt-16" id="projects">
       <div className="max-w-5xl mx-auto p-4">
         <h2 className="text-4xl font-bold mb-4  underline underline-offset-8 decoration-5 decoration-[#923cb5] text-[#923cb5]">
           Featured Projects

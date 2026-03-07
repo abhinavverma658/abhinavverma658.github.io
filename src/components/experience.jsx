@@ -1,7 +1,10 @@
 import DotCard from "./dotCard";
 const Experience = () => {
   return (
-    <div className="bg-[#923cb5] dark:bg-black border-b border-gray-500">
+    <div
+      className="bg-[#923cb5] dark:bg-black border-b border-gray-500"
+      id="experience"
+    >
       <div className="max-w-5xl mx-auto flex p-4 md:flex-row flex-col gap-10 pb-16">
         <div className="w-full md:w-1/2 text-left mt-16 mb-8">
           <div flex className="flex justify-start gap-4 items-center pb-4">

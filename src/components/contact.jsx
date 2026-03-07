@@ -7,10 +7,10 @@ const Contact = () => {
         className="max-w-5xl mx-auto p-12 md:p-26  mb-8 bg-gradient-to-b from-white from-85% to-[#923cb5] dark:bg-gradient-to-b dark:from-black dark:from-85% dark:to-purple-500  rounded-4xl border border-gray-500"
         id="contact"
       >
-        <h2 className="text-4xl font-bold mb-4 text-center dark:text-white">
+        <h2 className="text-2xl md:text-4xl font-bold mb-4 text-center dark:text-white">
           Let's work Together
         </h2>
-        <p className="text-2xl text-center capitalize dark:text-white leading-relaxed">
+        <p className="text-xl md:text-2xl text-center capitalize dark:text-white leading-relaxed">
           Have Project in mind? Looking for a partner to help build your
           <br />
           next big thing? Let's Chat

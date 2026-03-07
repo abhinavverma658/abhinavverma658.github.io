@@ -1,7 +1,10 @@
 import Skills from "./skill.jsx";
 const TechnicalSkills = () => {
   return (
-    <div className="bg-[#923cb5] dark:bg-black border-b border-gray-800">
+    <div
+      className="bg-[#923cb5] dark:bg-black border-b border-gray-800"
+      id="skills"
+    >
       <div className="max-w-5xl mx-auto pb-16 p-4">
         <h2 className="text-4xl font-bold mb-4 mt-16 underline underline-offset-8 decoration-5 decoration-white dark:decoration-[#923cb5] text-white dark:text-[#923cb5]">
           Technical Skills
