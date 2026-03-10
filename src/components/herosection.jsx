@@ -29,9 +29,12 @@ const heroSection = () => {
         </div>
 
         <div className="flex gap-4 mx-auto md:mx-0 md:justify-start justify-center flex-wrap">
-          <button className="bg-[#923cb5] hover:bg-[#7a2fa3] text-white font-bold py-3 px-6 rounded-full mt-4">
+          <a
+            href="#projects"
+            className="bg-[#923cb5] hover:bg-[#7a2fa3] text-white font-bold py-3 px-6 rounded-full mt-4"
+          >
             View Work
-          </button>
+          </a>
           <a className="bg-[#121212] border-2 border-gray-800 hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-full mt-4 flex items-center gap-1">
             <svg
               width="20px"
