@@ -9,6 +9,12 @@ function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const scrollTo = (id, closeMenu = false) => (e) => {
+    e.preventDefault();
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    if (closeMenu) setIsMenuOpen(false);
+  };
+
   return (
     <nav className="bg-gray-900/40 shadow-md shadow-gray-500 dark:shadow-none dark:bg-gray-900/40 backdrop-blur-2xl flex items-center justify-between md:justify-center ml-4 mr-4 md:mx-auto p-4 z-999 rounded-[52px] md:rounded-full max-w-2xl md:max-w-5xl mx-auto border-amber-50 top-5 fixed left-0 right-0">
       <div className="container mx-auto px-4 hidden md:block">
@@ -37,36 +43,36 @@ function Navbar() {
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              <a
-                href="#about"
+              <button
+                onClick={scrollTo("about")}
                 className="text-white hover:text-purple-700 transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium"
               >
                 About
-              </a>
-              <a
-                href="#skills"
+              </button>
+              <button
+                onClick={scrollTo("skills")}
                 className="text-white hover:text-purple-700 transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium"
               >
                 Skills
-              </a>
-              <a
-                href="#projects"
+              </button>
+              <button
+                onClick={scrollTo("projects")}
                 className="text-white hover:text-purple-700  transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium"
               >
                 Projects
-              </a>
-              <a
-                href="#experience"
+              </button>
+              <button
+                onClick={scrollTo("experience")}
                 className="text-white hover:text-purple-700  transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium"
               >
                 Experience
-              </a>
-              <a
-                href="#message"
+              </button>
+              <button
+                onClick={scrollTo("message")}
                 className="text-white hover:text-purple-700  transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium"
               >
                 Message
-              </a>
+              </button>
             </div>
           </div>
           <div className="ml-4 gap-2 flex items-center justify-center">
@@ -278,41 +284,36 @@ function Navbar() {
         {isMenuOpen && (
           <div className="mt-4 pb-4 border-t border-gray-700 pt-4 rounded-4xl">
             <div className="flex flex-col space-y-3">
-              <a
-                href="#about"
-                onClick={toggleMenu}
+              <button
+                onClick={scrollTo("about", true)}
                 className="text-white hover:text-purple-700 transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium"
               >
                 About
-              </a>
-              <a
-                href="#projects"
-                onClick={toggleMenu}
+              </button>
+              <button
+                onClick={scrollTo("projects", true)}
                 className="text-white hover:text-purple-700 transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium"
               >
                 Projects
-              </a>
-              <a
-                href="#experience"
-                onClick={toggleMenu}
+              </button>
+              <button
+                onClick={scrollTo("experience", true)}
                 className="text-white hover:text-purple-700 transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium"
               >
                 Experience
-              </a>
-              <a
-                href="#skills"
-                onClick={toggleMenu}
+              </button>
+              <button
+                onClick={scrollTo("skills", true)}
                 className="text-white hover:text-purple-700 transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium"
               >
                 Skills
-              </a>
-              <a
-                href="#contact"
-                onClick={toggleMenu}
+              </button>
+              <button
+                onClick={scrollTo("contact", true)}
                 className="text-white hover:text-purple-700 transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium"
               >
                 Contact
-              </a>
+              </button>
               <button className="text-white bg-purple p-4 px-3 py-2 rounded-full text-sm font-medium hover:transform hover:scale-105 transition-transform duration-300 w-full">
                 Hire Me
               </button>

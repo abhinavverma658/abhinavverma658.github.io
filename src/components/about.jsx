@@ -9,12 +9,10 @@ const aboutUs = () => {
             About Me
           </h2>
           <p className="text-lg mb-6 ">
-            I'm Abhinav Verma, a passionate web developer with expertise in
-            crafting dynamic and responsive websites. With a strong foundation
-            in HTML, CSS, JavaScript, and React, I specialize in creating
-            seamless user experiences. My journey in web development is driven
-            by a love for coding and a commitment to delivering high-quality
-            digital solutions.
+            Frontend Developer from Bihar passionate about creating responsive,
+            visually appealing, and user-friendly websites. I enjoy turning
+            ideas into interactive web experiences and continuously learning new
+            technologies to stay up-to-date.
           </p>
         </div>
         <div className="w-full md:w-1/2 flex">

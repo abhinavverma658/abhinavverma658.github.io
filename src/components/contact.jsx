@@ -2,6 +2,13 @@ import { useState, useEffect } from "react";
 import { useTheme } from "../context/ThemeContext.jsx";
 
 const Contact = () => {
+  async function mailCopy() {
+    try {
+      await navigator.clipboard.writeText("abhinavverma658@gmail.com");
+    } catch (err) {
+      console.error("Failed to copy email address: ", err);
+    }
+  }
   const { theme } = useTheme();
   return (
     <div className="pl-6 pr-6 bg-[#923cb5] dark:bg-black pt-16">
@@ -18,12 +25,12 @@ const Contact = () => {
           next big thing? Let's Chat
         </p>
         <div className="max-w-full flex-wrap flex justify-center items-center  mt-8 gap-4">
-          <a
-            href="mailto:abhinavverma658@gmail.com"
+          <button
+            onClick={mailCopy}
             className="bg-purple text-white px-6 py-3 rounded-full text-lg font-medium hover:bg-gray-800 transition-colors duration-300"
           >
             Send Email
-          </a>
+          </button>
           <a
             href="tel:+91-9924133658"
             className="bg-[#121212] border  border-gray-800  text-white px-6 py-3 rounded-full text-lg font-medium hover:bg-gray-800 transition-colors duration-300"

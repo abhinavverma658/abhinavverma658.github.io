@@ -24,7 +24,7 @@ const TechnicalSkills = () => {
         <h2 className="text-2xl text-white dark:text-gray-400 mt-5 mb-5 font-bold">
           Design & Tools
         </h2>
-        <div className=" md:flex grid grid-cols-3 gap-4 text-white ">
+        <div className="md:flex md:w-5xl grid grid-cols-3 gap-4 text-white ">
           <Skills skill="Figma" />
           <Skills skill="GitHub" />
           <Skills skill="Lighthouse" />
@@ -35,6 +35,7 @@ const TechnicalSkills = () => {
           <Skills skill="Gemini" />
           <Skills skill="Copilot" />
           <Skills skill="Claude" />
+          <Skills skill="Ollama" />
         </div>
       </div>
     </div>
