@@ -9,11 +9,13 @@ function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const scrollTo = (id, closeMenu = false) => (e) => {
-    e.preventDefault();
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-    if (closeMenu) setIsMenuOpen(false);
-  };
+  const scrollTo =
+    (id, closeMenu = false) =>
+    (e) => {
+      e.preventDefault();
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+      if (closeMenu) setIsMenuOpen(false);
+    };
 
   return (
     <nav className="bg-gray-900/40 shadow-md shadow-gray-500 dark:shadow-none dark:bg-gray-900/40 backdrop-blur-2xl flex items-center justify-between md:justify-center ml-4 mr-4 md:mx-auto p-4 z-999 rounded-[52px] md:rounded-full max-w-2xl md:max-w-5xl mx-auto border-amber-50 top-5 fixed left-0 right-0">
@@ -144,9 +146,12 @@ function Navbar() {
                 </svg>
               )}
             </button>
-            <button className="text-white bg-purple p-4 px-3 py-2 rounded-full text-sm font-medium hover:transform hover:scale-105 transition-transform duration-300">
+            <a
+              href="#contact"
+              className="text-white bg-purple p-4 px-3 py-2 rounded-full text-sm font-medium hover:transform hover:scale-105 transition-transform duration-300"
+            >
               Hire Me
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -314,9 +319,12 @@ function Navbar() {
               >
                 Contact
               </button>
-              <button className="text-white bg-purple p-4 px-3 py-2 rounded-full text-sm font-medium hover:transform hover:scale-105 transition-transform duration-300 w-full">
+              <a
+                href="#contact"
+                className="text-white bg-purple p-4 px-3 py-2 rounded-full text-sm font-medium hover:transform hover:scale-105 transition-transform duration-300 w-full"
+              >
                 Hire Me
-              </button>
+              </a>
             </div>
           </div>
         )}

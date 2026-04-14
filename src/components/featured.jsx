@@ -1,5 +1,7 @@
 import ProjectImg1 from "../assets/resumailer.webp";
-import ProjectImg2 from "../assets/resumailerpu.webp";
+import ProjectImg2 from "../assets/slicelink.webp";
+import ProjectImg3 from "../assets/cricket_search.webp";
+import ProjectImg4 from "../assets/daily_horoscope.webp";
 import Card from "./projectCard.jsx";
 import { useTheme } from "../context/ThemeContext.jsx";
 const Project = () => {
@@ -14,11 +16,39 @@ const Project = () => {
           <Card
             projectName="ResuMailer Chrome Extension"
             cardImg={ProjectImg1}
-            projectDescription="A Comprehensive Chrome extension for managing resumes."
+            projectDescription="It is a privacy-focused Chrome extension that automates personalized job applications by sending bulk emails with resume attachments directly through Gmail SMTP."
+            skill1="JavaScript"
+            skill2="NodeMailer"
+            skill3="SMTP"
+            link="https://chromewebstore.google.com/detail/oomdcamobkckogoiakmmadboaajemjpi?utm_source=item-share-cb"
           />
-          <Card projectName="Slice Link NPM Package" cardImg={ProjectImg2} />
-          <Card projectName="Slice Link NPM Package" cardImg={ProjectImg2} />
-          <Card projectName="Slice Link NPM Package" cardImg={ProjectImg2} />
+          <Card
+            projectName="Slice Link NPM Package"
+            cardImg={ProjectImg2}
+            projectDescription="Built a custom Node.js/JavaScript package for fast URL shortening via API integration, featuring a toggle-based private link system."
+            skill1="JavaScript"
+            skill2="Node.js"
+            skill3="API Integration"
+            link="https://www.npmjs.com/package/slice-link-npm-package"
+          />
+          <Card
+            projectName="Cricket Series Search Chrome Extension"
+            cardImg={ProjectImg3}
+            projectDescription="Built a responsive cricket information hub using JavaScript, featuring an intuitive search interface for instant access to cricket tournament schedules."
+            skill1="HTML/CSS"
+            skill2="JavaScript"
+            skill3="API Integration"
+            link="https://github.com/abhinavverma658/Cricket-Series-Search-Chrome-Extension"
+          />
+          <Card
+            projectName="Daily Horoscope Telegram Bot"
+            cardImg={ProjectImg4}
+            projectDescription="Built a responsive cricket information hub using JavaScript, featuring an intuitive search interface for instant access to cricket tournament schedules."
+            skill1="Zapier Automation"
+            skill2="Bot Development"
+            skill3="API Integration"
+            link="https://github.com/abhinavverma658/Daily_Horoscope_Telegram_Bot"
+          />
         </div>
         <div className="text-center mt-8 mb-8 flex items-center justify-center">
           <div className="flex justify-between gap-2">

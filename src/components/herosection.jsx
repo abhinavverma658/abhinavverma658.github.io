@@ -35,7 +35,10 @@ const heroSection = () => {
           >
             View Work
           </a>
-          <a className="bg-[#121212] border-2 border-gray-800 hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-full mt-4 flex items-center gap-1">
+          <a
+            href="https://drive.google.com/uc?export=download&id=1j_380kP3ahaWtpquN1aGnsVQTb8F3Snl"
+            className="bg-[#121212] border-2 border-gray-800 hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-full mt-4 flex items-center gap-1"
+          >
             <svg
               width="20px"
               height="20px"
