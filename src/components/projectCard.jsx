@@ -6,6 +6,7 @@ const ProjectCard = (props) => {
         <img
           src={props.cardImg}
           className="w-full max-h-max object-cover object-top h-96 hover:scale-105 trasition duration-300 ease-in-out"
+          alt={props.altText}
         />
       </div>
       <div className="mt-4 dark:text-white flex justify-between gap-10 items-center">

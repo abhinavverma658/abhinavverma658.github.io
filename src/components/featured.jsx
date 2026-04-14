@@ -20,6 +20,7 @@ const Project = () => {
             skill1="JavaScript"
             skill2="NodeMailer"
             skill3="SMTP"
+            altText="ResuMailer Chrome Extension"
             link="https://chromewebstore.google.com/detail/oomdcamobkckogoiakmmadboaajemjpi?utm_source=item-share-cb"
           />
           <Card
@@ -29,6 +30,7 @@ const Project = () => {
             skill1="JavaScript"
             skill2="Node.js"
             skill3="API Integration"
+            altText="Slice Link NPM Package"
             link="https://www.npmjs.com/package/slice-link-npm-package"
           />
           <Card
@@ -38,6 +40,7 @@ const Project = () => {
             skill1="HTML/CSS"
             skill2="JavaScript"
             skill3="API Integration"
+            altText="Cricket Series Search Chrome Extension"
             link="https://github.com/abhinavverma658/Cricket-Series-Search-Chrome-Extension"
           />
           <Card
@@ -47,6 +50,7 @@ const Project = () => {
             skill1="Zapier Automation"
             skill2="Bot Development"
             skill3="API Integration"
+            altText="Daily Horoscope Telegram Bot"
             link="https://github.com/abhinavverma658/Daily_Horoscope_Telegram_Bot"
           />
         </div>
