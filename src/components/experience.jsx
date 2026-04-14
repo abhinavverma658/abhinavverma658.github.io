@@ -80,12 +80,12 @@ const Experience = () => {
           <DotCard
             title="B.Tech in Computer Science"
             subtitle="I.T.S Engineering College | Nov 2020 - June 2024"
-            description="Led a full-stack web project as Project Leader, earned promotion to Communication Executive for strong communication skills, and received recognition for proactive problem-solving and consistent milestone delivery."
+            description="Pursued a Bachelor of Technology degree in Computer Science, focusing on software development and engineering principles."
           />
           <DotCard
             title="Higher Secondary Education"
             subtitle="Mount Litera Zee School | March 2018 - March 2020"
-            description="Led a full-stack web project as Project Leader, earned promotion to Communication Executive for strong communication skills, and received recognition for proactive problem-solving and consistent milestone delivery."
+            description="Completed higher secondary education with a focus on science and mathematics."
           />
         </div>
       </div>

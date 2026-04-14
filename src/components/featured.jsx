@@ -43,7 +43,7 @@ const Project = () => {
           <Card
             projectName="Daily Horoscope Telegram Bot"
             cardImg={ProjectImg4}
-            projectDescription="Built a responsive cricket information hub using JavaScript, featuring an intuitive search interface for instant access to cricket tournament schedules."
+            projectDescription="It provides daily horoscope readings to users. Essential to this effort is seamlessly integrating an API with platforms like Zapier for automation and UChat for a smooth workflow."
             skill1="Zapier Automation"
             skill2="Bot Development"
             skill3="API Integration"
