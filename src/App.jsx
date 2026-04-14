@@ -11,11 +11,7 @@ import Message from "./components/leaveMessage.jsx";
 import Contact from "./components/contact.jsx";
 import Cursor from "./components/cursor.jsx";
 import BackToTopButton from "./components/backToTop.jsx";
-import Clarity from "@microsoft/clarity";
 function App() {
-  const projectId = "wbs1fop80f";
-
-  Clarity.init(projectId);
   return (
     <ThemeProvider>
       <Cursor />
