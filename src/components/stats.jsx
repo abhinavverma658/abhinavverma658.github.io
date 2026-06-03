@@ -127,7 +127,7 @@ const statsNumber = () => {
           </div>
           <div className="text-white  md:w-1/4 flex flex-col items-center text-center">
             <h2 className="text-2xl md:text-3xl">
-              <AnimatedNumber target={5000} suffix="+" />
+              <AnimatedNumber target={6000} suffix="+" />
             </h2>
             <h5 className="text-md md:text-xl text-white dark:text-[#923cb5]">
               LinkedIn Followers

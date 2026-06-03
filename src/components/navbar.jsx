@@ -321,7 +321,7 @@ function Navbar() {
               </button>
               <a
                 href="#contact"
-                className="text-white bg-purple p-4 px-3 py-2 rounded-full text-sm font-medium hover:transform hover:scale-105 transition-transform duration-300 w-full"
+                className="text-white bg-purple text-center p-4 px-3 py-2 rounded-full text-sm font-medium hover:transform hover:scale-105 transition-transform duration-300 w-full"
               >
                 Hire Me
               </a>
