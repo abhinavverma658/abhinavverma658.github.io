@@ -3,6 +3,15 @@ const Message = () => {
   const [result, setResult] = useState("");
   const onSubmit = async (event) => {
     event.preventDefault();
+    if (
+      !event.target.name.value ||
+      !event.target.email.value ||
+      !event.target.message.value ||
+      !event.target.phone.value
+    ) {
+      setResult("Please fill in all required fields.");
+      return;
+    }
     setResult("Sending....");
     const formData = new FormData(event.target);
 
@@ -31,23 +40,29 @@ const Message = () => {
         </h2>
         <div className=" p-6 pt-8 rounded-2xl shadow-md border border-gray-500">
           <form onSubmit={onSubmit}>
-            <div className="flex justify-center gap-4">
-              <div className="w-1/2 flex flex-col  ">
-                <label className="text-white pb-3">First Name</label>
+            <div className="md:flex justify-center gap-4 grid-cols-2">
+              <div className="w-full md:w-1/2 flex flex-col">
+                <label className="text-white pb-3">
+                  First Name <span style={{ color: "red" }}>*</span>{" "}
+                </label>
                 <input
                   type="text"
                   placeholder="First Name"
                   name="name"
                   className="rounded-2xl pb-3 mb-3 text-white border-amber-50 border-2 placeholder:text-gray-400 placeholder:pl-5 pt-2 placeholder:vertical-center pl-3"
                 />
-                <label className="text-white pb-3">Last Name</label>
+                <label className="text-white pb-3">
+                  Last Name <span style={{ color: "red" }}>*</span>{" "}
+                </label>
                 <input
                   type="text"
                   placeholder="Last Name"
                   name="last_name"
                   className="rounded-2xl pb-3 mb-3 text-white border-amber-50 border-2 placeholder:text-gray-400 placeholder:pl-5 pt-2 placeholder:vertical-center pl-3"
                 />
-                <label className="text-white pb-3">Email</label>
+                <label className="text-white pb-3">
+                  Email <span style={{ color: "red" }}>*</span>{" "}
+                </label>
                 <input
                   type="email"
                   placeholder="Enter Email"
@@ -55,15 +70,19 @@ const Message = () => {
                   className="rounded-2xl pb-3 mb-3 text-white border-amber-50 border-2 placeholder:text-gray-400 placeholder:pl-5 pt-2 placeholder:vertical-center pl-3"
                 />
               </div>
-              <div className="w-1/2  flex flex-col">
-                <label className="text-white pb-3">Phone</label>
+              <div className="w-full md:w-1/2  flex flex-col">
+                <label className="text-white pb-3">
+                  Phone <span style={{ color: "red" }}>*</span>{" "}
+                </label>
                 <input
                   type="tel"
                   placeholder="Enter Phone Number"
                   name="phone"
                   className="rounded-2xl pb-3 mb-3 text-white border-amber-50 border-2 placeholder:text-gray-400 placeholder:pl-5 pt-2 placeholder:vertical-center pl-3"
                 />
-                <label className="text-white pb-3">Message</label>
+                <label className="text-white pb-3">
+                  Message <span style={{ color: "red" }}>*</span>{" "}
+                </label>
                 <textarea
                   rows="5"
                   placeholder="Enter your message"

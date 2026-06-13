@@ -2,10 +2,12 @@ import { useState, useEffect } from "react";
 import { useTheme } from "../context/ThemeContext.jsx";
 
 const Contact = () => {
+  const [emailCopied, setEmailCopied] = useState("Send Email");
   async function mailCopy() {
     try {
       await navigator.clipboard.writeText("abhinavverma658@gmail.com");
-      alert("Email address copied to clipboard!");
+      setEmailCopied("Email Copied!");
+      setTimeout(() => setEmailCopied("Send Email"), 2000);
     } catch (err) {
       console.error("Failed to copy email address: ", err);
     }
@@ -18,7 +20,7 @@ const Contact = () => {
         id="contact"
       >
         <h2 className="text-2xl md:text-4xl font-bold mb-4 text-center dark:text-white">
-          Let's work Together
+          Let's Work Together
         </h2>
         <p className="text-xl md:text-2xl text-center capitalize dark:text-white leading-relaxed">
           Have Project in mind? Looking for a partner to help build your
@@ -30,7 +32,7 @@ const Contact = () => {
             onClick={mailCopy}
             className="bg-purple text-white px-6 py-3 rounded-full text-lg font-medium hover:bg-gray-800 transition-colors duration-300"
           >
-            Send Email
+            {emailCopied}
           </button>
           <a
             href="tel:+91-9924133658"
