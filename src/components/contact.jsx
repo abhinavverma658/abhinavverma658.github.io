@@ -216,7 +216,7 @@ const Contact = () => {
             rel="noreferrer"
           >
             <svg
-              fill="#ffffff"
+              fill={theme === "dark" ? "#ffffff" : "#000000"}
               height="32px"
               width="32px"
               version="1.1"
@@ -250,7 +250,7 @@ const Contact = () => {
             rel="noreferrer"
           >
             <svg
-              fill="#ffffff"
+              fill={theme === "dark" ? "#ffffff" : "#000000"}
               width="32px"
               height="32px"
               viewBox="0 0 32 32"

@@ -112,7 +112,7 @@ const heroSection = () => {
           </div>
           <div className="text-md  dark:text-gray-400">
             <h6> Experience</h6>
-            <h2 className="text-xl dark:text-white">1+ Years</h2>
+            <h2 className="text-lg dark:text-white">1.5+ Years</h2>
           </div>
         </div>
       </div>

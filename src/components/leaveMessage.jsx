@@ -33,8 +33,8 @@ const Message = () => {
     }
   };
   return (
-    <div className="border-b border-gray-500">
-      <div className="max-w-5xl mx-auto p-4 mt-8 mb-8" id="contact">
+    <div className="border-b border-gray-500" id="message">
+      <div className="max-w-5xl mx-auto p-4 mt-8 mb-8">
         <h2 className="text-4xl font-bold mb-3 text-[#923cb5] underline underline-offset-4 text-center">
           Leave a Message
         </h2>
@@ -42,52 +42,52 @@ const Message = () => {
           <form onSubmit={onSubmit}>
             <div className="md:flex justify-center gap-4 grid-cols-2">
               <div className="w-full md:w-1/2 flex flex-col">
-                <label className="text-white pb-3">
+                <label className="dark:text-white pb-3">
                   First Name <span style={{ color: "red" }}>*</span>{" "}
                 </label>
                 <input
                   type="text"
                   placeholder="First Name"
                   name="name"
-                  className="rounded-2xl pb-3 mb-3 text-white border-amber-50 border-2 placeholder:text-gray-400 placeholder:pl-5 pt-2 placeholder:vertical-center pl-3"
+                  className="rounded-2xl pb-3 mb-3 text-white  border-black dark:border-amber-50 border placeholder:text-gray-400 placeholder:pl-5 pt-2 placeholder:vertical-center pl-3"
                 />
-                <label className="text-white pb-3">
+                <label className="dark:text-white pb-3">
                   Last Name <span style={{ color: "red" }}>*</span>{" "}
                 </label>
                 <input
                   type="text"
                   placeholder="Last Name"
                   name="last_name"
-                  className="rounded-2xl pb-3 mb-3 text-white border-amber-50 border-2 placeholder:text-gray-400 placeholder:pl-5 pt-2 placeholder:vertical-center pl-3"
+                  className="rounded-2xl pb-3 mb-3 text-white border-black dark:border-amber-50 border placeholder:text-gray-400 placeholder:pl-5 pt-2 placeholder:vertical-center pl-3"
                 />
-                <label className="text-white pb-3">
+                <label className="dark:text-white pb-3">
                   Email <span style={{ color: "red" }}>*</span>{" "}
                 </label>
                 <input
                   type="email"
                   placeholder="Enter Email"
                   name="email"
-                  className="rounded-2xl pb-3 mb-3 text-white border-amber-50 border-2 placeholder:text-gray-400 placeholder:pl-5 pt-2 placeholder:vertical-center pl-3"
+                  className="rounded-2xl pb-3 mb-3 text-white border-black dark:border-amber-50 border placeholder:text-gray-400 placeholder:pl-5 pt-2 placeholder:vertical-center pl-3"
                 />
               </div>
               <div className="w-full md:w-1/2  flex flex-col">
-                <label className="text-white pb-3">
+                <label className="dark:text-white pb-3">
                   Phone <span style={{ color: "red" }}>*</span>{" "}
                 </label>
                 <input
                   type="tel"
                   placeholder="Enter Phone Number"
                   name="phone"
-                  className="rounded-2xl pb-3 mb-3 text-white border-amber-50 border-2 placeholder:text-gray-400 placeholder:pl-5 pt-2 placeholder:vertical-center pl-3"
+                  className="rounded-2xl pb-3 mb-3 text-white border-black dark:border-amber-50 border placeholder:text-gray-400 placeholder:pl-5 pt-2 placeholder:vertical-center pl-3"
                 />
-                <label className="text-white pb-3">
+                <label className="dark:text-white pb-3">
                   Message <span style={{ color: "red" }}>*</span>{" "}
                 </label>
                 <textarea
                   rows="5"
                   placeholder="Enter your message"
                   name="message"
-                  className="rounded-2xl pb-3 mb-3 text-white border-amber-50 border-2 placeholder:text-gray-400 placeholder:pl-5 pt-2 placeholder:vertical-center pl-3"
+                  className="rounded-2xl pb-3 mb-3 text-white border-black dark:border-amber-50 border placeholder:text-gray-400 placeholder:pl-5 pt-2 placeholder:vertical-center pl-3"
                 />
               </div>
             </div>
