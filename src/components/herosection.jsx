@@ -4,7 +4,7 @@ const heroSection = () => {
     <div className="w-full md:max-w-5xl pt-30 md:pt-38 mx-auto flex flex-col-reverse md:flex md:flex-row justify-center items-center">
       <div className="w-full md:w-1/2 relative  md:flex md:flex-col gap-4 mt-4 md:mt-0">
         <div className="max-w-full md:max-w-[50%]  rounded-full dark:bg-[#121212] p-2 border-2 border-gray-800 flex items-center justify-center mx-auto md:justify-normal gap-3 ml-7 mr-7 md:ml-0 md:mr-0 mb-4 ">
-          <div className="bg-green-500 rounded-full p-1.5 w-2"> </div>
+          <div className="bg-green-500 rounded-full p-1.5 w-2 animate-pulse"> </div>
           <h2 className="dark:text-white">Available For New Projects</h2>
         </div>
         <h1 className="dark:text-white text-center md:text-left text-3xl md:text-6xl font-bold md:p-0 p-4">
@@ -112,7 +112,7 @@ const heroSection = () => {
           </div>
           <div className="text-md  dark:text-gray-400">
             <h6> Experience</h6>
-            <h2 className="text-lg dark:text-white">1.5+ Years</h2>
+            <h2 className="text-lg dark:text-white">2+ Years</h2>
           </div>
         </div>
       </div>

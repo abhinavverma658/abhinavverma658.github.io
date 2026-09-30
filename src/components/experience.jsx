@@ -40,7 +40,12 @@ const Experience = () => {
           </div>
           <DotCard
             title="Frontend Developer"
-            subtitle="Quantum IT Innovation | Oct 2024 - Present"
+            subtitle="XenelSoft Technologies | Aug 2026 - Present "
+            description="Built and maintained responsive, high-performance React.js interfaces that delivered seamless user experiences across devices. Collaborated closely with backend developers, product managers, and designers to define requirements, ship features, and integrate APIs efficiently. Worked with modern frontend technologies and AI-assisted development tools to improve productivity, performance, and code quality. Followed best practices for maintainability, accessibility, and scalability, and actively contributed to code reviews to uphold strong engineering standards."
+          />
+          <DotCard
+            title="Frontend Developer"
+            subtitle="Quantum IT Innovation | Oct 2024 - Aug 2026"
             description="Developed and maintained user interfaces using React.js, ensuring responsive design and optimal performance. Collaborated with cross-functional teams to define, design, and ship new features. Implemented best practices for code quality and participated in code reviews."
           />
           <DotCard

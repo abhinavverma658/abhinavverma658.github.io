@@ -18,8 +18,11 @@ const TechnicalSkills = () => {
           <Skills skill="JavaScript" />
           <Skills skill="TypeScript" />
           <Skills skill="React.Js" />
+          <Skills skill="Next.Js" />
           <Skills skill="Bootstrap" />
           <Skills skill="Tailwind CSS" />
+          <Skills skill="React Query" />
+          <Skills skill="Jest" />
         </div>
         <h2 className="text-2xl text-white dark:text-gray-400 mt-5 mb-5 font-bold">
           Design & Tools
